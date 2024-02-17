@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated test -->
+      <package
+            uri="http:///de/otpiccolo/dsa5/emf/pdf.ecore"
+            class="de.otpiccolo.dsa5.model.pdf.PdfPackage"
+            genModel="model/pdf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated pdf -->
+      <package
+            uri="http:///de/otpiccolo/dsa5/model/pdf/content.ecore"
+            class="de.otpiccolo.dsa5.model.pdf.content.ContentPackage"
+            genModel="model/pdf.genmodel"/>
+   </extension>
+
+</plugin>

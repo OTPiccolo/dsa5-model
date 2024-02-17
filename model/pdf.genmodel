@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dsa5.model/src/main/java" editDirectory="/dsa5.model.edit/src/main/java"
+    editorDirectory="/dsa5.model.editor/src/main/java" modelPluginID="dsa5.model"
+    modelName="Pdf" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    testsDirectory="/dsa5.model.tests/src/main/java" importerID="org.eclipse.emf.importer.java"
+    complianceLevel="17.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>@model</foreignModel>
+  <genPackages prefix="Pdf" basePackage="de.otpiccolo.dsa5.model" disposableProviderFactory="true"
+      ecorePackage="pdf.ecore#/">
+    <genClasses ecoreClass="pdf.ecore#//Page">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pdf.ecore#//Page/pageType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pdf.ecore#//Page/title"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pdf.ecore#//Page/contents"/>
+    </genClasses>
+    <genClasses ecoreClass="pdf.ecore#//Pdf">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pdf.ecore#//Pdf/version"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pdf.ecore#//Pdf/pages"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pdf.ecore#//Pdf/pdfSource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pdf.ecore#//Pdf/pdfDestination"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Content" basePackage="de.otpiccolo.dsa5.model.pdf" disposableProviderFactory="true"
+      ecorePackage="content.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="content.ecore#//ContentType">
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Vorteil"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Nachteil"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Kampfsonderfertigkeit"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zauber"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Hexenfluch"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Predigt"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Liturgie"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zeremonie"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Vision"/>
+    </genEnums>
+    <genClasses ecoreClass="content.ecore#//DataContent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//DataContent/content"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//DataContent/contentType"/>
+    </genClasses>
+    <genClasses ecoreClass="content.ecore#//PageContent"/>
+    <genClasses ecoreClass="content.ecore#//ParagraphContent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//ParagraphContent/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//ParagraphContent/paragraphs"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="content" nsURI="http:///de/otpiccolo/dsa5/model/pdf/content.ecore"
+    nsPrefix="de.otpiccolo.dsa5.model.pdf.content">
+  <eClassifiers xsi:type="ecore:EClass" name="DataContent" eSuperTypes="#//PageContent">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="contentType" eType="#//ContentType"
+        unsettable="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PageContent" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ParagraphContent" eSuperTypes="#//PageContent">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="paragraphs" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ContentType">
+    <eLiterals name="Vorteil"/>
+    <eLiterals name="Nachteil" value="1"/>
+    <eLiterals name="Kampfsonderfertigkeit" value="2"/>
+    <eLiterals name="Zauber" value="3"/>
+    <eLiterals name="Hexenfluch" value="4"/>
+    <eLiterals name="Predigt" value="5"/>
+    <eLiterals name="Liturgie" value="6"/>
+    <eLiterals name="Zeremonie" value="7"/>
+    <eLiterals name="Vision" value="8"/>
+  </eClassifiers>
+</ecore:EPackage>
