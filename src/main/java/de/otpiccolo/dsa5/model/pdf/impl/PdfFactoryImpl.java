@@ -6,10 +6,12 @@ import de.otpiccolo.dsa5.model.pdf.*;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
+import de.otpiccolo.dsa5.model.pdf.Pdf;
+import de.otpiccolo.dsa5.model.pdf.PdfFactory;
+import de.otpiccolo.dsa5.model.pdf.PdfPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -55,22 +57,10 @@ public class PdfFactoryImpl extends EFactoryImpl implements PdfFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case PdfPackage.PAGE: return createPage();
 			case PdfPackage.PDF: return createPdf();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Page createPage() {
-		PageImpl page = new PageImpl();
-		return page;
 	}
 
 	/**

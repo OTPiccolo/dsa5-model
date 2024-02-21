@@ -1,8 +1,9 @@
 /**
  */
-package de.otpiccolo.dsa5.model.pdf.util;
+package de.otpiccolo.dsa5.model.pdf.page.util;
 
-import de.otpiccolo.dsa5.model.pdf.*;
+import de.otpiccolo.dsa5.model.pdf.page.*;
+
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -18,17 +19,17 @@ import org.eclipse.emf.ecore.util.Switch;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see de.otpiccolo.dsa5.model.pdf.PdfPackage
+ * @see de.otpiccolo.dsa5.model.pdf.page.PagePackage
  * @generated
  */
-public class PdfSwitch<T> extends Switch<T> {
+public class PageSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static PdfPackage modelPackage;
+	protected static PagePackage modelPackage;
 
 	/**
 	 * Creates an instance of the switch.
@@ -36,9 +37,9 @@ public class PdfSwitch<T> extends Switch<T> {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PdfSwitch() {
+	public PageSwitch() {
 		if (modelPackage == null) {
-			modelPackage = PdfPackage.eINSTANCE;
+			modelPackage = PagePackage.eINSTANCE;
 		}
 	}
 
@@ -65,9 +66,23 @@ public class PdfSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case PdfPackage.PDF: {
-				Pdf pdf = (Pdf)theEObject;
-				T result = casePdf(pdf);
+			case PagePackage.DEFAULT_PAGE: {
+				DefaultPage defaultPage = (DefaultPage)theEObject;
+				T result = caseDefaultPage(defaultPage);
+				if (result == null) result = casePage(defaultPage);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case PagePackage.PAGE: {
+				Page page = (Page)theEObject;
+				T result = casePage(page);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case PagePackage.PDF_PAGE: {
+				PdfPage pdfPage = (PdfPage)theEObject;
+				T result = casePdfPage(pdfPage);
+				if (result == null) result = casePage(pdfPage);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -76,17 +91,47 @@ public class PdfSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Pdf</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Default Page</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Pdf</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Default Page</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePdf(Pdf object) {
+	public T caseDefaultPage(DefaultPage object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Page</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Page</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePage(Page object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Pdf Page</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Pdf Page</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePdfPage(PdfPage object) {
 		return null;
 	}
 
@@ -106,4 +151,4 @@ public class PdfSwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //PdfSwitch
+} //PageSwitch

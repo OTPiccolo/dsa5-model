@@ -22,15 +22,6 @@ public interface PdfFactory extends EFactory {
 	PdfFactory eINSTANCE = de.otpiccolo.dsa5.model.pdf.impl.PdfFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Page</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Page</em>'.
-	 * @generated
-	 */
-	Page createPage();
-
-	/**
 	 * Returns a new object of class '<em>Pdf</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

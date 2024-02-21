@@ -22,4 +22,12 @@
             genModel="model/pdf.genmodel"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated pdf -->
+      <package
+            uri="http:///de/otpiccolo/dsa5/model/pdf/page.ecore"
+            class="de.otpiccolo.dsa5.model.pdf.page.PagePackage"
+            genModel="model/pdf.genmodel"/>
+   </extension>
+
 </plugin>

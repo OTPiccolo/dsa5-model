@@ -57,61 +57,6 @@ public interface PdfPackage extends EPackage {
 	PdfPackage eINSTANCE = de.otpiccolo.dsa5.model.pdf.impl.PdfPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link de.otpiccolo.dsa5.model.pdf.impl.PageImpl <em>Page</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see de.otpiccolo.dsa5.model.pdf.impl.PageImpl
-	 * @see de.otpiccolo.dsa5.model.pdf.impl.PdfPackageImpl#getPage()
-	 * @generated
-	 */
-	int PAGE = 0;
-
-	/**
-	 * The feature id for the '<em><b>Page Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PAGE__PAGE_TYPE = 0;
-
-	/**
-	 * The feature id for the '<em><b>Title</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PAGE__TITLE = 1;
-
-	/**
-	 * The feature id for the '<em><b>Contents</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PAGE__CONTENTS = 2;
-
-	/**
-	 * The number of structural features of the '<em>Page</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PAGE_FEATURE_COUNT = 3;
-
-	/**
-	 * The number of operations of the '<em>Page</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PAGE_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link de.otpiccolo.dsa5.model.pdf.impl.PdfImpl <em>Pdf</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -119,7 +64,7 @@ public interface PdfPackage extends EPackage {
 	 * @see de.otpiccolo.dsa5.model.pdf.impl.PdfPackageImpl#getPdf()
 	 * @generated
 	 */
-	int PDF = 1;
+	int PDF = 0;
 
 	/**
 	 * The feature id for the '<em><b>Version</b></em>' attribute.
@@ -174,49 +119,6 @@ public interface PdfPackage extends EPackage {
 	 * @ordered
 	 */
 	int PDF_OPERATION_COUNT = 0;
-
-	/**
-	 * Returns the meta object for class '{@link de.otpiccolo.dsa5.model.pdf.Page <em>Page</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Page</em>'.
-	 * @see de.otpiccolo.dsa5.model.pdf.Page
-	 * @generated
-	 */
-	EClass getPage();
-
-	/**
-	 * Returns the meta object for the attribute '{@link de.otpiccolo.dsa5.model.pdf.Page#getPageType <em>Page Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Page Type</em>'.
-	 * @see de.otpiccolo.dsa5.model.pdf.Page#getPageType()
-	 * @see #getPage()
-	 * @generated
-	 */
-	EAttribute getPage_PageType();
-
-	/**
-	 * Returns the meta object for the attribute '{@link de.otpiccolo.dsa5.model.pdf.Page#getTitle <em>Title</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Title</em>'.
-	 * @see de.otpiccolo.dsa5.model.pdf.Page#getTitle()
-	 * @see #getPage()
-	 * @generated
-	 */
-	EAttribute getPage_Title();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link de.otpiccolo.dsa5.model.pdf.Page#getContents <em>Contents</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Contents</em>'.
-	 * @see de.otpiccolo.dsa5.model.pdf.Page#getContents()
-	 * @see #getPage()
-	 * @generated
-	 */
-	EReference getPage_Contents();
 
 	/**
 	 * Returns the meta object for class '{@link de.otpiccolo.dsa5.model.pdf.Pdf <em>Pdf</em>}'.
@@ -295,40 +197,6 @@ public interface PdfPackage extends EPackage {
 	 * @generated
 	 */
 	interface Literals {
-		/**
-		 * The meta object literal for the '{@link de.otpiccolo.dsa5.model.pdf.impl.PageImpl <em>Page</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see de.otpiccolo.dsa5.model.pdf.impl.PageImpl
-		 * @see de.otpiccolo.dsa5.model.pdf.impl.PdfPackageImpl#getPage()
-		 * @generated
-		 */
-		EClass PAGE = eINSTANCE.getPage();
-
-		/**
-		 * The meta object literal for the '<em><b>Page Type</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PAGE__PAGE_TYPE = eINSTANCE.getPage_PageType();
-
-		/**
-		 * The meta object literal for the '<em><b>Title</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PAGE__TITLE = eINSTANCE.getPage_Title();
-
-		/**
-		 * The meta object literal for the '<em><b>Contents</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PAGE__CONTENTS = eINSTANCE.getPage_Contents();
-
 		/**
 		 * The meta object literal for the '{@link de.otpiccolo.dsa5.model.pdf.impl.PdfImpl <em>Pdf</em>}' class.
 		 * <!-- begin-user-doc -->

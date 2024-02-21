@@ -62,17 +62,18 @@ public class DsaContentFactory {
 	 * @param content
 	 *            The content to create a writer for.
 	 * @return The created DSA writer.
-	 * @throws IllegalArgumentException
-	 *             If no data writer could be created for the given content.
+	 * @throws FactoryException
+	 *             If the data writer could not be created because of data
+	 *             problems.
 	 */
-	public static final IDataWriter createDataWriter(final PageContent content) {
+	public static final IDataWriter createDataWriter(final PageContent content) throws FactoryException {
 		if (content instanceof final DataContent dc) {
 			return createDataContent(dc);
 		}
 		if (content instanceof final ParagraphContent pc) {
 			return createParagraphContent(pc);
 		}
-		throw new IllegalArgumentException("Unknown pace content encountered: " + content);
+		throw new FactoryException("Unknown page content encountered: " + content);
 	}
 
 	private static final IDataWriter createDataContent(final DataContent content) {
@@ -83,7 +84,7 @@ public class DsaContentFactory {
 		return creator.apply(Collections.singletonList(content.getContent()));
 	}
 
-	private static final IDataWriter createParagraphContent(final ParagraphContent content) {
+	private static final ParagraphWriter createParagraphContent(final ParagraphContent content) {
 		return new ParagraphWriter(content.getTitle(), content.getParagraphs().stream().map(ParagraphData::new).toList());
 	}
 

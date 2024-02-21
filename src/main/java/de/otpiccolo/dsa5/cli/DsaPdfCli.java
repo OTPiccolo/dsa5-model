@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
+import de.otpiccolo.dsa5.cli.pdf.FactoryException;
 import de.otpiccolo.dsa5.cli.pdf.PdfBridge;
 import de.otpiccolo.dsa5.model.pdf.Pdf;
 import de.otpiccolo.dsa5.model.pdf.PdfPackage;
@@ -60,7 +61,7 @@ public class DsaPdfCli {
 		try {
 			System.out.println("Beginne mit der Generierung des PDFs.");
 			cli.writePdf();
-		} catch (final IOException e) {
+		} catch (final Exception e) {
 			e.printStackTrace();
 			System.exit(1);
 			return;
@@ -124,8 +125,10 @@ public class DsaPdfCli {
 	 * @throws IOException
 	 *             If an exception happens on reading the source PDF, or writing
 	 *             the generated PDF.
+	 * @throws FactoryException
+	 *             If an exception happens creating the content of the PDF.
 	 */
-	public void writePdf() throws IOException {
+	public void writePdf() throws IOException, FactoryException {
 		final PdfWriter writer = PdfBridge.createWriter(pdf);
 		writer.writeDocument();
 	}

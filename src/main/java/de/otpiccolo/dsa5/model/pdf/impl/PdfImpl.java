@@ -2,10 +2,10 @@
  */
 package de.otpiccolo.dsa5.model.pdf.impl;
 
-import de.otpiccolo.dsa5.model.pdf.Page;
 import de.otpiccolo.dsa5.model.pdf.Pdf;
 import de.otpiccolo.dsa5.model.pdf.PdfPackage;
 
+import de.otpiccolo.dsa5.model.pdf.page.Page;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;

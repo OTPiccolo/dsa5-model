@@ -1,8 +1,9 @@
 /**
  */
-package de.otpiccolo.dsa5.model.pdf.util;
+package de.otpiccolo.dsa5.model.pdf.page.util;
 
-import de.otpiccolo.dsa5.model.pdf.*;
+import de.otpiccolo.dsa5.model.pdf.page.*;
+
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
 
@@ -15,17 +16,17 @@ import org.eclipse.emf.ecore.EObject;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see de.otpiccolo.dsa5.model.pdf.PdfPackage
+ * @see de.otpiccolo.dsa5.model.pdf.page.PagePackage
  * @generated
  */
-public class PdfAdapterFactory extends AdapterFactoryImpl {
+public class PageAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static PdfPackage modelPackage;
+	protected static PagePackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -33,9 +34,9 @@ public class PdfAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PdfAdapterFactory() {
+	public PageAdapterFactory() {
 		if (modelPackage == null) {
-			modelPackage = PdfPackage.eINSTANCE;
+			modelPackage = PagePackage.eINSTANCE;
 		}
 	}
 
@@ -64,11 +65,19 @@ public class PdfAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PdfSwitch<Adapter> modelSwitch =
-		new PdfSwitch<Adapter>() {
+	protected PageSwitch<Adapter> modelSwitch =
+		new PageSwitch<Adapter>() {
 			@Override
-			public Adapter casePdf(Pdf object) {
-				return createPdfAdapter();
+			public Adapter caseDefaultPage(DefaultPage object) {
+				return createDefaultPageAdapter();
+			}
+			@Override
+			public Adapter casePage(Page object) {
+				return createPageAdapter();
+			}
+			@Override
+			public Adapter casePdfPage(PdfPage object) {
+				return createPdfPageAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -91,16 +100,44 @@ public class PdfAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.otpiccolo.dsa5.model.pdf.Pdf <em>Pdf</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.otpiccolo.dsa5.model.pdf.page.DefaultPage <em>Default Page</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.otpiccolo.dsa5.model.pdf.Pdf
+	 * @see de.otpiccolo.dsa5.model.pdf.page.DefaultPage
 	 * @generated
 	 */
-	public Adapter createPdfAdapter() {
+	public Adapter createDefaultPageAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.otpiccolo.dsa5.model.pdf.page.Page <em>Page</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.otpiccolo.dsa5.model.pdf.page.Page
+	 * @generated
+	 */
+	public Adapter createPageAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.otpiccolo.dsa5.model.pdf.page.PdfPage <em>Pdf Page</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.otpiccolo.dsa5.model.pdf.page.PdfPage
+	 * @generated
+	 */
+	public Adapter createPdfPageAdapter() {
 		return null;
 	}
 
@@ -116,4 +153,4 @@ public class PdfAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //PdfAdapterFactory
+} //PageAdapterFactory

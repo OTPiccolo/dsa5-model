@@ -4,12 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
-import de.otpiccolo.dsa5.model.pdf.Page;
 import de.otpiccolo.dsa5.model.pdf.Pdf;
-import de.otpiccolo.dsa5.model.pdf.content.PageContent;
+import de.otpiccolo.dsa5.model.pdf.page.Page;
 import de.otpiccolo.dsa5.pdf.PdfWriter;
-import de.otpiccolo.dsa5.pdf.data.IDataWriter;
-import de.otpiccolo.dsa5.pdf.page.DefaultPage;
 import de.otpiccolo.dsa5.pdf.page.IPage;
 
 /**
@@ -24,8 +21,11 @@ public class PdfBridge {
 	 * @param pdf
 	 *            The model describing what to write in the PDF.
 	 * @return A writer for the PDF.
+	 * @throws FactoryException
+	 *             If the PDF writer could not be created because of data
+	 *             problems.
 	 */
-	public static final PdfWriter createWriter(final Pdf pdf) {
+	public static final PdfWriter createWriter(final Pdf pdf) throws FactoryException {
 		final PdfWriter writer = new PdfWriter();
 		writer.setDestination(pdf.getPdfDestination());
 		writer.setSource(pdf.getPdfSource());
@@ -33,27 +33,12 @@ public class PdfBridge {
 		return writer;
 	}
 
-	private static final Stream<IPage> createPageStream(final List<Page> pages) {
+	private static final Stream<IPage> createPageStream(final List<Page> pages) throws FactoryException {
 		final List<IPage> convertedPages = new ArrayList<>(pages.size());
 		for (final Page page : pages) {
-			final DefaultPage convertedPage = DsaPageFactory.createPage(page.getPageType());
-			convertedPage.setTitle(page.getTitle());
-			convertedPage.getWriters().addAll(createDataWriters(page.getContents()));
-			convertedPages.add(convertedPage);
+			convertedPages.add(DsaPageFactory.createPage(page));
 		}
 		return convertedPages.stream();
-	}
-
-	private static final List<IDataWriter> createDataWriters(final List<PageContent> pageContents) {
-		final List<IDataWriter> writers = new ArrayList<>();
-		for (final PageContent content : pageContents) {
-			writers.add(createWriter(content));
-		}
-		return writers;
-	}
-
-	private static final IDataWriter createWriter(final PageContent content) {
-		return DsaContentFactory.createDataWriter(content);
 	}
 
 }

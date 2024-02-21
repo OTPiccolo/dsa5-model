@@ -13,6 +13,8 @@ import de.otpiccolo.dsa5.model.pdf.content.ParagraphContent;
 
 import de.otpiccolo.dsa5.model.pdf.impl.PdfPackageImpl;
 
+import de.otpiccolo.dsa5.model.pdf.page.PagePackage;
+import de.otpiccolo.dsa5.model.pdf.page.impl.PagePackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
@@ -104,14 +106,18 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PdfPackage.eNS_URI);
 		PdfPackageImpl thePdfPackage = (PdfPackageImpl)(registeredPackage instanceof PdfPackageImpl ? registeredPackage : PdfPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PagePackage.eNS_URI);
+		PagePackageImpl thePagePackage = (PagePackageImpl)(registeredPackage instanceof PagePackageImpl ? registeredPackage : PagePackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theContentPackage.createPackageContents();
 		thePdfPackage.createPackageContents();
+		thePagePackage.createPackageContents();
 
 		// Initialize created meta-data
 		theContentPackage.initializePackageContents();
 		thePdfPackage.initializePackageContents();
+		thePagePackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theContentPackage.freeze();
