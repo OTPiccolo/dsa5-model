@@ -19,9 +19,10 @@
     <eLiterals name="Kampfsonderfertigkeit" value="2"/>
     <eLiterals name="Zauber" value="3"/>
     <eLiterals name="Hexenfluch" value="4"/>
-    <eLiterals name="Predigt" value="5"/>
-    <eLiterals name="Liturgie" value="6"/>
-    <eLiterals name="Zeremonie" value="7"/>
-    <eLiterals name="Vision" value="8"/>
+    <eLiterals name="Segen" value="5"/>
+    <eLiterals name="Predigt" value="6"/>
+    <eLiterals name="Liturgie" value="7"/>
+    <eLiterals name="Zeremonie" value="8"/>
+    <eLiterals name="Vision" value="9"/>
   </eClassifiers>
 </ecore:EPackage>

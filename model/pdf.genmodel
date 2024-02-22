@@ -23,6 +23,7 @@
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Kampfsonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zauber"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Hexenfluch"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Segen"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Predigt"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Liturgie"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zeremonie"/>

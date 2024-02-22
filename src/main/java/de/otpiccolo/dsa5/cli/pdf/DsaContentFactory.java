@@ -19,6 +19,8 @@ import de.otpiccolo.dsa5.data.nachteile.NachteilReader;
 import de.otpiccolo.dsa5.data.nachteile.NachteilWriter;
 import de.otpiccolo.dsa5.data.predigt.PredigtReader;
 import de.otpiccolo.dsa5.data.predigt.PredigtWriter;
+import de.otpiccolo.dsa5.data.segen.SegenReader;
+import de.otpiccolo.dsa5.data.segen.SegenWriter;
 import de.otpiccolo.dsa5.data.vision.VisionReader;
 import de.otpiccolo.dsa5.data.vision.VisionWriter;
 import de.otpiccolo.dsa5.data.vorteile.VorteilReader;
@@ -50,6 +52,7 @@ public class DsaContentFactory {
 		map.put(ContentType.LITURGIE, d -> fillWriter(LiturgieWriter::new, LiturgieReader::new, d));
 		map.put(ContentType.NACHTEIL, d -> fillWriter(NachteilWriter::new, NachteilReader::new, d));
 		map.put(ContentType.PREDIGT, d -> fillWriter(PredigtWriter::new, PredigtReader::new, d));
+		map.put(ContentType.SEGEN, d -> fillWriter(SegenWriter::new, SegenReader::new, d));
 		map.put(ContentType.VISION, d -> fillWriter(VisionWriter::new, VisionReader::new, d));
 		map.put(ContentType.VORTEIL, d -> fillWriter(VorteilWriter::new, VorteilReader::new, d));
 		map.put(ContentType.ZAUBER, d -> fillWriter(ZauberWriter::new, ZauberReader::new, d));
