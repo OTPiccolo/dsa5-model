@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.xmi.XMLResource.XMLInfo;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLInfoImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLMapImpl;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import de.otpiccolo.dsa5.model.cli.person.Thyra;
@@ -27,7 +28,7 @@ import de.otpiccolo.dsa5.model.pdf.page.PagePackage;
 public class PersonTest {
 
 	@Test
-	// @Disabled
+	@Disabled
 	public void writeThyra() throws Exception {
 		final String saveFile = "C:\\Users\\OT Piccolo\\Desktop\\temp\\Thyra.xml";
 		final String source = "C:\\Users\\OT Piccolo\\Desktop\\Thyra.pdf";
