@@ -12,6 +12,7 @@
      <id>github</id>
      <name>GitHub OTPiccolo Apache Maven Packages</name>
      <url>https://maven.pkg.github.com/otpiccolo/dsa5-model</url>
+     <uniqueVersion>false</uniqueVersion>
    </repository>
   </distributionManagement>
 
@@ -21,16 +22,6 @@
     <maven.compiler.target>17</maven.compiler.target>
     <emf.version>2.35.0</emf.version>
   </properties>
-
-  <repositories>
-	<repository>
-      <id>github</id>
-      <url>https://maven.pkg.github.com/otpiccolo/de.otpiccolo.dsa5</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
 
   <dependencies>
     <dependency>
@@ -74,6 +65,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <repositories>
+	<repository>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/otpiccolo/de.otpiccolo.dsa5</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
 
   <build>
 	<plugins>
