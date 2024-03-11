@@ -12,7 +12,6 @@
      <id>github</id>
      <name>GitHub OTPiccolo Apache Maven Packages</name>
      <url>https://maven.pkg.github.com/otpiccolo/dsa5-model</url>
-     <uniqueVersion>false</uniqueVersion>
    </repository>
   </distributionManagement>
 
@@ -67,7 +66,7 @@
   </dependencies>
 
   <repositories>
-	<repository>
+    <repository>
       <id>github</id>
       <url>https://maven.pkg.github.com/otpiccolo/de.otpiccolo.dsa5</url>
       <snapshots>
@@ -77,7 +76,7 @@
   </repositories>
 
   <build>
-	<plugins>
+    <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
