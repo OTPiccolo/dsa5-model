@@ -20,6 +20,8 @@ import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import de.otpiccolo.dsa5.cli.pdf.DsaPageFactory;
 import de.otpiccolo.dsa5.cli.pdf.PdfBridge;
@@ -37,6 +39,8 @@ import de.otpiccolo.pdf.PDUtil;
 @SuppressWarnings("javadoc")
 public class DsaPageFactoryTest {
 
+	private static final Logger LOG = LoggerFactory.getLogger(DsaPageFactoryTest.class);
+
 	private static File pdfFile;
 	private static File outputFile;
 
@@ -52,11 +56,13 @@ public class DsaPageFactoryTest {
 	private static void createOutputFile() throws IOException {
 		outputFile = File.createTempFile("ut-pagefactory-output", ".pdf");
 		outputFile.deleteOnExit();
+		LOG.info("Temporary PDF file to write to: {}", outputFile);
 	}
 
 	private static void createPdfFile() throws IOException {
 		pdfFile = File.createTempFile("ut-pagefactory-pdf", ".pdf");
 		pdfFile.deleteOnExit();
+		LOG.info("Temporary PDF file to read: {}", pdfFile);
 		final PDDocument doc = new PDDocument();
 		for (int i = 0; i < 20; i++) {
 			final PDPage page = new PDPage(PDRectangle.A4);
