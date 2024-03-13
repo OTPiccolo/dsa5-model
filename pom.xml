@@ -67,7 +67,7 @@
 
   <repositories>
     <repository>
-      <id>github</id>
+      <id>dsa5-tool</id>
       <url>https://maven.pkg.github.com/otpiccolo/de.otpiccolo.dsa5</url>
       <snapshots>
         <enabled>true</enabled>
