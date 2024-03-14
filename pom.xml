@@ -93,6 +93,7 @@
               <goal>single</goal>
             </goals>
             <configuration>
+              <finalName>dsa5.cli</finalName>
               <archive>
                 <manifest>
                   <mainClass>de.otpiccolo.dsa5.cli.DsaPdfCli</mainClass>
@@ -101,6 +102,7 @@
               <descriptorRefs>
                 <descriptorRef>jar-with-dependencies</descriptorRef>
               </descriptorRefs>
+              <appendAssemblyId>false</appendAssemblyId>
             </configuration>
           </execution>
         </executions>

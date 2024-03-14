@@ -32,5 +32,6 @@ jobs:
       env:
         USER_NAME: ${{ secrets.USER_NAME }} # Secret user name for the 'tool' package.
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # Secret access token for the 'tool' package.
-        GITHUB_TOKEN: ${{ github.token }} # 'github' (inside brackets) must match the ID given in distributionManagement in pom.xml
+        GITHUB_ACTOR: ${{ github.actor }}
+        GITHUB_TOKEN: ${{ github.token }} # See https://docs.github.com/en/actions/publishing-packages/publishing-java-packages-with-maven
       run: mvn -s $GITHUB_WORKSPACE/.github/workflows/maven-settings.xml -B deploy --file pom.xml
