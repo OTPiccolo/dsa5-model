@@ -69,8 +69,8 @@ Bereits implementierte Informationen:
 
 | ContentType | Homepage |
 | --- | --- |
-| *Hexenfluch* | (https://dsa.ulisses-regelwiki.de/hexenfluchauswahl.html |
-| *Kampfsonderfertigkeit* | (https://dsa.ulisses-regelwiki.de/sf_kampfsonderfertigkeiten.html |
+| *Hexenfluch* | https://dsa.ulisses-regelwiki.de/hexenfluchauswahl.html |
+| *Kampfsonderfertigkeit* | https://dsa.ulisses-regelwiki.de/sf_kampfsonderfertigkeiten.html |
 | *Liturgie* | https://dsa.ulisses-regelwiki.de/liturgieauswahl.html |
 | *Nachteil* | https://dsa.ulisses-regelwiki.de/nachteilauswahl.html |
 | *Predigt* | https://dsa.ulisses-regelwiki.de/predigtauswahl.html |
@@ -91,5 +91,5 @@ Bereits implementierte Informationen:
 
 | ID | Beschreibung |
 | --- | --- |
-| Segen | Eine Übersicht über die 12 kleinen Segen, die alle Geweihten für gewöhnlich können. |
-| ZauberMod | Eine Übersicht, wie Zauber modifiziert werden können, um ihre Wirkung zu verändern. |
+| *Segen* | Eine Übersicht über die 12 kleinen Segen, die alle Geweihten für gewöhnlich können. |
+| *ZauberMod* | Eine Übersicht, wie Zauber modifiziert werden können, um ihre Wirkung zu verändern. |
