@@ -2,7 +2,6 @@
 EMF wird verwendet um das Model auszulesen. Es wird in einer XML-Datei gespeichert. Ein Beispiel ist hier gezeigt.
 
 ```
-
 <?xml version="1.0" encoding="UTF-8"?>
 <de.otpiccolo.dsa5.model.pdf:Pdf xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.otpiccolo.dsa5.model.pdf="http:///de/otpiccolo/dsa5/model/pdf.ecore" xmlns:de.otpiccolo.dsa5.model.pdf.content="http:///de/otpiccolo/dsa5/model/pdf/content.ecore" xmlns:de.otpiccolo.dsa5.model.pdf.page="http:///de/otpiccolo/dsa5/model/pdf/page.ecore">
   <pages xsi:type="de.otpiccolo.dsa5.model.pdf.page:DefaultPage">
@@ -54,7 +53,7 @@ EMF wird verwendet um das Model auszulesen. Es wird in einer XML-Datei gespeiche
 </de.otpiccolo.dsa5.model.pdf:Pdf>
 ```
 
-Man kann beliebig viele Seiten anzeigen lassen, allerdings wird der Inhalt nicht über mehrere Seiten automatisch verteilt. Man muss also selber aufpassen, dass alles auf eine Seite drauf passt. Auch müssen eventualle Sonderzeichen wie das *kaufmännische Und* XML-escaped werden. Beispiel: & -> &amp;
+Man kann beliebig viele Seiten anzeigen lassen, allerdings wird der Inhalt nicht über mehrere Seiten automatisch verteilt. Man muss also selber aufpassen, dass alles auf eine Seite drauf passt. Auch müssen eventualle Sonderzeichen wie das *kaufmännische Und* XML-escaped werden. Beispiel: & -> &amp;amp;
 
 *pdfDestination* gibt an, wohin die generierte PDF gespeichert werden soll. *pdfSource* ist optional, um eine PDF vor das generierte PDF anzuhängen (Source wird nicht überschrieben).
 
