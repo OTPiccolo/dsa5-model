@@ -40,6 +40,15 @@ public interface PageFactory extends EFactory {
 	PdfPage createPdfPage();
 
 	/**
+	 * Returns a new object of class '<em>Predefined Page</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Predefined Page</em>'.
+	 * @generated
+	 */
+	PredefinedPage createPredefinedPage();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

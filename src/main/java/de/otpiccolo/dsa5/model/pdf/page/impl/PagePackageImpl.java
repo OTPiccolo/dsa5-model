@@ -16,10 +16,13 @@ import de.otpiccolo.dsa5.model.pdf.page.PageFactory;
 import de.otpiccolo.dsa5.model.pdf.page.PagePackage;
 import de.otpiccolo.dsa5.model.pdf.page.PdfPage;
 
+import de.otpiccolo.dsa5.model.pdf.page.PredefinedPage;
+import de.otpiccolo.dsa5.model.pdf.page.PredefinedType;
 import java.util.Collection;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -52,6 +55,20 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 	 * @generated
 	 */
 	private EClass pdfPageEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass predefinedPageEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum predefinedTypeEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -206,6 +223,36 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getPredefinedPage() {
+		return predefinedPageEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPredefinedPage_Id() {
+		return (EAttribute)predefinedPageEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getPredefinedType() {
+		return predefinedTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EDataType getCollection() {
 		return collectionEDataType;
 	}
@@ -249,6 +296,12 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 		createEAttribute(pdfPageEClass, PDF_PAGE__FILE);
 		createEAttribute(pdfPageEClass, PDF_PAGE__PAGE_NUMBERS);
 
+		predefinedPageEClass = createEClass(PREDEFINED_PAGE);
+		createEAttribute(predefinedPageEClass, PREDEFINED_PAGE__ID);
+
+		// Create enums
+		predefinedTypeEEnum = createEEnum(PREDEFINED_TYPE);
+
 		// Create data types
 		collectionEDataType = createEDataType(COLLECTION);
 	}
@@ -287,6 +340,7 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 		// Add supertypes to classes
 		defaultPageEClass.getESuperTypes().add(this.getPage());
 		pdfPageEClass.getESuperTypes().add(this.getPage());
+		predefinedPageEClass.getESuperTypes().add(this.getPage());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(defaultPageEClass, DefaultPage.class, "DefaultPage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -298,6 +352,14 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 		initEClass(pdfPageEClass, PdfPage.class, "PdfPage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPdfPage_File(), ecorePackage.getEString(), "file", null, 0, 1, PdfPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPdfPage_PageNumbers(), ecorePackage.getEString(), "pageNumbers", null, 0, 1, PdfPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(predefinedPageEClass, PredefinedPage.class, "PredefinedPage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getPredefinedPage_Id(), this.getPredefinedType(), "id", null, 0, 1, PredefinedPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Initialize enums and add enum literals
+		initEEnum(predefinedTypeEEnum, PredefinedType.class, "PredefinedType");
+		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.SEGEN);
+		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.ZAUBER_MOD);
 
 		// Initialize data types
 		initEDataType(collectionEDataType, Collection.class, "Collection", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);

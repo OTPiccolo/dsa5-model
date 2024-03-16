@@ -41,6 +41,10 @@
   </genPackages>
   <genPackages prefix="Page" basePackage="de.otpiccolo.dsa5.model.pdf" disposableProviderFactory="true"
       ecorePackage="page.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="page.ecore#//PredefinedType">
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Segen"/>
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/ZauberMod"/>
+    </genEnums>
     <genDataTypes ecoreDataType="page.ecore#//Collection">
       <genTypeParameters ecoreTypeParameter="page.ecore#//Collection/T"/>
     </genDataTypes>
@@ -52,6 +56,9 @@
     <genClasses ecoreClass="page.ecore#//PdfPage">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute page.ecore#//PdfPage/file"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute page.ecore#//PdfPage/pageNumbers"/>
+    </genClasses>
+    <genClasses ecoreClass="page.ecore#//PredefinedPage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute page.ecore#//PredefinedPage/id"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

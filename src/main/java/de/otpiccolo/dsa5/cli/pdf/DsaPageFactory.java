@@ -14,7 +14,12 @@ import de.otpiccolo.dsa5.model.pdf.content.PageContent;
 import de.otpiccolo.dsa5.model.pdf.page.DefaultPage;
 import de.otpiccolo.dsa5.model.pdf.page.Page;
 import de.otpiccolo.dsa5.model.pdf.page.PdfPage;
+import de.otpiccolo.dsa5.model.pdf.page.PredefinedPage;
+import de.otpiccolo.dsa5.model.pdf.page.PredefinedType;
 import de.otpiccolo.dsa5.pdf.data.IDataWriter;
+import de.otpiccolo.dsa5.pdf.page.IPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.SegenPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.ZauberModPage;
 
 /**
  * Factory to generate DSA page.
@@ -38,6 +43,9 @@ public class DsaPageFactory {
 		}
 		if (page instanceof final PdfPage pp) {
 			return createPdfPage(pp);
+		}
+		if (page instanceof final PredefinedPage pp) {
+			return createPredefinedPage(pp);
 		}
 		throw new FactoryException("Unknown pace encountered: " + page);
 	}
@@ -84,7 +92,7 @@ public class DsaPageFactory {
 	// Page numbers are usually given one based index (human input), while the
 	// machine needs zero based index.
 	private static final Collection<Integer> createPageIndices(final String pageNumbers) {
-		final List<Integer> indices = new ArrayList<Integer>();
+		final List<Integer> indices = new ArrayList<>();
 		final Matcher matcher = PAGE_NUMBER_PATTERN.matcher(pageNumbers);
 		while (matcher.find()) {
 			final String first = matcher.group("first");
@@ -100,6 +108,19 @@ public class DsaPageFactory {
 			}
 		}
 		return indices;
+	}
+
+	private static IPage createPredefinedPage(final PredefinedPage pp) throws FactoryException {
+		final PredefinedType id = pp.getId();
+		if (id == null) {
+			throw new FactoryException("Could not create Predefined page. No ID was given.");
+		}
+
+		return switch (id) {
+		case SEGEN -> new SegenPage();
+		case ZAUBER_MOD -> new ZauberModPage();
+		default -> throw new FactoryException("Unknown predefined page encountered. Not yet implemented: " + id.getLiteral());
+		};
 	}
 
 }

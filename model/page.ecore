@@ -15,4 +15,11 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Collection" instanceClassName="java.util.Collection">
     <eTypeParameters name="T"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PredefinedPage" eSuperTypes="#//Page">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//PredefinedType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PredefinedType">
+    <eLiterals name="Segen"/>
+    <eLiterals name="ZauberMod" value="1"/>
+  </eClassifiers>
 </ecore:EPackage>

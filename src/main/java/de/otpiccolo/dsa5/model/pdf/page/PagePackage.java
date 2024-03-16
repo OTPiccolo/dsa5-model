@@ -5,6 +5,7 @@ package de.otpiccolo.dsa5.model.pdf.page;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -179,6 +180,53 @@ public interface PagePackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link de.otpiccolo.dsa5.model.pdf.page.impl.PredefinedPageImpl <em>Predefined Page</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.otpiccolo.dsa5.model.pdf.page.impl.PredefinedPageImpl
+	 * @see de.otpiccolo.dsa5.model.pdf.page.impl.PagePackageImpl#getPredefinedPage()
+	 * @generated
+	 */
+	int PREDEFINED_PAGE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREDEFINED_PAGE__ID = PAGE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Predefined Page</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREDEFINED_PAGE_FEATURE_COUNT = PAGE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Predefined Page</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREDEFINED_PAGE_OPERATION_COUNT = PAGE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link de.otpiccolo.dsa5.model.pdf.page.PredefinedType <em>Predefined Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.otpiccolo.dsa5.model.pdf.page.PredefinedType
+	 * @see de.otpiccolo.dsa5.model.pdf.page.impl.PagePackageImpl#getPredefinedType()
+	 * @generated
+	 */
+	int PREDEFINED_TYPE = 4;
+
+	/**
 	 * The meta object id for the '<em>Collection</em>' data type.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -186,7 +234,7 @@ public interface PagePackage extends EPackage {
 	 * @see de.otpiccolo.dsa5.model.pdf.page.impl.PagePackageImpl#getCollection()
 	 * @generated
 	 */
-	int COLLECTION = 3;
+	int COLLECTION = 5;
 
 
 	/**
@@ -262,6 +310,37 @@ public interface PagePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getPdfPage_PageNumbers();
+
+	/**
+	 * Returns the meta object for class '{@link de.otpiccolo.dsa5.model.pdf.page.PredefinedPage <em>Predefined Page</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Predefined Page</em>'.
+	 * @see de.otpiccolo.dsa5.model.pdf.page.PredefinedPage
+	 * @generated
+	 */
+	EClass getPredefinedPage();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.otpiccolo.dsa5.model.pdf.page.PredefinedPage#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see de.otpiccolo.dsa5.model.pdf.page.PredefinedPage#getId()
+	 * @see #getPredefinedPage()
+	 * @generated
+	 */
+	EAttribute getPredefinedPage_Id();
+
+	/**
+	 * Returns the meta object for enum '{@link de.otpiccolo.dsa5.model.pdf.page.PredefinedType <em>Predefined Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Predefined Type</em>'.
+	 * @see de.otpiccolo.dsa5.model.pdf.page.PredefinedType
+	 * @generated
+	 */
+	EEnum getPredefinedType();
 
 	/**
 	 * Returns the meta object for data type '{@link java.util.Collection <em>Collection</em>}'.
@@ -358,6 +437,34 @@ public interface PagePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PDF_PAGE__PAGE_NUMBERS = eINSTANCE.getPdfPage_PageNumbers();
+
+		/**
+		 * The meta object literal for the '{@link de.otpiccolo.dsa5.model.pdf.page.impl.PredefinedPageImpl <em>Predefined Page</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.otpiccolo.dsa5.model.pdf.page.impl.PredefinedPageImpl
+		 * @see de.otpiccolo.dsa5.model.pdf.page.impl.PagePackageImpl#getPredefinedPage()
+		 * @generated
+		 */
+		EClass PREDEFINED_PAGE = eINSTANCE.getPredefinedPage();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PREDEFINED_PAGE__ID = eINSTANCE.getPredefinedPage_Id();
+
+		/**
+		 * The meta object literal for the '{@link de.otpiccolo.dsa5.model.pdf.page.PredefinedType <em>Predefined Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.otpiccolo.dsa5.model.pdf.page.PredefinedType
+		 * @see de.otpiccolo.dsa5.model.pdf.page.impl.PagePackageImpl#getPredefinedType()
+		 * @generated
+		 */
+		EEnum PREDEFINED_TYPE = eINSTANCE.getPredefinedType();
 
 		/**
 		 * The meta object literal for the '<em>Collection</em>' data type.

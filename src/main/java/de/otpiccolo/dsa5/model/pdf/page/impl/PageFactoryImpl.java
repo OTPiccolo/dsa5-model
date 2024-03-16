@@ -60,6 +60,7 @@ public class PageFactoryImpl extends EFactoryImpl implements PageFactory {
 		switch (eClass.getClassifierID()) {
 			case PagePackage.DEFAULT_PAGE: return createDefaultPage();
 			case PagePackage.PDF_PAGE: return createPdfPage();
+			case PagePackage.PREDEFINED_PAGE: return createPredefinedPage();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -73,6 +74,8 @@ public class PageFactoryImpl extends EFactoryImpl implements PageFactory {
 	@Override
 	public Object createFromString(EDataType eDataType, String initialValue) {
 		switch (eDataType.getClassifierID()) {
+			case PagePackage.PREDEFINED_TYPE:
+				return createPredefinedTypeFromString(eDataType, initialValue);
 			case PagePackage.COLLECTION:
 				return createCollectionFromString(eDataType, initialValue);
 			default:
@@ -88,6 +91,8 @@ public class PageFactoryImpl extends EFactoryImpl implements PageFactory {
 	@Override
 	public String convertToString(EDataType eDataType, Object instanceValue) {
 		switch (eDataType.getClassifierID()) {
+			case PagePackage.PREDEFINED_TYPE:
+				return convertPredefinedTypeToString(eDataType, instanceValue);
 			case PagePackage.COLLECTION:
 				return convertCollectionToString(eDataType, instanceValue);
 			default:
@@ -115,6 +120,37 @@ public class PageFactoryImpl extends EFactoryImpl implements PageFactory {
 	public PdfPage createPdfPage() {
 		PdfPageImpl pdfPage = new PdfPageImpl();
 		return pdfPage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PredefinedPage createPredefinedPage() {
+		PredefinedPageImpl predefinedPage = new PredefinedPageImpl();
+		return predefinedPage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PredefinedType createPredefinedTypeFromString(EDataType eDataType, String initialValue) {
+		PredefinedType result = PredefinedType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertPredefinedTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
 	}
 
 	/**

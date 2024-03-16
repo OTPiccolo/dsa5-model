@@ -86,6 +86,13 @@ public class PageSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case PagePackage.PREDEFINED_PAGE: {
+				PredefinedPage predefinedPage = (PredefinedPage)theEObject;
+				T result = casePredefinedPage(predefinedPage);
+				if (result == null) result = casePage(predefinedPage);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -132,6 +139,21 @@ public class PageSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T casePdfPage(PdfPage object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Predefined Page</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Predefined Page</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePredefinedPage(PredefinedPage object) {
 		return null;
 	}
 
