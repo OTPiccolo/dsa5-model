@@ -69,16 +69,16 @@ Bereits implementierte Informationen:
 
 | ContentType | Homepage |
 | --- | --- |
-| *Hexenfluch* | (https://dsa.ulisses-regelwiki.de/hexenfluchauswahl.html) |
-| *Kampfsonderfertigkeit* | (https://dsa.ulisses-regelwiki.de/sf_kampfsonderfertigkeiten.html) |
-| *Liturgie* | (https://dsa.ulisses-regelwiki.de/liturgieauswahl.html) |
-| *Nachteil* | (https://dsa.ulisses-regelwiki.de/nachteilauswahl.html) |
-| *Predigt* | (https://dsa.ulisses-regelwiki.de/predigtauswahl.html) |
-| *Segen* | (https://dsa.ulisses-regelwiki.de/segenauswahl.html) |
-| *Vision* | (https://dsa.ulisses-regelwiki.de/visionauswahl.html) |
-| *Vorteil* | (https://dsa.ulisses-regelwiki.de/vorteilauswahl.html) |
-| *Zauber* | (https://dsa.ulisses-regelwiki.de/zauberauswahl.html) |
-| *Zeremonie* | (https://dsa.ulisses-regelwiki.de/zeremonieauswahl.html) |
+| *Hexenfluch* | (https://dsa.ulisses-regelwiki.de/hexenfluchauswahl.html |
+| *Kampfsonderfertigkeit* | (https://dsa.ulisses-regelwiki.de/sf_kampfsonderfertigkeiten.html |
+| *Liturgie* | https://dsa.ulisses-regelwiki.de/liturgieauswahl.html |
+| *Nachteil* | https://dsa.ulisses-regelwiki.de/nachteilauswahl.html |
+| *Predigt* | https://dsa.ulisses-regelwiki.de/predigtauswahl.html |
+| *Segen* | https://dsa.ulisses-regelwiki.de/segenauswahl.html |
+| *Vision* | https://dsa.ulisses-regelwiki.de/visionauswahl.html |
+| *Vorteil* | https://dsa.ulisses-regelwiki.de/vorteilauswahl.html |
+| *Zauber* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html |
+| *Zeremonie* | https://dsa.ulisses-regelwiki.de/zeremonieauswahl.html |
 
 ### ParagraphContent
 *ParagraphContent* erlaubt es, Freitext in das PDF aufzunehmen. Es kann ein optionaler *title* angegeben werden. Und dann wird je ein Paragraph/Absatz in *paragraphs* angegeben.
@@ -90,5 +90,6 @@ Bereits implementierte Informationen:
 *PredefinedPage* fügt vordefinierten Seite in die PDF. Diese sind dazu da, um häufig vorkommende Hilfen anzuzeigen, sollten diese benötigt werden. Im Feld *id* wird angegeben, welche Seite genau hinzu gefügt wird.
 
 | ID | Beschreibung |
+| --- | --- |
 | Segen | Eine Übersicht über die 12 kleinen Segen, die alle Geweihten für gewöhnlich können. |
 | ZauberMod | Eine Übersicht, wie Zauber modifiziert werden können, um ihre Wirkung zu verändern. |
