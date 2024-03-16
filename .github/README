@@ -1,0 +1,95 @@
+# Model-Aufbau
+EMF wird verwendet um das Model auszulesen. Es wird in einer XML-Datei gespeichert. Ein Beispiel ist hier gezeigt.
+
+```
+
+<?xml version="1.0" encoding="UTF-8"?>
+<de.otpiccolo.dsa5.model.pdf:Pdf xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.otpiccolo.dsa5.model.pdf="http:///de/otpiccolo/dsa5/model/pdf.ecore" xmlns:de.otpiccolo.dsa5.model.pdf.content="http:///de/otpiccolo/dsa5/model/pdf/content.ecore" xmlns:de.otpiccolo.dsa5.model.pdf.page="http:///de/otpiccolo/dsa5/model/pdf/page.ecore">
+  <pages xsi:type="de.otpiccolo.dsa5.model.pdf.page:DefaultPage">
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Altersresistenz (*)" contentType="Vorteil"/>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Beidhändig" contentType="Vorteil"/>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Kälteresistenz" contentType="Vorteil"/>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Verbesserte Regeneration (Astralenergie) I-III" contentType="Vorteil"/>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Waffenbegabung" contentType="Vorteil"/>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Hitzeempfindlich" contentType="Nachteil"/>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Verpflichtungen I-III" contentType="Nachteil"/>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Zauberanfällig I-II" contentType="Nachteil"/>
+    <title>Vorteile &amp; Nachteile</title>
+  </pages>
+  <pages xsi:type="de.otpiccolo.dsa5.model.pdf.page:DefaultPage">
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Balsam Salabunde" contentType="Zauber"/>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Blick in die Gedanken" contentType="Zauber"/>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Harmlose Gestalt" contentType="Zauber"/>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Hexenknoten" contentType="Zauber"/>
+    <title>Zaubersprüche</title>
+  </pages>
+  <pages xsi:type="de.otpiccolo.dsa5.model.pdf.page:DefaultPage">
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Hagelschlag" contentType="Hexenfluch"/>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Katzenaugen" contentType="Zauber"/>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Krötensprung" contentType="Zauber"/>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Odem Arcanum" contentType="Zauber"/>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:DataContent" content="Tiergedanken" contentType="Zauber"/>
+  </pages>
+  <pages xsi:type="de.otpiccolo.dsa5.model.pdf.page:DefaultPage">
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:ParagraphContent">
+      <title>Überschift Paragraph 1</title>
+      <paragraphs>Paragraph 1</paragraphs>
+    </contents>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:ParagraphContent">
+      <title>Überschrift Paragraph 2</title>
+      <paragraphs>Paragraph 2</paragraphs>
+      <paragraphs>Paragraph 3</paragraphs>
+    </contents>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:ParagraphContent">
+      <paragraphs>Paragraph 4</paragraphs>
+    </contents>
+    <title>Freitext</title>
+  </pages>
+  <pages xsi:type="de.otpiccolo.dsa5.model.pdf.page:PredefinedPage" id="Segen"/>
+  <pages xsi:type="de.otpiccolo.dsa5.model.pdf.page:PdfPage" pageNumbers="1, 3-4">
+    <file>C:\Some\file.pdf</file>
+  </pages>
+  <pdfSource>C:\Path\optional.source.pdf</pdfSource>
+  <pdfDestination>C:\Path\destination.pdf</pdfDestination>
+</de.otpiccolo.dsa5.model.pdf:Pdf>
+```
+
+Man kann beliebig viele Seiten anzeigen lassen, allerdings wird der Inhalt nicht über mehrere Seiten automatisch verteilt. Man muss also selber aufpassen, dass alles auf eine Seite drauf passt. Auch müssen eventualle Sonderzeichen wie das *kaufmännische Und* XML-escaped werden. Beispiel: & -> &amp;
+
+*pdfDestination* gibt an, wohin die generierte PDF gespeichert werden soll. *pdfSource* ist optional, um eine PDF vor das generierte PDF anzuhängen (Source wird nicht überschrieben).
+
+Seiten sind von einem bestimmten Typ (xsi:type), die dann unterschiedliche Inhalte beinhalten können.
+
+## DefaultPage
+Die *DefaultPage* ist eine leere Seite die befüllt werden kann. Sie hat ein optionales Titel-Feld (*title*) und wird dann mit Inhalt befüllt. Der Inhalt kann gemixt sein.
+
+### DataContent
+*DataContent* ruft Daten von der [Ulisses Homepage](https://dsa.ulisses-regelwiki.de) ab. Es wird in *contentType* angegeben, welchen Obertyp an Daten abgerufen wird, und in *content* welcher spezielle Fähigkiet/Vorteil/.... Man muss diese Angabe machen, wie sie in der Übersicht auf der entsprechenden *contentType*-Seite angegeben ist.
+
+Bereits implementierte Informationen:
+
+| ContentType | Homepage |
+| --- | --- |
+| *Hexenfluch* | (https://dsa.ulisses-regelwiki.de/hexenfluchauswahl.html) |
+| *Kampfsonderfertigkeit* | (https://dsa.ulisses-regelwiki.de/sf_kampfsonderfertigkeiten.html) |
+| *Liturgie* | (https://dsa.ulisses-regelwiki.de/liturgieauswahl.html) |
+| *Nachteil* | (https://dsa.ulisses-regelwiki.de/nachteilauswahl.html) |
+| *Predigt* | (https://dsa.ulisses-regelwiki.de/predigtauswahl.html) |
+| *Segen* | (https://dsa.ulisses-regelwiki.de/segenauswahl.html) |
+| *Vision* | (https://dsa.ulisses-regelwiki.de/visionauswahl.html) |
+| *Vorteil* | (https://dsa.ulisses-regelwiki.de/vorteilauswahl.html) |
+| *Zauber* | (https://dsa.ulisses-regelwiki.de/zauberauswahl.html) |
+| *Zeremonie* | (https://dsa.ulisses-regelwiki.de/zeremonieauswahl.html) |
+
+### ParagraphContent
+*ParagraphContent* erlaubt es, Freitext in das PDF aufzunehmen. Es kann ein optionaler *title* angegeben werden. Und dann wird je ein Paragraph/Absatz in *paragraphs* angegeben.
+
+## PdfPage
+*PdfPage* fügt den Inhalt einer PDF Datei zu diesem zu generierenden PDF hinzu. In *file* wird der Dateipfad zur PDF angegeben. Man kann über *pageNumbers* noch angeben, welche Seiten genau übernommen werden sollen. Wenn nicht angegeben, werden alle Seiten übernommen.
+
+## PredefinedPage
+*PredefinedPage* fügt vordefinierten Seite in die PDF. Diese sind dazu da, um häufig vorkommende Hilfen anzuzeigen, sollten diese benötigt werden. Im Feld *id* wird angegeben, welche Seite genau hinzu gefügt wird.
+
+| ID | Beschreibung |
+| Segen | Eine Übersicht über die 12 kleinen Segen, die alle Geweihten für gewöhnlich können. |
+| ZauberMod | Eine Übersicht, wie Zauber modifiziert werden können, um ihre Wirkung zu verändern. |
