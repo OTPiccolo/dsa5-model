@@ -48,6 +48,15 @@ public class PredefinedPageImpl extends MinimalEObjectImpl.Container implements 
 	protected PredefinedType id = ID_EDEFAULT;
 
 	/**
+	 * This is true if the Id attribute has been set.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean idESet;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -85,8 +94,35 @@ public class PredefinedPageImpl extends MinimalEObjectImpl.Container implements 
 	public void setId(PredefinedType newId) {
 		PredefinedType oldId = id;
 		id = newId == null ? ID_EDEFAULT : newId;
+		boolean oldIdESet = idESet;
+		idESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PagePackage.PREDEFINED_PAGE__ID, oldId, id));
+			eNotify(new ENotificationImpl(this, Notification.SET, PagePackage.PREDEFINED_PAGE__ID, oldId, id, !oldIdESet));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void unsetId() {
+		PredefinedType oldId = id;
+		boolean oldIdESet = idESet;
+		id = ID_EDEFAULT;
+		idESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, PagePackage.PREDEFINED_PAGE__ID, oldId, ID_EDEFAULT, oldIdESet));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isSetId() {
+		return idESet;
 	}
 
 	/**
@@ -127,7 +163,7 @@ public class PredefinedPageImpl extends MinimalEObjectImpl.Container implements 
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case PagePackage.PREDEFINED_PAGE__ID:
-				setId(ID_EDEFAULT);
+				unsetId();
 				return;
 		}
 		super.eUnset(featureID);
@@ -142,7 +178,7 @@ public class PredefinedPageImpl extends MinimalEObjectImpl.Container implements 
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case PagePackage.PREDEFINED_PAGE__ID:
-				return id != ID_EDEFAULT;
+				return isSetId();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -158,7 +194,7 @@ public class PredefinedPageImpl extends MinimalEObjectImpl.Container implements 
 
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (id: ");
-		result.append(id);
+		if (idESet) result.append(id); else result.append("<unset>");
 		result.append(')');
 		return result.toString();
 	}

@@ -354,7 +354,7 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 		initEAttribute(getPdfPage_PageNumbers(), ecorePackage.getEString(), "pageNumbers", null, 0, 1, PdfPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(predefinedPageEClass, PredefinedPage.class, "PredefinedPage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getPredefinedPage_Id(), this.getPredefinedType(), "id", null, 0, 1, PredefinedPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPredefinedPage_Id(), this.getPredefinedType(), "id", null, 0, 1, PredefinedPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(predefinedTypeEEnum, PredefinedType.class, "PredefinedType");

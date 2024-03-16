@@ -12,14 +12,15 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="file" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="pageNumbers" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="Collection" instanceClassName="java.util.Collection">
-    <eTypeParameters name="T"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PredefinedPage" eSuperTypes="#//Page">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//PredefinedType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//PredefinedType"
+        unsettable="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="PredefinedType">
     <eLiterals name="Segen"/>
     <eLiterals name="ZauberMod" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Collection" instanceClassName="java.util.Collection">
+    <eTypeParameters name="T"/>
   </eClassifiers>
 </ecore:EPackage>
