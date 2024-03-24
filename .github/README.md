@@ -93,3 +93,20 @@ Bereits implementierte Informationen:
 | --- | --- |
 | *Segen* | Eine Übersicht über die 12 kleinen Segen, die alle Geweihten für gewöhnlich können. |
 | *ZauberMod* | Eine Übersicht, wie Zauber modifiziert werden können, um ihre Wirkung zu verändern. |
+
+# CLI
+CLI beschreibt den Aufruf des Programms über die Kommando-Zeile. Die Kommando-Zeile kann über die Tastenkombination 'Win+R' und dann 'cmd' aufgrerufen werden.
+
+Im Ordner, wo die jar-Datei gespeichert ist, muss man dann folgenden Befehl eingeben: `java -jar "jar-datei" "C:\Pfad\Zum\Helden.xml`
+
+Beispiel (wenn die XML Datei im selben Verzeichnis ist): `java -jar "dsa5.model-1.0.0-20240316.210355-7-jar-with-dependencies.jar" "held.xml"`
+
+## Kommandozeile-Parameter
+Über `java -jar "jar-datei" --help` kann die Hilfe des Programms aufgerufen werden. Diese zeigt, welche möglichen Argumente das Programm annehmen kann.
+
+Es gibt einen zwingend vorhandenen Parameter, und danach bis zu zwei optionale weitere Parameter. Der erste Parameter ist der Datei-Pfad zur XML-Datei, in der die Daten zum Helden drin stehen. Der zweite Parameter gibt an, wo die generierte PDF gespeichert werden soll. Der dritte Parameter gibt an, ob eine zusätzliche PDF am Anfang der generierten PDF eingefügt werden soll.
+
+Beispiel: `java -jar "dsa5-model.jar" "held.xml" "ausgabe.pdf" "quelle.pdf"`
+Diese Angabe nimmt die Daten aus der Datei `held.xml`und schreibt sie in die Datei `ausgabe.pdf` und fügt am Anfang den Inhalt der Datei `quelle.pdf` hinzu.
+
+Da sowohl `ausgabe.pdf` als auch `quelle.pdf` optionale Parameter sind, werden diese Werte normalerweise aus der `held.xml`-Datei genommen, falls nicht angegeben. `ausgabe.pdf` überschreibt dabei den Wert von `pdfDestination` aus der `held.xml`-Datei, und `quelle.pdf` den Wert von `pdfSource`.
