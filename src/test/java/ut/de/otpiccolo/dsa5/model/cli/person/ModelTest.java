@@ -25,7 +25,7 @@ import de.otpiccolo.dsa5.model.pdf.content.ContentPackage;
 import de.otpiccolo.dsa5.model.pdf.page.PagePackage;
 
 @SuppressWarnings("javadoc")
-public class PersonTest {
+public class ModelTest {
 
 	@Test
 	@Disabled
@@ -61,6 +61,7 @@ public class PersonTest {
 		map.add(PagePackage.eINSTANCE.getDefaultPage_Title(), infoElement);
 		map.add(PagePackage.eINSTANCE.getPdfPage_File(), infoElement);
 		map.add(ContentPackage.eINSTANCE.getParagraphContent_Title(), infoElement);
+		map.add(ContentPackage.eINSTANCE.getImageContent_ImagePath(), infoElement);
 		saveOptions.put(XMLResource.OPTION_XML_MAP, map);
 		saveOptions.put(XMLResource.OPTION_EXTENDED_META_DATA, Boolean.TRUE);
 

@@ -59,6 +59,7 @@ public class ContentFactoryImpl extends EFactoryImpl implements ContentFactory {
 		switch (eClass.getClassifierID()) {
 			case ContentPackage.DATA_CONTENT: return createDataContent();
 			case ContentPackage.PARAGRAPH_CONTENT: return createParagraphContent();
+			case ContentPackage.IMAGE_CONTENT: return createImageContent();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -114,6 +115,17 @@ public class ContentFactoryImpl extends EFactoryImpl implements ContentFactory {
 	public ParagraphContent createParagraphContent() {
 		ParagraphContentImpl paragraphContent = new ParagraphContentImpl();
 		return paragraphContent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ImageContent createImageContent() {
+		ImageContentImpl imageContent = new ImageContentImpl();
+		return imageContent;
 	}
 
 	/**

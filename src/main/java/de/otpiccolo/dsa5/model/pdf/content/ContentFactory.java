@@ -40,6 +40,15 @@ public interface ContentFactory extends EFactory {
 	ParagraphContent createParagraphContent();
 
 	/**
+	 * Returns a new object of class '<em>Image Content</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Image Content</em>'.
+	 * @generated
+	 */
+	ImageContent createImageContent();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

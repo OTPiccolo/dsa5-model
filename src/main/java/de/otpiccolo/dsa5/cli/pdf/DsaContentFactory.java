@@ -31,10 +31,13 @@ import de.otpiccolo.dsa5.data.zeremonien.ZeremonieReader;
 import de.otpiccolo.dsa5.data.zeremonien.ZeremonieWriter;
 import de.otpiccolo.dsa5.model.pdf.content.ContentType;
 import de.otpiccolo.dsa5.model.pdf.content.DataContent;
+import de.otpiccolo.dsa5.model.pdf.content.ImageContent;
 import de.otpiccolo.dsa5.model.pdf.content.PageContent;
 import de.otpiccolo.dsa5.model.pdf.content.ParagraphContent;
 import de.otpiccolo.dsa5.pdf.data.IDataReader;
 import de.otpiccolo.dsa5.pdf.data.IDataWriter;
+import de.otpiccolo.dsa5.pdf.data.image.ImageReader;
+import de.otpiccolo.dsa5.pdf.data.image.ImageWriter;
 import de.otpiccolo.dsa5.pdf.data.paragraph.ParagraphData;
 import de.otpiccolo.dsa5.pdf.data.paragraph.ParagraphWriter;
 
@@ -76,6 +79,9 @@ public class DsaContentFactory {
 		if (content instanceof final ParagraphContent pc) {
 			return createParagraphContent(pc);
 		}
+		if (content instanceof final ImageContent ic) {
+			return createImageContent(ic);
+		}
 		throw new FactoryException("Unknown page content encountered: " + content);
 	}
 
@@ -87,8 +93,12 @@ public class DsaContentFactory {
 		return creator.apply(Collections.singletonList(content.getContent()));
 	}
 
-	private static final ParagraphWriter createParagraphContent(final ParagraphContent content) {
+	private static final IDataWriter createParagraphContent(final ParagraphContent content) {
 		return new ParagraphWriter(content.getTitle(), content.getParagraphs().stream().map(ParagraphData::new).toList());
+	}
+
+	private static final IDataWriter createImageContent(final ImageContent content) {
+		return new ImageWriter(new ImageReader().readData(content.getImagePath()));
 	}
 
 	private static final <T extends IDataWriter, U extends IDataReader<String, V>, V> T fillWriter(final Function<Collection<V>, T> writer, final Supplier<U> reader, final List<String> data) {

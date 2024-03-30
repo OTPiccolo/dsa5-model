@@ -38,6 +38,9 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//ParagraphContent/title"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//ParagraphContent/paragraphs"/>
     </genClasses>
+    <genClasses ecoreClass="content.ecore#//ImageContent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//ImageContent/imagePath"/>
+    </genClasses>
   </genPackages>
   <genPackages prefix="Page" basePackage="de.otpiccolo.dsa5.model.pdf" disposableProviderFactory="true"
       ecorePackage="page.ecore#/">

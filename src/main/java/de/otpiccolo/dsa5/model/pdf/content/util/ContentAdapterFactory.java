@@ -80,6 +80,10 @@ public class ContentAdapterFactory extends AdapterFactoryImpl {
 				return createParagraphContentAdapter();
 			}
 			@Override
+			public Adapter caseImageContent(ImageContent object) {
+				return createImageContentAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -138,6 +142,20 @@ public class ContentAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createParagraphContentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.otpiccolo.dsa5.model.pdf.content.ImageContent <em>Image Content</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.otpiccolo.dsa5.model.pdf.content.ImageContent
+	 * @generated
+	 */
+	public Adapter createImageContentAdapter() {
 		return null;
 	}
 

@@ -8,6 +8,7 @@ import de.otpiccolo.dsa5.model.pdf.content.ContentFactory;
 import de.otpiccolo.dsa5.model.pdf.content.ContentPackage;
 import de.otpiccolo.dsa5.model.pdf.content.ContentType;
 import de.otpiccolo.dsa5.model.pdf.content.DataContent;
+import de.otpiccolo.dsa5.model.pdf.content.ImageContent;
 import de.otpiccolo.dsa5.model.pdf.content.PageContent;
 import de.otpiccolo.dsa5.model.pdf.content.ParagraphContent;
 
@@ -49,6 +50,13 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 	 * @generated
 	 */
 	private EClass paragraphContentEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass imageContentEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,6 +211,26 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getImageContent() {
+		return imageContentEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getImageContent_ImagePath() {
+		return (EAttribute)imageContentEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EEnum getContentType() {
 		return contentTypeEEnum;
 	}
@@ -246,6 +274,9 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		createEAttribute(paragraphContentEClass, PARAGRAPH_CONTENT__TITLE);
 		createEAttribute(paragraphContentEClass, PARAGRAPH_CONTENT__PARAGRAPHS);
 
+		imageContentEClass = createEClass(IMAGE_CONTENT);
+		createEAttribute(imageContentEClass, IMAGE_CONTENT__IMAGE_PATH);
+
 		// Create enums
 		contentTypeEEnum = createEEnum(CONTENT_TYPE);
 	}
@@ -280,6 +311,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		// Add supertypes to classes
 		dataContentEClass.getESuperTypes().add(this.getPageContent());
 		paragraphContentEClass.getESuperTypes().add(this.getPageContent());
+		imageContentEClass.getESuperTypes().add(this.getPageContent());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(dataContentEClass, DataContent.class, "DataContent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -291,6 +323,9 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		initEClass(paragraphContentEClass, ParagraphContent.class, "ParagraphContent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getParagraphContent_Title(), ecorePackage.getEString(), "title", null, 0, 1, ParagraphContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getParagraphContent_Paragraphs(), ecorePackage.getEString(), "paragraphs", null, 0, -1, ParagraphContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(imageContentEClass, ImageContent.class, "ImageContent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getImageContent_ImagePath(), ecorePackage.getEString(), "imagePath", null, 0, 1, ImageContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(contentTypeEEnum, ContentType.class, "ContentType");

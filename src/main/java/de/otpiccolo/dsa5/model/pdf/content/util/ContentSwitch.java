@@ -86,6 +86,13 @@ public class ContentSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ContentPackage.IMAGE_CONTENT: {
+				ImageContent imageContent = (ImageContent)theEObject;
+				T result = caseImageContent(imageContent);
+				if (result == null) result = casePageContent(imageContent);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -132,6 +139,21 @@ public class ContentSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseParagraphContent(ParagraphContent object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Image Content</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Image Content</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseImageContent(ImageContent object) {
 		return null;
 	}
 

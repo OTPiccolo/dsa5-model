@@ -25,4 +25,7 @@
     <eLiterals name="Zeremonie" value="8"/>
     <eLiterals name="Vision" value="9"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ImageContent" eSuperTypes="#//PageContent">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="imagePath" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
 </ecore:EPackage>

@@ -9,6 +9,7 @@ import de.otpiccolo.dsa5.model.pdf.PdfFactory;
 import de.otpiccolo.dsa5.model.pdf.content.ContentFactory;
 import de.otpiccolo.dsa5.model.pdf.content.ContentType;
 import de.otpiccolo.dsa5.model.pdf.content.DataContent;
+import de.otpiccolo.dsa5.model.pdf.content.ImageContent;
 import de.otpiccolo.dsa5.model.pdf.content.PageContent;
 import de.otpiccolo.dsa5.model.pdf.content.ParagraphContent;
 import de.otpiccolo.dsa5.model.pdf.page.DefaultPage;
@@ -56,6 +57,12 @@ public class Thyra {
 		final PredefinedPage zauberModPage = PageFactory.eINSTANCE.createPredefinedPage();
 		zauberModPage.setId(PredefinedType.ZAUBER_MOD);
 		pages.add(zauberModPage);
+
+		final DefaultPage imagePage = createPage(null);
+		final ImageContent imageContent = ContentFactory.eINSTANCE.createImageContent();
+		imageContent.setImagePath("D:\\RP\\Bilder\\Thyra.jpg");
+		imagePage.getContents().add(imageContent);
+		pages.add(imagePage);
 	}
 
 	/**

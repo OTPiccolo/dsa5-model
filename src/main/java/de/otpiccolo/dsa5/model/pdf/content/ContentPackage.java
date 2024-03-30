@@ -177,6 +177,43 @@ public interface ContentPackage extends EPackage {
 	int PARAGRAPH_CONTENT_OPERATION_COUNT = PAGE_CONTENT_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link de.otpiccolo.dsa5.model.pdf.content.impl.ImageContentImpl <em>Image Content</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.otpiccolo.dsa5.model.pdf.content.impl.ImageContentImpl
+	 * @see de.otpiccolo.dsa5.model.pdf.content.impl.ContentPackageImpl#getImageContent()
+	 * @generated
+	 */
+	int IMAGE_CONTENT = 3;
+
+	/**
+	 * The feature id for the '<em><b>Image Path</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_CONTENT__IMAGE_PATH = PAGE_CONTENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Image Content</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_CONTENT_FEATURE_COUNT = PAGE_CONTENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Image Content</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_CONTENT_OPERATION_COUNT = PAGE_CONTENT_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link de.otpiccolo.dsa5.model.pdf.content.ContentType <em>Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -184,7 +221,7 @@ public interface ContentPackage extends EPackage {
 	 * @see de.otpiccolo.dsa5.model.pdf.content.impl.ContentPackageImpl#getContentType()
 	 * @generated
 	 */
-	int CONTENT_TYPE = 3;
+	int CONTENT_TYPE = 4;
 
 
 	/**
@@ -260,6 +297,27 @@ public interface ContentPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getParagraphContent_Paragraphs();
+
+	/**
+	 * Returns the meta object for class '{@link de.otpiccolo.dsa5.model.pdf.content.ImageContent <em>Image Content</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Image Content</em>'.
+	 * @see de.otpiccolo.dsa5.model.pdf.content.ImageContent
+	 * @generated
+	 */
+	EClass getImageContent();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.otpiccolo.dsa5.model.pdf.content.ImageContent#getImagePath <em>Image Path</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Image Path</em>'.
+	 * @see de.otpiccolo.dsa5.model.pdf.content.ImageContent#getImagePath()
+	 * @see #getImageContent()
+	 * @generated
+	 */
+	EAttribute getImageContent_ImagePath();
 
 	/**
 	 * Returns the meta object for enum '{@link de.otpiccolo.dsa5.model.pdf.content.ContentType <em>Type</em>}'.
@@ -355,6 +413,24 @@ public interface ContentPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PARAGRAPH_CONTENT__PARAGRAPHS = eINSTANCE.getParagraphContent_Paragraphs();
+
+		/**
+		 * The meta object literal for the '{@link de.otpiccolo.dsa5.model.pdf.content.impl.ImageContentImpl <em>Image Content</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.otpiccolo.dsa5.model.pdf.content.impl.ImageContentImpl
+		 * @see de.otpiccolo.dsa5.model.pdf.content.impl.ContentPackageImpl#getImageContent()
+		 * @generated
+		 */
+		EClass IMAGE_CONTENT = eINSTANCE.getImageContent();
+
+		/**
+		 * The meta object literal for the '<em><b>Image Path</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_CONTENT__IMAGE_PATH = eINSTANCE.getImageContent_ImagePath();
 
 		/**
 		 * The meta object literal for the '{@link de.otpiccolo.dsa5.model.pdf.content.ContentType <em>Type</em>}' enum.

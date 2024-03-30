@@ -48,6 +48,14 @@ EMF wird verwendet um das Model auszulesen. Es wird in einer XML-Datei gespeiche
   <pages xsi:type="de.otpiccolo.dsa5.model.pdf.page:PdfPage" pageNumbers="1, 3-4">
     <file>C:\Some\file.pdf</file>
   </pages>
+  <pages xsi:type="de.otpiccolo.dsa5.model.pdf.page:DefaultPage">
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:ImageContent">
+     <imagePath>C:\Pfad\Zum\Bild.jpg</imagePath>
+    </contents>
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:ImageContent">
+     <imagePath>http://www.bilder.de/bild.png</imagePath>
+    </contents>
+  </pages>
   <pdfSource>C:\Path\optional.source.pdf</pdfSource>
   <pdfDestination>C:\Path\destination.pdf</pdfDestination>
 </de.otpiccolo.dsa5.model.pdf:Pdf>
@@ -82,6 +90,9 @@ Bereits implementierte Informationen:
 
 ### ParagraphContent
 *ParagraphContent* erlaubt es, Freitext in das PDF aufzunehmen. Es kann ein optionaler *title* angegeben werden. Und dann wird je ein Paragraph/Absatz in *paragraphs* angegeben.
+
+### ImageContent
+*ImageContent* erlaubt es, ein Bild in das PDF aufzunehmen. Der *imagePath* kann dabei sowohl ein Pfad im lokalen System sein, als auch eine URL zu einer Webseite. Bilder, die zu groß sind, um auf die restliche Seite zu passen, werden auf die passende Größe skaliert.
 
 ## PdfPage
 *PdfPage* fügt den Inhalt einer PDF Datei zu diesem zu generierenden PDF hinzu. In *file* wird der Dateipfad zur PDF angegeben. Man kann über *pageNumbers* noch angeben, welche Seiten genau übernommen werden sollen. Wenn nicht angegeben, werden alle Seiten übernommen.
