@@ -13,19 +13,20 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="paragraphs" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ImageContent" eSuperTypes="#//PageContent">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="imagePath" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ContentType">
     <eLiterals name="Vorteil"/>
     <eLiterals name="Nachteil" value="1"/>
     <eLiterals name="Kampfsonderfertigkeit" value="2"/>
     <eLiterals name="Zauber" value="3"/>
-    <eLiterals name="Hexenfluch" value="4"/>
-    <eLiterals name="Segen" value="5"/>
-    <eLiterals name="Predigt" value="6"/>
-    <eLiterals name="Liturgie" value="7"/>
-    <eLiterals name="Zeremonie" value="8"/>
-    <eLiterals name="Vision" value="9"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ImageContent" eSuperTypes="#//PageContent">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="imagePath" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eLiterals name="Zaubererweiterung" value="4"/>
+    <eLiterals name="Hexenfluch" value="5"/>
+    <eLiterals name="Segen" value="6"/>
+    <eLiterals name="Predigt" value="7"/>
+    <eLiterals name="Liturgie" value="8"/>
+    <eLiterals name="Zeremonie" value="9"/>
+    <eLiterals name="Vision" value="10"/>
   </eClassifiers>
 </ecore:EPackage>

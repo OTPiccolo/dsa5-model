@@ -27,29 +27,33 @@ public enum ContentType implements Enumerator {
 	 */
 	ZAUBER(3, "Zauber", "Zauber"),
 	/**
+	 * @model name="Zaubererweiterung"
+	 */
+	ZAUBERERWEITERUNG(4, "Zaubererweiterung", "Zaubererweiterung"),
+	/**
 	 * @model name="Hexenfluch"
 	 */
-	HEXENFLUCH(4, "Hexenfluch", "Hexenfluch"),
+	HEXENFLUCH(5, "Hexenfluch", "Hexenfluch"),
 	/**
 	 * @model name="Segen"
 	 */
-	SEGEN(5, "Segen", "Segen"),
+	SEGEN(6, "Segen", "Segen"),
 	/**
 	 * @model name="Predigt"
 	 */
-	PREDIGT(6, "Predigt", "Predigt"),
+	PREDIGT(7, "Predigt", "Predigt"),
 	/**
 	 * @model name="Liturgie"
 	 */
-	LITURGIE(7, "Liturgie", "Liturgie"),
+	LITURGIE(8, "Liturgie", "Liturgie"),
 	/**
 	 * @model name="Zeremonie"
 	 */
-	ZEREMONIE(8, "Zeremonie", "Zeremonie"),
+	ZEREMONIE(9, "Zeremonie", "Zeremonie"),
 	/**
 	 * @model name="Vision"
 	 */
-	VISION(9, "Vision", "Vision");
+	VISION(10, "Vision", "Vision");
 
 	/**
 	 * The '<em><b>Vorteil</b></em>' literal value.
@@ -92,6 +96,16 @@ public enum ContentType implements Enumerator {
 	 */
 	public static final int ZAUBER_VALUE = 3;
 	/**
+	 * The '<em><b>Zaubererweiterung</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ZAUBERERWEITERUNG
+	 * @model name="Zaubererweiterung"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ZAUBERERWEITERUNG_VALUE = 4;
+	/**
 	 * The '<em><b>Hexenfluch</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -100,17 +114,17 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int HEXENFLUCH_VALUE = 4;
+	public static final int HEXENFLUCH_VALUE = 5;
 	/**
 	 * The '<em><b>Segen</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * @see #SEGEN
 	 * @model name="Segen"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int SEGEN_VALUE = 5;
+	public static final int SEGEN_VALUE = 6;
 	/**
 	 * The '<em><b>Predigt</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -120,7 +134,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PREDIGT_VALUE = 6;
+	public static final int PREDIGT_VALUE = 7;
 	/**
 	 * The '<em><b>Liturgie</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -130,7 +144,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int LITURGIE_VALUE = 7;
+	public static final int LITURGIE_VALUE = 8;
 	/**
 	 * The '<em><b>Zeremonie</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -140,7 +154,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ZEREMONIE_VALUE = 8;
+	public static final int ZEREMONIE_VALUE = 9;
 	/**
 	 * The '<em><b>Vision</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -150,7 +164,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int VISION_VALUE = 9;
+	public static final int VISION_VALUE = 10;
 	/**
 	 * An array of all the '<em><b>Content Type</b></em>' enumerators. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -162,6 +176,7 @@ public enum ContentType implements Enumerator {
 			NACHTEIL,
 			KAMPFSONDERFERTIGKEIT,
 			ZAUBER,
+			ZAUBERERWEITERUNG,
 			HEXENFLUCH,
 			SEGEN,
 			PREDIGT,
@@ -225,6 +240,7 @@ public enum ContentType implements Enumerator {
 			case NACHTEIL_VALUE: return NACHTEIL;
 			case KAMPFSONDERFERTIGKEIT_VALUE: return KAMPFSONDERFERTIGKEIT;
 			case ZAUBER_VALUE: return ZAUBER;
+			case ZAUBERERWEITERUNG_VALUE: return ZAUBERERWEITERUNG;
 			case HEXENFLUCH_VALUE: return HEXENFLUCH;
 			case SEGEN_VALUE: return SEGEN;
 			case PREDIGT_VALUE: return PREDIGT;

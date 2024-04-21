@@ -18,6 +18,7 @@ import de.otpiccolo.dsa5.model.pdf.page.PredefinedPage;
 import de.otpiccolo.dsa5.model.pdf.page.PredefinedType;
 import de.otpiccolo.dsa5.pdf.data.IDataWriter;
 import de.otpiccolo.dsa5.pdf.page.IPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.SchicksalspunktePage;
 import de.otpiccolo.dsa5.pdf.page.predefined.SegenPage;
 import de.otpiccolo.dsa5.pdf.page.predefined.ZauberModPage;
 
@@ -117,6 +118,7 @@ public class DsaPageFactory {
 		}
 
 		return switch (id) {
+		case SCHICKSALSPUNKTE -> new SchicksalspunktePage();
 		case SEGEN -> new SegenPage();
 		case ZAUBER_MOD -> new ZauberModPage();
 		default -> throw new FactoryException("Unknown predefined page encountered. Not yet implemented: " + id.getLiteral());

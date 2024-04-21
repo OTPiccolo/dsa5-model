@@ -3,6 +3,7 @@ package de.otpiccolo.dsa5.model.pdf.page;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
 import org.eclipse.emf.common.util.Enumerator;
 
 /**
@@ -11,24 +12,38 @@ import org.eclipse.emf.common.util.Enumerator;
 public enum PredefinedType implements Enumerator {
 
 	/**
+	 * @model name="Schicksalspunkte"
+	 */
+	SCHICKSALSPUNKTE(0, "Schicksalspunkte", "Schicksalspunkte"),
+	/**
 	 * @model name="Segen"
 	 */
-	SEGEN(0, "Segen", "Segen"),
+	SEGEN(1, "Segen", "Segen"),
 	/**
 	 * @model name="ZauberMod"
 	 */
-	ZAUBER_MOD(1, "ZauberMod", "ZauberMod");
+	ZAUBER_MOD(2, "ZauberMod", "ZauberMod");
 
 	/**
-	 * The '<em><b>Segen</b></em>' literal value.
+	 * The '<em><b>Schicksalspunkte</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see #SCHICKSALSPUNKTE
+	 * @model name="Schicksalspunkte"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int SCHICKSALSPUNKTE_VALUE = 0;
+	/**
+	 * The '<em><b>Segen</b></em>' literal value.
+	 * <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * @see #SEGEN
 	 * @model name="Segen"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int SEGEN_VALUE = 0;
+	public static final int SEGEN_VALUE = 1;
 	/**
 	 * The '<em><b>Zauber Mod</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -38,30 +53,28 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ZAUBER_MOD_VALUE = 1;
+	public static final int ZAUBER_MOD_VALUE = 2;
 	/**
-	 * An array of all the '<em><b>Predefined Type</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * An array of all the '<em><b>Predefined Type</b></em>' enumerators. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
-	private static final PredefinedType[] VALUES_ARRAY =
-		new PredefinedType[] {
+	private static final PredefinedType[] VALUES_ARRAY = new PredefinedType[] {
+			SCHICKSALSPUNKTE,
 			SEGEN,
 			ZAUBER_MOD,
 		};
 	/**
 	 * A public read-only list of all the '<em><b>Predefined Type</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public static final List<PredefinedType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
 	 * Returns the '<em><b>Predefined Type</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @param literal the literal.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
@@ -78,8 +91,7 @@ public enum PredefinedType implements Enumerator {
 
 	/**
 	 * Returns the '<em><b>Predefined Type</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @param name the name.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
@@ -96,14 +108,14 @@ public enum PredefinedType implements Enumerator {
 
 	/**
 	 * Returns the '<em><b>Predefined Type</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @param value the integer value.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static PredefinedType get(int value) {
 		switch (value) {
+			case SCHICKSALSPUNKTE_VALUE: return SCHICKSALSPUNKTE;
 			case SEGEN_VALUE: return SEGEN;
 			case ZAUBER_MOD_VALUE: return ZAUBER_MOD;
 		}
@@ -111,28 +123,25 @@ public enum PredefinedType implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	private final int value;
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	private final String name;
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	private final String literal;
 
 	/**
 	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * @generated
 	 */
 	private PredefinedType(int value, String name, String literal) {
@@ -142,8 +151,7 @@ public enum PredefinedType implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -152,8 +160,7 @@ public enum PredefinedType implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -162,8 +169,7 @@ public enum PredefinedType implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -173,8 +179,7 @@ public enum PredefinedType implements Enumerator {
 
 	/**
 	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override

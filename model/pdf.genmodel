@@ -22,6 +22,7 @@
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Nachteil"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Kampfsonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zauber"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zaubererweiterung"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Hexenfluch"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Segen"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Predigt"/>
@@ -45,6 +46,7 @@
   <genPackages prefix="Page" basePackage="de.otpiccolo.dsa5.model.pdf" disposableProviderFactory="true"
       ecorePackage="page.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="page.ecore#//PredefinedType">
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Schicksalspunkte"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Segen"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/ZauberMod"/>
     </genEnums>

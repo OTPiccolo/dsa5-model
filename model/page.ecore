@@ -17,8 +17,9 @@
         unsettable="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="PredefinedType">
-    <eLiterals name="Segen"/>
-    <eLiterals name="ZauberMod" value="1"/>
+    <eLiterals name="Schicksalspunkte"/>
+    <eLiterals name="Segen" value="1"/>
+    <eLiterals name="ZauberMod" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="Collection" instanceClassName="java.util.Collection">
     <eTypeParameters name="T"/>
