@@ -86,7 +86,12 @@ Bereits implementierte Informationen:
 | *Vision* | https://dsa.ulisses-regelwiki.de/visionauswahl.html |
 | *Vorteil* | https://dsa.ulisses-regelwiki.de/vorteilauswahl.html |
 | *Zauber* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html |
+| *Zaubererweiterung* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html |
 | *Zeremonie* | https://dsa.ulisses-regelwiki.de/zeremonieauswahl.html |
+
+Für Zaubererweiterungen haben einen leicht anderen Syntax, da man zusätzlich zum Namen der Zaubererweiterung auch noch den Namen des Zaubers angeben muss.
+Syntax: Zauber-Name#Zaubererweiterung-Name
+Beispiel: Axxeleratus#Noch schneller
 
 ### ParagraphContent
 *ParagraphContent* erlaubt es, Freitext in das PDF aufzunehmen. Es kann ein optionaler *title* angegeben werden. Und dann wird je ein Paragraph/Absatz in *paragraphs* angegeben.
@@ -102,6 +107,7 @@ Bereits implementierte Informationen:
 
 | ID | Beschreibung |
 | --- | --- |
+| *Schicksalspunkte* | Eine Übersicht, wie Schicksalspunkte verwendet werden können. |
 | *Segen* | Eine Übersicht über die 12 kleinen Segen, die alle Geweihten für gewöhnlich können. |
 | *ZauberMod* | Eine Übersicht, wie Zauber modifiziert werden können, um ihre Wirkung zu verändern. |
 
