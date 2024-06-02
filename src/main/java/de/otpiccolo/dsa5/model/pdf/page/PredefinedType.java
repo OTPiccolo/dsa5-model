@@ -20,14 +20,18 @@ public enum PredefinedType implements Enumerator {
 	 */
 	SEGEN(1, "Segen", "Segen"),
 	/**
+	 * @model name="Travia"
+	 */
+	TRAVIA(2, "Travia", "Travia"),
+	/**
 	 * @model name="ZauberMod"
 	 */
-	ZAUBER_MOD(2, "ZauberMod", "ZauberMod");
+	ZAUBER_MOD(3, "ZauberMod", "ZauberMod");
 
 	/**
 	 * The '<em><b>Schicksalspunkte</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
 	 * @see #SCHICKSALSPUNKTE
 	 * @model name="Schicksalspunkte"
 	 * @generated
@@ -45,6 +49,16 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int SEGEN_VALUE = 1;
 	/**
+	 * The '<em><b>Travia</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #TRAVIA
+	 * @model name="Travia"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int TRAVIA_VALUE = 2;
+	/**
 	 * The '<em><b>Zauber Mod</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53,7 +67,7 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ZAUBER_MOD_VALUE = 2;
+	public static final int ZAUBER_MOD_VALUE = 3;
 	/**
 	 * An array of all the '<em><b>Predefined Type</b></em>' enumerators. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -63,6 +77,7 @@ public enum PredefinedType implements Enumerator {
 	private static final PredefinedType[] VALUES_ARRAY = new PredefinedType[] {
 			SCHICKSALSPUNKTE,
 			SEGEN,
+			TRAVIA,
 			ZAUBER_MOD,
 		};
 	/**
@@ -117,6 +132,7 @@ public enum PredefinedType implements Enumerator {
 		switch (value) {
 			case SCHICKSALSPUNKTE_VALUE: return SCHICKSALSPUNKTE;
 			case SEGEN_VALUE: return SEGEN;
+			case TRAVIA_VALUE: return TRAVIA;
 			case ZAUBER_MOD_VALUE: return ZAUBER_MOD;
 		}
 		return null;

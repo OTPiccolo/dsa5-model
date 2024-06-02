@@ -329,17 +329,18 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 
 		// Initialize enums and add enum literals
 		initEEnum(contentTypeEEnum, ContentType.class, "ContentType");
-		addEEnumLiteral(contentTypeEEnum, ContentType.VORTEIL);
-		addEEnumLiteral(contentTypeEEnum, ContentType.NACHTEIL);
+		addEEnumLiteral(contentTypeEEnum, ContentType.HEXENFLUCH);
+		addEEnumLiteral(contentTypeEEnum, ContentType.KARMALE_TRADITION);
 		addEEnumLiteral(contentTypeEEnum, ContentType.KAMPFSONDERFERTIGKEIT);
+		addEEnumLiteral(contentTypeEEnum, ContentType.LITURGIE);
+		addEEnumLiteral(contentTypeEEnum, ContentType.NACHTEIL);
+		addEEnumLiteral(contentTypeEEnum, ContentType.PREDIGT);
+		addEEnumLiteral(contentTypeEEnum, ContentType.SEGEN);
+		addEEnumLiteral(contentTypeEEnum, ContentType.VISION);
+		addEEnumLiteral(contentTypeEEnum, ContentType.VORTEIL);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ZAUBER);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ZAUBERERWEITERUNG);
-		addEEnumLiteral(contentTypeEEnum, ContentType.HEXENFLUCH);
-		addEEnumLiteral(contentTypeEEnum, ContentType.SEGEN);
-		addEEnumLiteral(contentTypeEEnum, ContentType.PREDIGT);
-		addEEnumLiteral(contentTypeEEnum, ContentType.LITURGIE);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ZEREMONIE);
-		addEEnumLiteral(contentTypeEEnum, ContentType.VISION);
 
 		// Create resource
 		createResource(eNS_URI);

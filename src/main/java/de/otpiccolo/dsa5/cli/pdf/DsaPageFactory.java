@@ -21,6 +21,7 @@ import de.otpiccolo.dsa5.pdf.page.IPage;
 import de.otpiccolo.dsa5.pdf.page.predefined.SchicksalspunktePage;
 import de.otpiccolo.dsa5.pdf.page.predefined.SegenPage;
 import de.otpiccolo.dsa5.pdf.page.predefined.ZauberModPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.geweihte.TraviaPage;
 
 /**
  * Factory to generate DSA page.
@@ -120,6 +121,7 @@ public class DsaPageFactory {
 		return switch (id) {
 		case SCHICKSALSPUNKTE -> new SchicksalspunktePage();
 		case SEGEN -> new SegenPage();
+		case TRAVIA -> new TraviaPage();
 		case ZAUBER_MOD -> new ZauberModPage();
 		default -> throw new FactoryException("Unknown predefined page encountered. Not yet implemented: " + id.getLiteral());
 		};

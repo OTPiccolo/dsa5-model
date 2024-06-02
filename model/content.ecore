@@ -17,16 +17,17 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="imagePath" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ContentType">
-    <eLiterals name="Vorteil"/>
-    <eLiterals name="Nachteil" value="1"/>
+    <eLiterals name="Hexenfluch"/>
+    <eLiterals name="KarmaleTradition" value="1"/>
     <eLiterals name="Kampfsonderfertigkeit" value="2"/>
-    <eLiterals name="Zauber" value="3"/>
-    <eLiterals name="Zaubererweiterung" value="4"/>
-    <eLiterals name="Hexenfluch" value="5"/>
+    <eLiterals name="Liturgie" value="3"/>
+    <eLiterals name="Nachteil" value="4"/>
+    <eLiterals name="Predigt" value="5"/>
     <eLiterals name="Segen" value="6"/>
-    <eLiterals name="Predigt" value="7"/>
-    <eLiterals name="Liturgie" value="8"/>
-    <eLiterals name="Zeremonie" value="9"/>
-    <eLiterals name="Vision" value="10"/>
+    <eLiterals name="Vision" value="7"/>
+    <eLiterals name="Vorteil" value="8"/>
+    <eLiterals name="Zauber" value="9"/>
+    <eLiterals name="Zaubererweiterung" value="10"/>
+    <eLiterals name="Zeremonie" value="11"/>
   </eClassifiers>
 </ecore:EPackage>

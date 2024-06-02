@@ -18,17 +18,18 @@
   <genPackages prefix="Content" basePackage="de.otpiccolo.dsa5.model.pdf" disposableProviderFactory="true"
       ecorePackage="content.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="content.ecore#//ContentType">
-      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Vorteil"/>
-      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Nachteil"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Hexenfluch"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/KarmaleTradition"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Kampfsonderfertigkeit"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Liturgie"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Nachteil"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Predigt"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Segen"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Vision"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Vorteil"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zauber"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zaubererweiterung"/>
-      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Hexenfluch"/>
-      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Segen"/>
-      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Predigt"/>
-      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Liturgie"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zeremonie"/>
-      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Vision"/>
     </genEnums>
     <genClasses ecoreClass="content.ecore#//DataContent">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//DataContent/content"/>
@@ -48,6 +49,7 @@
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="page.ecore#//PredefinedType">
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Schicksalspunkte"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Segen"/>
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Travia"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/ZauberMod"/>
     </genEnums>
     <genDataTypes ecoreDataType="page.ecore#//Collection">

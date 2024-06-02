@@ -79,6 +79,7 @@ Bereits implementierte Informationen:
 | --- | --- |
 | *Hexenfluch* | https://dsa.ulisses-regelwiki.de/hexenfluchauswahl.html |
 | *Kampfsonderfertigkeit* | https://dsa.ulisses-regelwiki.de/sf_kampfsonderfertigkeiten.html |
+| *KarmaleTradition* | https://dsa.ulisses-regelwiki.de/karmale_traditionauswahl.html (nur der Teil in Klammern. Beispiel: Praioskirche) |
 | *Liturgie* | https://dsa.ulisses-regelwiki.de/liturgieauswahl.html |
 | *Nachteil* | https://dsa.ulisses-regelwiki.de/nachteilauswahl.html |
 | *Predigt* | https://dsa.ulisses-regelwiki.de/predigtauswahl.html |
@@ -86,7 +87,7 @@ Bereits implementierte Informationen:
 | *Vision* | https://dsa.ulisses-regelwiki.de/visionauswahl.html |
 | *Vorteil* | https://dsa.ulisses-regelwiki.de/vorteilauswahl.html |
 | *Zauber* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html |
-| *Zaubererweiterung* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html |
+| *Zaubererweiterung* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html (Spezielle Angabe, siehe unten) |
 | *Zeremonie* | https://dsa.ulisses-regelwiki.de/zeremonieauswahl.html |
 
 Für Zaubererweiterungen haben einen leicht anderen Syntax, da man zusätzlich zum Namen der Zaubererweiterung auch noch den Namen des Zaubers angeben muss.
@@ -109,6 +110,7 @@ Beispiel: Axxeleratus#Noch schneller
 | --- | --- |
 | *Schicksalspunkte* | Eine Übersicht, wie Schicksalspunkte verwendet werden können. |
 | *Segen* | Eine Übersicht über die 12 kleinen Segen, die alle Geweihten für gewöhnlich können. |
+| *Travia* | Eine Übersicht über den Travia-Geweihten. |
 | *ZauberMod* | Eine Übersicht, wie Zauber modifiziert werden können, um ihre Wirkung zu verändern. |
 
 # CLI

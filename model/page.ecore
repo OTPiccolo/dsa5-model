@@ -19,7 +19,8 @@
   <eClassifiers xsi:type="ecore:EEnum" name="PredefinedType">
     <eLiterals name="Schicksalspunkte"/>
     <eLiterals name="Segen" value="1"/>
-    <eLiterals name="ZauberMod" value="2"/>
+    <eLiterals name="Travia" value="2"/>
+    <eLiterals name="ZauberMod" value="3"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="Collection" instanceClassName="java.util.Collection">
     <eTypeParameters name="T"/>

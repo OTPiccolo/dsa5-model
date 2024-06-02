@@ -11,70 +11,76 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum ContentType implements Enumerator {
 	/**
-	 * @model name="Vorteil"
+	 * @model name="Hexenfluch"
 	 */
-	VORTEIL(0, "Vorteil", "Vorteil"),
+	HEXENFLUCH(0, "Hexenfluch", "Hexenfluch"),
 	/**
-	 * @model name="Nachteil"
+	 * @model name="KarmaleTradition"
 	 */
-	NACHTEIL(1, "Nachteil", "Nachteil"),
+	KARMALE_TRADITION(1, "KarmaleTradition", "KarmaleTradition"),
 	/**
 	 * @model name="Kampfsonderfertigkeit"
 	 */
 	KAMPFSONDERFERTIGKEIT(2, "Kampfsonderfertigkeit", "Kampfsonderfertigkeit"),
 	/**
-	 * @model name="Zauber"
+	 * @model name="Liturgie"
 	 */
-	ZAUBER(3, "Zauber", "Zauber"),
+	LITURGIE(3, "Liturgie", "Liturgie"),
+
 	/**
-	 * @model name="Zaubererweiterung"
+	 * @model name="Nachteil"
 	 */
-	ZAUBERERWEITERUNG(4, "Zaubererweiterung", "Zaubererweiterung"),
+	NACHTEIL(4, "Nachteil", "Nachteil"),
 	/**
-	 * @model name="Hexenfluch"
+	 * @model name="Predigt"
 	 */
-	HEXENFLUCH(5, "Hexenfluch", "Hexenfluch"),
+	PREDIGT(5, "Predigt", "Predigt"),
+
 	/**
 	 * @model name="Segen"
 	 */
 	SEGEN(6, "Segen", "Segen"),
 	/**
-	 * @model name="Predigt"
+	 * @model name="Vision"
 	 */
-	PREDIGT(7, "Predigt", "Predigt"),
+	VISION(7, "Vision", "Vision"),
 	/**
-	 * @model name="Liturgie"
+	 * @model name="Vorteil"
 	 */
-	LITURGIE(8, "Liturgie", "Liturgie"),
+	VORTEIL(8, "Vorteil", "Vorteil"),
+	/**
+	 * @model name="Zauber"
+	 */
+	ZAUBER(9, "Zauber", "Zauber"),
+	/**
+	 * @model name="Zaubererweiterung"
+	 */
+	ZAUBERERWEITERUNG(10, "Zaubererweiterung", "Zaubererweiterung"),
 	/**
 	 * @model name="Zeremonie"
 	 */
-	ZEREMONIE(9, "Zeremonie", "Zeremonie"),
-	/**
-	 * @model name="Vision"
-	 */
-	VISION(10, "Vision", "Vision");
+	ZEREMONIE(11, "Zeremonie", "Zeremonie");
 
 	/**
-	 * The '<em><b>Vorteil</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-	 * @see #VORTEIL
-	 * @model name="Vorteil"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int VORTEIL_VALUE = 0;
-	/**
-	 * The '<em><b>Nachteil</b></em>' literal value.
+	 * The '<em><b>Hexenfluch</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #NACHTEIL
-	 * @model name="Nachteil"
+	 * @see #HEXENFLUCH
+	 * @model name="Hexenfluch"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int NACHTEIL_VALUE = 1;
+	public static final int HEXENFLUCH_VALUE = 0;
+	/**
+	 * The '<em><b>Karmale Tradition</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #KARMALE_TRADITION
+	 * @model name="KarmaleTradition"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int KARMALE_TRADITION_VALUE = 1;
 	/**
 	 * The '<em><b>Kampfsonderfertigkeit</b></em>' literal value. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -86,35 +92,35 @@ public enum ContentType implements Enumerator {
 	 */
 	public static final int KAMPFSONDERFERTIGKEIT_VALUE = 2;
 	/**
-	 * The '<em><b>Zauber</b></em>' literal value.
+	 * The '<em><b>Liturgie</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #LITURGIE
+	 * @model name="Liturgie"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int LITURGIE_VALUE = 3;
+	/**
+	 * The '<em><b>Nachteil</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #NACHTEIL
+	 * @model name="Nachteil"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int NACHTEIL_VALUE = 4;
+	/**
+	 * The '<em><b>Predigt</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * @see #ZAUBER
-	 * @model name="Zauber"
+	 * @see #PREDIGT
+	 * @model name="Predigt"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ZAUBER_VALUE = 3;
-	/**
-	 * The '<em><b>Zaubererweiterung</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ZAUBERERWEITERUNG
-	 * @model name="Zaubererweiterung"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int ZAUBERERWEITERUNG_VALUE = 4;
-	/**
-	 * The '<em><b>Hexenfluch</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #HEXENFLUCH
-	 * @model name="Hexenfluch"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int HEXENFLUCH_VALUE = 5;
+	public static final int PREDIGT_VALUE = 5;
 	/**
 	 * The '<em><b>Segen</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -126,25 +132,45 @@ public enum ContentType implements Enumerator {
 	 */
 	public static final int SEGEN_VALUE = 6;
 	/**
-	 * The '<em><b>Predigt</b></em>' literal value.
+	 * The '<em><b>Vision</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * @see #PREDIGT
-	 * @model name="Predigt"
+	 * @see #VISION
+	 * @model name="Vision"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PREDIGT_VALUE = 7;
+	public static final int VISION_VALUE = 7;
 	/**
-	 * The '<em><b>Liturgie</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #LITURGIE
-	 * @model name="Liturgie"
+	 * The '<em><b>Vorteil</b></em>' literal value.
+	 * <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * @see #VORTEIL
+	 * @model name="Vorteil"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int LITURGIE_VALUE = 8;
+	public static final int VORTEIL_VALUE = 8;
+	/**
+	 * The '<em><b>Zauber</b></em>' literal value.
+	 * <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * @see #ZAUBER
+	 * @model name="Zauber"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ZAUBER_VALUE = 9;
+	/**
+	 * The '<em><b>Zaubererweiterung</b></em>' literal value. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @see #ZAUBERERWEITERUNG
+	 * @model name="Zaubererweiterung"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ZAUBERERWEITERUNG_VALUE = 10;
 	/**
 	 * The '<em><b>Zeremonie</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -154,17 +180,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ZEREMONIE_VALUE = 9;
-	/**
-	 * The '<em><b>Vision</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-	 * @see #VISION
-	 * @model name="Vision"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int VISION_VALUE = 10;
+	public static final int ZEREMONIE_VALUE = 11;
 	/**
 	 * An array of all the '<em><b>Content Type</b></em>' enumerators. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -172,17 +188,18 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 */
 	private static final ContentType[] VALUES_ARRAY = new ContentType[] {
-			VORTEIL,
-			NACHTEIL,
+			HEXENFLUCH,
+			KARMALE_TRADITION,
 			KAMPFSONDERFERTIGKEIT,
+			LITURGIE,
+			NACHTEIL,
+			PREDIGT,
+			SEGEN,
+			VISION,
+			VORTEIL,
 			ZAUBER,
 			ZAUBERERWEITERUNG,
-			HEXENFLUCH,
-			SEGEN,
-			PREDIGT,
-			LITURGIE,
 			ZEREMONIE,
-			VISION,
 		};
 	/**
 	 * A public read-only list of all the '<em><b>Type</b></em>' enumerators.
@@ -236,17 +253,18 @@ public enum ContentType implements Enumerator {
 	 */
 	public static ContentType get(int value) {
 		switch (value) {
-			case VORTEIL_VALUE: return VORTEIL;
-			case NACHTEIL_VALUE: return NACHTEIL;
+			case HEXENFLUCH_VALUE: return HEXENFLUCH;
+			case KARMALE_TRADITION_VALUE: return KARMALE_TRADITION;
 			case KAMPFSONDERFERTIGKEIT_VALUE: return KAMPFSONDERFERTIGKEIT;
+			case LITURGIE_VALUE: return LITURGIE;
+			case NACHTEIL_VALUE: return NACHTEIL;
+			case PREDIGT_VALUE: return PREDIGT;
+			case SEGEN_VALUE: return SEGEN;
+			case VISION_VALUE: return VISION;
+			case VORTEIL_VALUE: return VORTEIL;
 			case ZAUBER_VALUE: return ZAUBER;
 			case ZAUBERERWEITERUNG_VALUE: return ZAUBERERWEITERUNG;
-			case HEXENFLUCH_VALUE: return HEXENFLUCH;
-			case SEGEN_VALUE: return SEGEN;
-			case PREDIGT_VALUE: return PREDIGT;
-			case LITURGIE_VALUE: return LITURGIE;
 			case ZEREMONIE_VALUE: return ZEREMONIE;
-			case VISION_VALUE: return VISION;
 		}
 		return null;
 	}
