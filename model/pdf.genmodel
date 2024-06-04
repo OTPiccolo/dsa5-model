@@ -47,9 +47,20 @@
   <genPackages prefix="Page" basePackage="de.otpiccolo.dsa5.model.pdf" disposableProviderFactory="true"
       ecorePackage="page.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="page.ecore#//PredefinedType">
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Boron"/>
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Efferd"/>
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Firun"/>
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Hesinde"/>
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Ingerimm"/>
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Peraine"/>
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Phex"/>
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Praios"/>
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Rahja"/>
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Rondra"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Schicksalspunkte"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Segen"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Travia"/>
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Tsa"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/ZauberMod"/>
     </genEnums>
     <genDataTypes ecoreDataType="page.ecore#//Collection">

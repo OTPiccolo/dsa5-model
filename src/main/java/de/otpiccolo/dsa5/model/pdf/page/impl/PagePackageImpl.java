@@ -358,9 +358,20 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 
 		// Initialize enums and add enum literals
 		initEEnum(predefinedTypeEEnum, PredefinedType.class, "PredefinedType");
+		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.BORON);
+		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.EFFERD);
+		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.FIRUN);
+		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.HESINDE);
+		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.INGERIMM);
+		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.PERAINE);
+		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.PHEX);
+		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.PRAIOS);
+		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.RAHJA);
+		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.RONDRA);
 		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.SCHICKSALSPUNKTE);
 		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.SEGEN);
 		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.TRAVIA);
+		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.TSA);
 		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.ZAUBER_MOD);
 
 		// Initialize data types

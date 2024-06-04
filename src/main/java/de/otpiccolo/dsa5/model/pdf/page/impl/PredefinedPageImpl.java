@@ -35,7 +35,7 @@ public class PredefinedPageImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final PredefinedType ID_EDEFAULT = PredefinedType.SCHICKSALSPUNKTE;
+	protected static final PredefinedType ID_EDEFAULT = PredefinedType.BORON;
 
 	/**
 	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.

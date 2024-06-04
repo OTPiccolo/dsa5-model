@@ -21,7 +21,18 @@ import de.otpiccolo.dsa5.pdf.page.IPage;
 import de.otpiccolo.dsa5.pdf.page.predefined.SchicksalspunktePage;
 import de.otpiccolo.dsa5.pdf.page.predefined.SegenPage;
 import de.otpiccolo.dsa5.pdf.page.predefined.ZauberModPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.geweihte.BoronPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.geweihte.EfferdPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.geweihte.FirunPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.geweihte.HesindePage;
+import de.otpiccolo.dsa5.pdf.page.predefined.geweihte.IngerimmPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.geweihte.PerainePage;
+import de.otpiccolo.dsa5.pdf.page.predefined.geweihte.PhexPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.geweihte.PraiosPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.geweihte.RahjaPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.geweihte.RondraPage;
 import de.otpiccolo.dsa5.pdf.page.predefined.geweihte.TraviaPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.geweihte.TsaPage;
 
 /**
  * Factory to generate DSA page.
@@ -119,9 +130,20 @@ public class DsaPageFactory {
 		}
 
 		return switch (id) {
+		case BORON -> new BoronPage();
+		case EFFERD -> new EfferdPage();
+		case FIRUN -> new FirunPage();
+		case HESINDE -> new HesindePage();
+		case INGERIMM -> new IngerimmPage();
+		case PERAINE -> new PerainePage();
+		case PHEX -> new PhexPage();
+		case PRAIOS -> new PraiosPage();
+		case RAHJA -> new RahjaPage();
+		case RONDRA -> new RondraPage();
 		case SCHICKSALSPUNKTE -> new SchicksalspunktePage();
 		case SEGEN -> new SegenPage();
 		case TRAVIA -> new TraviaPage();
+		case TSA -> new TsaPage();
 		case ZAUBER_MOD -> new ZauberModPage();
 		default -> throw new FactoryException("Unknown predefined page encountered. Not yet implemented: " + id.getLiteral());
 		};

@@ -110,8 +110,11 @@ Beispiel: Axxeleratus#Noch schneller
 | --- | --- |
 | *Schicksalspunkte* | Eine Übersicht, wie Schicksalspunkte verwendet werden können. |
 | *Segen* | Eine Übersicht über die 12 kleinen Segen, die alle Geweihten für gewöhnlich können. |
-| *Travia* | Eine Übersicht über den Travia-Geweihten. |
 | *ZauberMod* | Eine Übersicht, wie Zauber modifiziert werden können, um ihre Wirkung zu verändern. |
+| *<Geweihten>* | Eine Übersicht über einen Geweihten. Siehe Unten. |
+
+### Geweihten-Seite
+Eine Geweihten-Seite gehört auch zu den *PredefinedPage*. Sie gibt eine kurze Übersicht über den Moralkodex der Kirche sowie einige spielerische Fähigkeiten. Um sie einzubinden, muss für die ID der *PredefinedPage* der Name der Gottheit angegeben werden. Um zB. eine Übersicht über den Praios-Geweihten zu erhalten, muss für die ID *Praios* angegeben werden.
 
 # CLI
 CLI beschreibt den Aufruf des Programms über die Kommando-Zeile. Die Kommando-Zeile kann über die Tastenkombination 'Win+R' und dann 'cmd' aufgrerufen werden.
