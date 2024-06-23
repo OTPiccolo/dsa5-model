@@ -13,6 +13,8 @@ import de.otpiccolo.dsa5.data.hexenfluch.HexenfluchReader;
 import de.otpiccolo.dsa5.data.hexenfluch.HexenfluchWriter;
 import de.otpiccolo.dsa5.data.kampfsonderfertigkeiten.KampfsonderfertigkeitReader;
 import de.otpiccolo.dsa5.data.kampfsonderfertigkeiten.KampfsonderfertigkeitWriter;
+import de.otpiccolo.dsa5.data.kampfstilsonderfertigkeiten.KampfstilsonderfertigkeitReader;
+import de.otpiccolo.dsa5.data.kampfstilsonderfertigkeiten.KampfstilsonderfertigkeitWriter;
 import de.otpiccolo.dsa5.data.karmaletradition.KarmaleTraditionReader;
 import de.otpiccolo.dsa5.data.karmaletradition.KarmaleTraditionWriter;
 import de.otpiccolo.dsa5.data.liturgien.LiturgieReader;
@@ -56,6 +58,7 @@ public class DsaContentFactory {
 		map = new EnumMap<>(ContentType.class);
 		map.put(ContentType.HEXENFLUCH, d -> fillWriter(HexenfluchWriter::new, HexenfluchReader::new, d));
 		map.put(ContentType.KAMPFSONDERFERTIGKEIT, d -> fillWriter(KampfsonderfertigkeitWriter::new, KampfsonderfertigkeitReader::new, d));
+		map.put(ContentType.KAMPFSTILSONDERFERTIGKEIT, d -> fillWriter(KampfstilsonderfertigkeitWriter::new, KampfstilsonderfertigkeitReader::new, d));
 		map.put(ContentType.KARMALE_TRADITION, d -> fillWriter(KarmaleTraditionWriter::new, KarmaleTraditionReader::new, d));
 		map.put(ContentType.LITURGIE, d -> fillWriter(LiturgieWriter::new, LiturgieReader::new, d));
 		map.put(ContentType.NACHTEIL, d -> fillWriter(NachteilWriter::new, NachteilReader::new, d));

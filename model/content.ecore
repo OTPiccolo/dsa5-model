@@ -20,14 +20,15 @@
     <eLiterals name="Hexenfluch"/>
     <eLiterals name="KarmaleTradition" value="1"/>
     <eLiterals name="Kampfsonderfertigkeit" value="2"/>
-    <eLiterals name="Liturgie" value="3"/>
-    <eLiterals name="Nachteil" value="4"/>
-    <eLiterals name="Predigt" value="5"/>
-    <eLiterals name="Segen" value="6"/>
-    <eLiterals name="Vision" value="7"/>
-    <eLiterals name="Vorteil" value="8"/>
-    <eLiterals name="Zauber" value="9"/>
-    <eLiterals name="Zaubererweiterung" value="10"/>
-    <eLiterals name="Zeremonie" value="11"/>
+    <eLiterals name="Kampfstilsonderfertigkeit" value="3"/>
+    <eLiterals name="Liturgie" value="4"/>
+    <eLiterals name="Nachteil" value="5"/>
+    <eLiterals name="Predigt" value="6"/>
+    <eLiterals name="Segen" value="7"/>
+    <eLiterals name="Vision" value="8"/>
+    <eLiterals name="Vorteil" value="9"/>
+    <eLiterals name="Zauber" value="10"/>
+    <eLiterals name="Zaubererweiterung" value="11"/>
+    <eLiterals name="Zeremonie" value="12"/>
   </eClassifiers>
 </ecore:EPackage>

@@ -21,6 +21,7 @@
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Hexenfluch"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/KarmaleTradition"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Kampfsonderfertigkeit"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Kampfstilsonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Liturgie"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Nachteil"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Predigt"/>
