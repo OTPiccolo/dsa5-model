@@ -79,6 +79,7 @@ Bereits implementierte Informationen:
 | --- | --- |
 | *Hexenfluch* | https://dsa.ulisses-regelwiki.de/hexenfluchauswahl.html |
 | *Kampfsonderfertigkeit* | https://dsa.ulisses-regelwiki.de/sf_kampfsonderfertigkeiten.html |
+| *Kampfstilsonderfertigkeit* | https://dsa.ulisses-regelwiki.de/SF_Kampfstilsonderfertigkeiten.html |
 | *KarmaleTradition* | https://dsa.ulisses-regelwiki.de/karmale_traditionauswahl.html (nur der Teil in Klammern. Beispiel: Praioskirche) |
 | *Liturgie* | https://dsa.ulisses-regelwiki.de/liturgieauswahl.html |
 | *Nachteil* | https://dsa.ulisses-regelwiki.de/nachteilauswahl.html |
@@ -108,6 +109,7 @@ Beispiel: Axxeleratus#Noch schneller
 
 | ID | Beschreibung |
 | --- | --- |
+| *EntrueckungTrance* | Eine Übersicht, über die Status-Effekte Entrückung und Trance. |
 | *Schicksalspunkte* | Eine Übersicht, wie Schicksalspunkte verwendet werden können. |
 | *Segen* | Eine Übersicht über die 12 kleinen Segen, die alle Geweihten für gewöhnlich können. |
 | *ZauberMod* | Eine Übersicht, wie Zauber modifiziert werden können, um ihre Wirkung zu verändern. |
