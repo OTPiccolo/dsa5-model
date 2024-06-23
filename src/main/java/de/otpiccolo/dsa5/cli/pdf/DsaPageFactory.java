@@ -18,6 +18,7 @@ import de.otpiccolo.dsa5.model.pdf.page.PredefinedPage;
 import de.otpiccolo.dsa5.model.pdf.page.PredefinedType;
 import de.otpiccolo.dsa5.pdf.data.IDataWriter;
 import de.otpiccolo.dsa5.pdf.page.IPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.EntrueckungTrancePage;
 import de.otpiccolo.dsa5.pdf.page.predefined.SchicksalspunktePage;
 import de.otpiccolo.dsa5.pdf.page.predefined.SegenPage;
 import de.otpiccolo.dsa5.pdf.page.predefined.ZauberModPage;
@@ -132,6 +133,7 @@ public class DsaPageFactory {
 		return switch (id) {
 		case BORON -> new BoronPage();
 		case EFFERD -> new EfferdPage();
+		case ENTRUECKUNG_TRANCE -> new EntrueckungTrancePage();
 		case FIRUN -> new FirunPage();
 		case HESINDE -> new HesindePage();
 		case INGERIMM -> new IngerimmPage();
