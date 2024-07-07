@@ -77,6 +77,7 @@ Bereits implementierte Informationen:
 
 | ContentType | Homepage |
 | --- | --- |
+| *Elixier* | https://dsa.ulisses-regelwiki.de/Elixier.html |
 | *Hexenfluch* | https://dsa.ulisses-regelwiki.de/hexenfluchauswahl.html |
 | *Kampfsonderfertigkeit* | https://dsa.ulisses-regelwiki.de/sf_kampfsonderfertigkeiten.html |
 | *Kampfstilsonderfertigkeit* | https://dsa.ulisses-regelwiki.de/SF_Kampfstilsonderfertigkeiten.html |
