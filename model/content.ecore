@@ -24,14 +24,15 @@
     <eLiterals name="Kampfsonderfertigkeit" value="4"/>
     <eLiterals name="Kampfstilsonderfertigkeit" value="5"/>
     <eLiterals name="Liturgie" value="6"/>
-    <eLiterals name="Nachteil" value="7"/>
-    <eLiterals name="Predigt" value="8"/>
-    <eLiterals name="Segen" value="9"/>
-    <eLiterals name="Vision" value="10"/>
-    <eLiterals name="Vorteil" value="11"/>
-    <eLiterals name="Zauber" value="12"/>
-    <eLiterals name="Zaubererweiterung" value="13"/>
-    <eLiterals name="Zeremonialgegenstand" value="14"/>
-    <eLiterals name="Zeremonie" value="15"/>
+    <eLiterals name="Liturgiestil" value="7"/>
+    <eLiterals name="Nachteil" value="8"/>
+    <eLiterals name="Predigt" value="9"/>
+    <eLiterals name="Segen" value="10"/>
+    <eLiterals name="Vision" value="11"/>
+    <eLiterals name="Vorteil" value="12"/>
+    <eLiterals name="Zauber" value="13"/>
+    <eLiterals name="Zaubererweiterung" value="14"/>
+    <eLiterals name="Zeremonialgegenstand" value="15"/>
+    <eLiterals name="Zeremonie" value="16"/>
   </eClassifiers>
 </ecore:EPackage>

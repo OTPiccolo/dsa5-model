@@ -336,6 +336,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		addEEnumLiteral(contentTypeEEnum, ContentType.KAMPFSONDERFERTIGKEIT);
 		addEEnumLiteral(contentTypeEEnum, ContentType.KAMPFSTILSONDERFERTIGKEIT);
 		addEEnumLiteral(contentTypeEEnum, ContentType.LITURGIE);
+		addEEnumLiteral(contentTypeEEnum, ContentType.LITURGIESTIL);
 		addEEnumLiteral(contentTypeEEnum, ContentType.NACHTEIL);
 		addEEnumLiteral(contentTypeEEnum, ContentType.PREDIGT);
 		addEEnumLiteral(contentTypeEEnum, ContentType.SEGEN);

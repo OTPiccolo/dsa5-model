@@ -23,6 +23,8 @@ import de.otpiccolo.dsa5.data.karmaletradition.KarmaleTraditionReader;
 import de.otpiccolo.dsa5.data.karmaletradition.KarmaleTraditionWriter;
 import de.otpiccolo.dsa5.data.liturgien.LiturgieReader;
 import de.otpiccolo.dsa5.data.liturgien.LiturgieWriter;
+import de.otpiccolo.dsa5.data.liturgiestil.LiturgiestilReader;
+import de.otpiccolo.dsa5.data.liturgiestil.LiturgiestilWriter;
 import de.otpiccolo.dsa5.data.nachteile.NachteilReader;
 import de.otpiccolo.dsa5.data.nachteile.NachteilWriter;
 import de.otpiccolo.dsa5.data.predigt.PredigtReader;
@@ -69,6 +71,7 @@ public class DsaContentFactory {
 		map.put(ContentType.KARMALE_SONDERFERTIGKEIT, d -> fillWriter(KarmaleSonderfertigkeitWriter::new, KarmaleSonderfertigkeitReader::new, d));
 		map.put(ContentType.KARMALE_TRADITION, d -> fillWriter(KarmaleTraditionWriter::new, KarmaleTraditionReader::new, d));
 		map.put(ContentType.LITURGIE, d -> fillWriter(LiturgieWriter::new, LiturgieReader::new, d));
+		map.put(ContentType.LITURGIESTIL, d -> fillWriter(LiturgiestilWriter::new, LiturgiestilReader::new, d));
 		map.put(ContentType.NACHTEIL, d -> fillWriter(NachteilWriter::new, NachteilReader::new, d));
 		map.put(ContentType.PREDIGT, d -> fillWriter(PredigtWriter::new, PredigtReader::new, d));
 		map.put(ContentType.SEGEN, d -> fillWriter(SegenWriter::new, SegenReader::new, d));

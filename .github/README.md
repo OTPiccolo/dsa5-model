@@ -84,6 +84,7 @@ Bereits implementierte Informationen:
 | *KarmaleSonderfertigkeit* | https://dsa.ulisses-regelwiki.de/allgemeine_karmale_sonderfertigkeitauswahl.html |
 | *KarmaleTradition* | https://dsa.ulisses-regelwiki.de/karmale_traditionauswahl.html (nur der Teil in Klammern. Beispiel: Praioskirche) |
 | *Liturgie* | https://dsa.ulisses-regelwiki.de/liturgieauswahl.html |
+| *Liturgiestil* | https://dsa.ulisses-regelwiki.de/liturgiestilsonderfertigkeitenauswahl.html |
 | *Nachteil* | https://dsa.ulisses-regelwiki.de/nachteilauswahl.html |
 | *Predigt* | https://dsa.ulisses-regelwiki.de/predigtauswahl.html |
 | *Segen* | https://dsa.ulisses-regelwiki.de/segenauswahl.html |
