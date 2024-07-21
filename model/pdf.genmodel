@@ -19,6 +19,7 @@
       ecorePackage="content.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="content.ecore#//ContentType">
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Elixier"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/ErweiterterLiturgiestil"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Hexenfluch"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/KarmaleSonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/KarmaleTradition"/>

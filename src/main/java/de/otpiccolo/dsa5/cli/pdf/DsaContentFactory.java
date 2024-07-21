@@ -11,6 +11,8 @@ import java.util.function.Supplier;
 
 import de.otpiccolo.dsa5.data.elixiere.ElixierReader;
 import de.otpiccolo.dsa5.data.elixiere.ElixierWriter;
+import de.otpiccolo.dsa5.data.erweiteterliturgiestil.ErweiterterLiturgiestilReader;
+import de.otpiccolo.dsa5.data.erweiteterliturgiestil.ErweiterterLiturgiestilWriter;
 import de.otpiccolo.dsa5.data.hexenfluch.HexenfluchReader;
 import de.otpiccolo.dsa5.data.hexenfluch.HexenfluchWriter;
 import de.otpiccolo.dsa5.data.kampfsonderfertigkeiten.KampfsonderfertigkeitReader;
@@ -65,6 +67,7 @@ public class DsaContentFactory {
 	static {
 		map = new EnumMap<>(ContentType.class);
 		map.put(ContentType.ELIXIER, d -> fillWriter(ElixierWriter::new, ElixierReader::new, d));
+		map.put(ContentType.ERWEITERTER_LITURGIESTIL, d -> fillWriter(ErweiterterLiturgiestilWriter::new, ErweiterterLiturgiestilReader::new, d));
 		map.put(ContentType.HEXENFLUCH, d -> fillWriter(HexenfluchWriter::new, HexenfluchReader::new, d));
 		map.put(ContentType.KAMPFSONDERFERTIGKEIT, d -> fillWriter(KampfsonderfertigkeitWriter::new, KampfsonderfertigkeitReader::new, d));
 		map.put(ContentType.KAMPFSTILSONDERFERTIGKEIT, d -> fillWriter(KampfstilsonderfertigkeitWriter::new, KampfstilsonderfertigkeitReader::new, d));
