@@ -81,6 +81,7 @@ Bereits implementierte Informationen:
 | *Hexenfluch* | https://dsa.ulisses-regelwiki.de/hexenfluchauswahl.html |
 | *Kampfsonderfertigkeit* | https://dsa.ulisses-regelwiki.de/sf_kampfsonderfertigkeiten.html |
 | *Kampfstilsonderfertigkeit* | https://dsa.ulisses-regelwiki.de/SF_Kampfstilsonderfertigkeiten.html |
+| *KarmaleSonderfertigkeit* | https://dsa.ulisses-regelwiki.de/allgemeine_karmale_sonderfertigkeitauswahl.html |
 | *KarmaleTradition* | https://dsa.ulisses-regelwiki.de/karmale_traditionauswahl.html (nur der Teil in Klammern. Beispiel: Praioskirche) |
 | *Liturgie* | https://dsa.ulisses-regelwiki.de/liturgieauswahl.html |
 | *Nachteil* | https://dsa.ulisses-regelwiki.de/nachteilauswahl.html |

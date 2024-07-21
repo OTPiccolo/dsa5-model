@@ -20,6 +20,7 @@
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="content.ecore#//ContentType">
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Elixier"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Hexenfluch"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/KarmaleSonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/KarmaleTradition"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Kampfsonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Kampfstilsonderfertigkeit"/>

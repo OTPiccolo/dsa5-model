@@ -19,59 +19,63 @@ public enum ContentType implements Enumerator {
 	 */
 	HEXENFLUCH(1, "Hexenfluch", "Hexenfluch"),
 	/**
+	 * @model name="KarmaleSonderfertigkeit"
+	 */
+	KARMALE_SONDERFERTIGKEIT(2, "KarmaleSonderfertigkeit", "KarmaleSonderfertigkeit"),
+	/**
 	 * @model name="KarmaleTradition"
 	 */
-	KARMALE_TRADITION(2, "KarmaleTradition", "KarmaleTradition"),
+	KARMALE_TRADITION(3, "KarmaleTradition", "KarmaleTradition"),
 	/**
 	 * @model name="Kampfsonderfertigkeit"
 	 */
-	KAMPFSONDERFERTIGKEIT(3, "Kampfsonderfertigkeit", "Kampfsonderfertigkeit"),
+	KAMPFSONDERFERTIGKEIT(4, "Kampfsonderfertigkeit", "Kampfsonderfertigkeit"),
 	/**
 	 * @model name="Kampfstilsonderfertigkeit"
 	 */
-	KAMPFSTILSONDERFERTIGKEIT(4, "Kampfstilsonderfertigkeit", "Kampfstilsonderfertigkeit"),
+	KAMPFSTILSONDERFERTIGKEIT(5, "Kampfstilsonderfertigkeit", "Kampfstilsonderfertigkeit"),
 	/**
 	 * @model name="Liturgie"
 	 */
-	LITURGIE(5, "Liturgie", "Liturgie"),
+	LITURGIE(6, "Liturgie", "Liturgie"),
 
 	/**
 	 * @model name="Nachteil"
 	 */
-	NACHTEIL(6, "Nachteil", "Nachteil"),
+	NACHTEIL(7, "Nachteil", "Nachteil"),
 	/**
 	 * @model name="Predigt"
 	 */
-	PREDIGT(7, "Predigt", "Predigt"),
+	PREDIGT(8, "Predigt", "Predigt"),
 
 	/**
 	 * @model name="Segen"
 	 */
-	SEGEN(8, "Segen", "Segen"),
+	SEGEN(9, "Segen", "Segen"),
 	/**
 	 * @model name="Vision"
 	 */
-	VISION(9, "Vision", "Vision"),
+	VISION(10, "Vision", "Vision"),
 	/**
 	 * @model name="Vorteil"
 	 */
-	VORTEIL(10, "Vorteil", "Vorteil"),
+	VORTEIL(11, "Vorteil", "Vorteil"),
 	/**
 	 * @model name="Zauber"
 	 */
-	ZAUBER(11, "Zauber", "Zauber"),
+	ZAUBER(12, "Zauber", "Zauber"),
 	/**
 	 * @model name="Zaubererweiterung"
 	 */
-	ZAUBERERWEITERUNG(12, "Zaubererweiterung", "Zaubererweiterung"),
+	ZAUBERERWEITERUNG(13, "Zaubererweiterung", "Zaubererweiterung"),
 	/**
 	 * @model name="Zeremonialgegenstand"
 	 */
-	ZEREMONIALGEGENSTAND(13, "Zeremonialgegenstand", "Zeremonialgegenstand"),
+	ZEREMONIALGEGENSTAND(14, "Zeremonialgegenstand", "Zeremonialgegenstand"),
 	/**
 	 * @model name="Zeremonie"
 	 */
-	ZEREMONIE(14, "Zeremonie", "Zeremonie");
+	ZEREMONIE(15, "Zeremonie", "Zeremonie");
 
 	/**
 	 * The '<em><b>Elixier</b></em>' literal value.
@@ -94,6 +98,16 @@ public enum ContentType implements Enumerator {
 	 */
 	public static final int HEXENFLUCH_VALUE = 1;
 	/**
+	 * The '<em><b>Karmale Sonderfertigkeit</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #KARMALE_SONDERFERTIGKEIT
+	 * @model name="KarmaleSonderfertigkeit"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int KARMALE_SONDERFERTIGKEIT_VALUE = 2;
+	/**
 	 * The '<em><b>Karmale Tradition</b></em>' literal value. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 *
@@ -102,7 +116,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int KARMALE_TRADITION_VALUE = 2;
+	public static final int KARMALE_TRADITION_VALUE = 3;
 	/**
 	 * The '<em><b>Kampfsonderfertigkeit</b></em>' literal value. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -112,7 +126,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int KAMPFSONDERFERTIGKEIT_VALUE = 3;
+	public static final int KAMPFSONDERFERTIGKEIT_VALUE = 4;
 	/**
 	 * The '<em><b>Kampfstilsonderfertigkeit</b></em>' literal value. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -122,7 +136,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int KAMPFSTILSONDERFERTIGKEIT_VALUE = 4;
+	public static final int KAMPFSTILSONDERFERTIGKEIT_VALUE = 5;
 	/**
 	 * The '<em><b>Liturgie</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -132,7 +146,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int LITURGIE_VALUE = 5;
+	public static final int LITURGIE_VALUE = 6;
 	/**
 	 * The '<em><b>Nachteil</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -142,7 +156,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int NACHTEIL_VALUE = 6;
+	public static final int NACHTEIL_VALUE = 7;
 	/**
 	 * The '<em><b>Predigt</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -152,7 +166,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PREDIGT_VALUE = 7;
+	public static final int PREDIGT_VALUE = 8;
 	/**
 	 * The '<em><b>Segen</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -162,7 +176,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int SEGEN_VALUE = 8;
+	public static final int SEGEN_VALUE = 9;
 	/**
 	 * The '<em><b>Vision</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -172,7 +186,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int VISION_VALUE = 9;
+	public static final int VISION_VALUE = 10;
 	/**
 	 * The '<em><b>Vorteil</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -182,7 +196,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int VORTEIL_VALUE = 10;
+	public static final int VORTEIL_VALUE = 11;
 	/**
 	 * The '<em><b>Zauber</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -192,7 +206,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ZAUBER_VALUE = 11;
+	public static final int ZAUBER_VALUE = 12;
 	/**
 	 * The '<em><b>Zaubererweiterung</b></em>' literal value. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -202,17 +216,17 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ZAUBERERWEITERUNG_VALUE = 12;
+	public static final int ZAUBERERWEITERUNG_VALUE = 13;
 	/**
-	 * The '<em><b>Zeremonialgegenstand</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>Zeremonialgegenstand</b></em>' literal value. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @see #ZEREMONIALGEGENSTAND
 	 * @model name="Zeremonialgegenstand"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ZEREMONIALGEGENSTAND_VALUE = 13;
+	public static final int ZEREMONIALGEGENSTAND_VALUE = 14;
 	/**
 	 * The '<em><b>Zeremonie</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -222,7 +236,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ZEREMONIE_VALUE = 14;
+	public static final int ZEREMONIE_VALUE = 15;
 	/**
 	 * An array of all the '<em><b>Content Type</b></em>' enumerators. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -232,6 +246,7 @@ public enum ContentType implements Enumerator {
 	private static final ContentType[] VALUES_ARRAY = new ContentType[] {
 			ELIXIER,
 			HEXENFLUCH,
+			KARMALE_SONDERFERTIGKEIT,
 			KARMALE_TRADITION,
 			KAMPFSONDERFERTIGKEIT,
 			KAMPFSTILSONDERFERTIGKEIT,
@@ -300,6 +315,7 @@ public enum ContentType implements Enumerator {
 		switch (value) {
 			case ELIXIER_VALUE: return ELIXIER;
 			case HEXENFLUCH_VALUE: return HEXENFLUCH;
+			case KARMALE_SONDERFERTIGKEIT_VALUE: return KARMALE_SONDERFERTIGKEIT;
 			case KARMALE_TRADITION_VALUE: return KARMALE_TRADITION;
 			case KAMPFSONDERFERTIGKEIT_VALUE: return KAMPFSONDERFERTIGKEIT;
 			case KAMPFSTILSONDERFERTIGKEIT_VALUE: return KAMPFSTILSONDERFERTIGKEIT;

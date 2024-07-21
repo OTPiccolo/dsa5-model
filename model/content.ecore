@@ -19,18 +19,19 @@
   <eClassifiers xsi:type="ecore:EEnum" name="ContentType">
     <eLiterals name="Elixier"/>
     <eLiterals name="Hexenfluch" value="1"/>
-    <eLiterals name="KarmaleTradition" value="2"/>
-    <eLiterals name="Kampfsonderfertigkeit" value="3"/>
-    <eLiterals name="Kampfstilsonderfertigkeit" value="4"/>
-    <eLiterals name="Liturgie" value="5"/>
-    <eLiterals name="Nachteil" value="6"/>
-    <eLiterals name="Predigt" value="7"/>
-    <eLiterals name="Segen" value="8"/>
-    <eLiterals name="Vision" value="9"/>
-    <eLiterals name="Vorteil" value="10"/>
-    <eLiterals name="Zauber" value="11"/>
-    <eLiterals name="Zaubererweiterung" value="12"/>
-    <eLiterals name="Zeremonialgegenstand" value="13"/>
-    <eLiterals name="Zeremonie" value="14"/>
+    <eLiterals name="KarmaleSonderfertigkeit" value="2"/>
+    <eLiterals name="KarmaleTradition" value="3"/>
+    <eLiterals name="Kampfsonderfertigkeit" value="4"/>
+    <eLiterals name="Kampfstilsonderfertigkeit" value="5"/>
+    <eLiterals name="Liturgie" value="6"/>
+    <eLiterals name="Nachteil" value="7"/>
+    <eLiterals name="Predigt" value="8"/>
+    <eLiterals name="Segen" value="9"/>
+    <eLiterals name="Vision" value="10"/>
+    <eLiterals name="Vorteil" value="11"/>
+    <eLiterals name="Zauber" value="12"/>
+    <eLiterals name="Zaubererweiterung" value="13"/>
+    <eLiterals name="Zeremonialgegenstand" value="14"/>
+    <eLiterals name="Zeremonie" value="15"/>
   </eClassifiers>
 </ecore:EPackage>
