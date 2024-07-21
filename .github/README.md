@@ -90,6 +90,7 @@ Bereits implementierte Informationen:
 | *Vorteil* | https://dsa.ulisses-regelwiki.de/vorteilauswahl.html |
 | *Zauber* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html |
 | *Zaubererweiterung* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html (Spezielle Angabe, siehe unten) |
+| *Zeremonialgegenstandssonderfertigkeit* | https://dsa.ulisses-regelwiki.de/zeremonialgegenstands_sf_auswahl.html |
 | *Zeremonie* | https://dsa.ulisses-regelwiki.de/zeremonieauswahl.html |
 
 Für Zaubererweiterungen haben einen leicht anderen Syntax, da man zusätzlich zum Namen der Zaubererweiterung auch noch den Namen des Zaubers angeben muss.

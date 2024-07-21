@@ -31,6 +31,7 @@
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Vorteil"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zauber"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zaubererweiterung"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zeremonialgegenstandssonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zeremonie"/>
     </genEnums>
     <genClasses ecoreClass="content.ecore#//DataContent">
