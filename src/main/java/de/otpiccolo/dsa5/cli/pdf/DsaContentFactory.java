@@ -35,8 +35,8 @@ import de.otpiccolo.dsa5.data.zauber.ZauberReader;
 import de.otpiccolo.dsa5.data.zauber.ZauberWriter;
 import de.otpiccolo.dsa5.data.zaubererweiterung.ZaubererweiterungReader;
 import de.otpiccolo.dsa5.data.zaubererweiterung.ZaubererweiterungWriter;
-import de.otpiccolo.dsa5.data.zeremonialgegenstandssonderfertigkeiten.ZeremonialgegenstandssonderfertigkeitReader;
-import de.otpiccolo.dsa5.data.zeremonialgegenstandssonderfertigkeiten.ZeremonialgegenstandssonderfertigkeitWriter;
+import de.otpiccolo.dsa5.data.zeremonialgegenstand.ZeremonialgegenstandReader;
+import de.otpiccolo.dsa5.data.zeremonialgegenstand.ZeremonialgegenstandWriter;
 import de.otpiccolo.dsa5.data.zeremonien.ZeremonieReader;
 import de.otpiccolo.dsa5.data.zeremonien.ZeremonieWriter;
 import de.otpiccolo.dsa5.model.pdf.content.ContentType;
@@ -73,7 +73,7 @@ public class DsaContentFactory {
 		map.put(ContentType.VORTEIL, d -> fillWriter(VorteilWriter::new, VorteilReader::new, d));
 		map.put(ContentType.ZAUBER, d -> fillWriter(ZauberWriter::new, ZauberReader::new, d));
 		map.put(ContentType.ZAUBERERWEITERUNG, d -> fillWriter(ZaubererweiterungWriter::new, ZaubererweiterungReader::new, d));
-		map.put(ContentType.ZEREMONIALGEGENSTANDSSONDERFERTIGKEIT, d -> fillWriter(ZeremonialgegenstandssonderfertigkeitWriter::new, ZeremonialgegenstandssonderfertigkeitReader::new, d));
+		map.put(ContentType.ZEREMONIALGEGENSTAND, d -> fillWriter(ZeremonialgegenstandWriter::new, ZeremonialgegenstandReader::new, d));
 		map.put(ContentType.ZEREMONIE, d -> fillWriter(ZeremonieWriter::new, ZeremonieReader::new, d));
 	}
 

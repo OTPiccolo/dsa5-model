@@ -65,9 +65,9 @@ public enum ContentType implements Enumerator {
 	 */
 	ZAUBERERWEITERUNG(12, "Zaubererweiterung", "Zaubererweiterung"),
 	/**
-	 * @model name="Zeremonialgegenstandssonderfertigkeit"
+	 * @model name="Zeremonialgegenstand"
 	 */
-	ZEREMONIALGEGENSTANDSSONDERFERTIGKEIT(13, "Zeremonialgegenstandssonderfertigkeit", "Zeremonialgegenstandssonderfertigkeit"),
+	ZEREMONIALGEGENSTAND(13, "Zeremonialgegenstand", "Zeremonialgegenstand"),
 	/**
 	 * @model name="Zeremonie"
 	 */
@@ -204,15 +204,15 @@ public enum ContentType implements Enumerator {
 	 */
 	public static final int ZAUBERERWEITERUNG_VALUE = 12;
 	/**
-	 * The '<em><b>Zeremonialgegenstandssonderfertigkeit</b></em>' literal value.
+	 * The '<em><b>Zeremonialgegenstand</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ZEREMONIALGEGENSTANDSSONDERFERTIGKEIT
-	 * @model name="Zeremonialgegenstandssonderfertigkeit"
+	 * @see #ZEREMONIALGEGENSTAND
+	 * @model name="Zeremonialgegenstand"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ZEREMONIALGEGENSTANDSSONDERFERTIGKEIT_VALUE = 13;
+	public static final int ZEREMONIALGEGENSTAND_VALUE = 13;
 	/**
 	 * The '<em><b>Zeremonie</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -243,7 +243,7 @@ public enum ContentType implements Enumerator {
 			VORTEIL,
 			ZAUBER,
 			ZAUBERERWEITERUNG,
-			ZEREMONIALGEGENSTANDSSONDERFERTIGKEIT,
+			ZEREMONIALGEGENSTAND,
 			ZEREMONIE,
 		};
 	/**
@@ -311,7 +311,7 @@ public enum ContentType implements Enumerator {
 			case VORTEIL_VALUE: return VORTEIL;
 			case ZAUBER_VALUE: return ZAUBER;
 			case ZAUBERERWEITERUNG_VALUE: return ZAUBERERWEITERUNG;
-			case ZEREMONIALGEGENSTANDSSONDERFERTIGKEIT_VALUE: return ZEREMONIALGEGENSTANDSSONDERFERTIGKEIT;
+			case ZEREMONIALGEGENSTAND_VALUE: return ZEREMONIALGEGENSTAND;
 			case ZEREMONIE_VALUE: return ZEREMONIE;
 		}
 		return null;

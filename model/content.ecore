@@ -30,7 +30,7 @@
     <eLiterals name="Vorteil" value="10"/>
     <eLiterals name="Zauber" value="11"/>
     <eLiterals name="Zaubererweiterung" value="12"/>
-    <eLiterals name="Zeremonialgegenstandssonderfertigkeit" value="13"/>
+    <eLiterals name="Zeremonialgegenstand" value="13"/>
     <eLiterals name="Zeremonie" value="14"/>
   </eClassifiers>
 </ecore:EPackage>
