@@ -77,6 +77,7 @@ Bereits implementierte Informationen:
 
 | ContentType | Homepage |
 | --- | --- |
+| *Elfenlied* | https://dsa.ulisses-regelwiki.de/elfenliedauswahl.html |
 | *Elixier* | https://dsa.ulisses-regelwiki.de/Elixier.html |
 | *ErweiterterLiturgiestil* | https://dsa.ulisses-regelwiki.de/erweiterte_liturgiestilsonderfertigkeitenauswahl.html |
 | *Hexenfluch* | https://dsa.ulisses-regelwiki.de/hexenfluchauswahl.html |
@@ -93,6 +94,7 @@ Bereits implementierte Informationen:
 | *Vorteil* | https://dsa.ulisses-regelwiki.de/vorteilauswahl.html |
 | *Zauber* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html |
 | *Zaubererweiterung* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html (Spezielle Angabe, siehe unten) |
+| *Zaubertrick* | https://dsa.ulisses-regelwiki.de/zaubertrickauswahl.html |
 | *Zeremonialgegenstand* | https://dsa.ulisses-regelwiki.de/zeremonialgegenstands_sf_auswahl.html |
 | *Zeremonie* | https://dsa.ulisses-regelwiki.de/zeremonieauswahl.html |
 

@@ -9,6 +9,8 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
+import de.otpiccolo.dsa5.data.elfenlied.ElfenliedReader;
+import de.otpiccolo.dsa5.data.elfenlied.ElfenliedWriter;
 import de.otpiccolo.dsa5.data.elixiere.ElixierReader;
 import de.otpiccolo.dsa5.data.elixiere.ElixierWriter;
 import de.otpiccolo.dsa5.data.erweiteterliturgiestil.ErweiterterLiturgiestilReader;
@@ -41,6 +43,8 @@ import de.otpiccolo.dsa5.data.zauber.ZauberReader;
 import de.otpiccolo.dsa5.data.zauber.ZauberWriter;
 import de.otpiccolo.dsa5.data.zaubererweiterung.ZaubererweiterungReader;
 import de.otpiccolo.dsa5.data.zaubererweiterung.ZaubererweiterungWriter;
+import de.otpiccolo.dsa5.data.zaubertrick.ZaubertrickReader;
+import de.otpiccolo.dsa5.data.zaubertrick.ZaubertrickWriter;
 import de.otpiccolo.dsa5.data.zeremonialgegenstand.ZeremonialgegenstandReader;
 import de.otpiccolo.dsa5.data.zeremonialgegenstand.ZeremonialgegenstandWriter;
 import de.otpiccolo.dsa5.data.zeremonien.ZeremonieReader;
@@ -66,6 +70,7 @@ public class DsaContentFactory {
 
 	static {
 		map = new EnumMap<>(ContentType.class);
+		map.put(ContentType.ELFENLIED, d -> fillWriter(ElfenliedWriter::new, ElfenliedReader::new, d));
 		map.put(ContentType.ELIXIER, d -> fillWriter(ElixierWriter::new, ElixierReader::new, d));
 		map.put(ContentType.ERWEITERTER_LITURGIESTIL, d -> fillWriter(ErweiterterLiturgiestilWriter::new, ErweiterterLiturgiestilReader::new, d));
 		map.put(ContentType.HEXENFLUCH, d -> fillWriter(HexenfluchWriter::new, HexenfluchReader::new, d));
@@ -82,6 +87,7 @@ public class DsaContentFactory {
 		map.put(ContentType.VORTEIL, d -> fillWriter(VorteilWriter::new, VorteilReader::new, d));
 		map.put(ContentType.ZAUBER, d -> fillWriter(ZauberWriter::new, ZauberReader::new, d));
 		map.put(ContentType.ZAUBERERWEITERUNG, d -> fillWriter(ZaubererweiterungWriter::new, ZaubererweiterungReader::new, d));
+		map.put(ContentType.ZAUBERTRICK, d -> fillWriter(ZaubertrickWriter::new, ZaubertrickReader::new, d));
 		map.put(ContentType.ZEREMONIALGEGENSTAND, d -> fillWriter(ZeremonialgegenstandWriter::new, ZeremonialgegenstandReader::new, d));
 		map.put(ContentType.ZEREMONIE, d -> fillWriter(ZeremonieWriter::new, ZeremonieReader::new, d));
 	}
