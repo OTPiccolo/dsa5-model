@@ -329,6 +329,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 
 		// Initialize enums and add enum literals
 		initEEnum(contentTypeEEnum, ContentType.class, "ContentType");
+		addEEnumLiteral(contentTypeEEnum, ContentType.ALLGEMEINE_SONDERFERTIGKEIT);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ELFENLIED);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ELIXIER);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ERWEITERTER_LITURGIESTIL);

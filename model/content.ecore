@@ -17,25 +17,26 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="imagePath" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ContentType">
-    <eLiterals name="Elfenlied"/>
-    <eLiterals name="Elixier" value="1"/>
-    <eLiterals name="ErweiterterLiturgiestil" value="2"/>
-    <eLiterals name="Hexenfluch" value="3"/>
-    <eLiterals name="KarmaleSonderfertigkeit" value="4"/>
-    <eLiterals name="KarmaleTradition" value="5"/>
-    <eLiterals name="Kampfsonderfertigkeit" value="6"/>
-    <eLiterals name="Kampfstilsonderfertigkeit" value="7"/>
-    <eLiterals name="Liturgie" value="8"/>
-    <eLiterals name="Liturgiestil" value="9"/>
-    <eLiterals name="Nachteil" value="10"/>
-    <eLiterals name="Predigt" value="11"/>
-    <eLiterals name="Segen" value="12"/>
-    <eLiterals name="Vision" value="13"/>
-    <eLiterals name="Vorteil" value="14"/>
-    <eLiterals name="Zauber" value="15"/>
-    <eLiterals name="Zaubererweiterung" value="16"/>
-    <eLiterals name="Zaubertrick" value="17"/>
-    <eLiterals name="Zeremonialgegenstand" value="18"/>
-    <eLiterals name="Zeremonie" value="19"/>
+    <eLiterals name="AllgemeineSonderfertigkeit"/>
+    <eLiterals name="Elfenlied" value="1"/>
+    <eLiterals name="Elixier" value="2"/>
+    <eLiterals name="ErweiterterLiturgiestil" value="3"/>
+    <eLiterals name="Hexenfluch" value="4"/>
+    <eLiterals name="KarmaleSonderfertigkeit" value="5"/>
+    <eLiterals name="KarmaleTradition" value="6"/>
+    <eLiterals name="Kampfsonderfertigkeit" value="7"/>
+    <eLiterals name="Kampfstilsonderfertigkeit" value="8"/>
+    <eLiterals name="Liturgie" value="9"/>
+    <eLiterals name="Liturgiestil" value="10"/>
+    <eLiterals name="Nachteil" value="11"/>
+    <eLiterals name="Predigt" value="12"/>
+    <eLiterals name="Segen" value="13"/>
+    <eLiterals name="Vision" value="14"/>
+    <eLiterals name="Vorteil" value="15"/>
+    <eLiterals name="Zauber" value="16"/>
+    <eLiterals name="Zaubererweiterung" value="17"/>
+    <eLiterals name="Zaubertrick" value="18"/>
+    <eLiterals name="Zeremonialgegenstand" value="19"/>
+    <eLiterals name="Zeremonie" value="20"/>
   </eClassifiers>
 </ecore:EPackage>

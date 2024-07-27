@@ -18,6 +18,7 @@
   <genPackages prefix="Content" basePackage="de.otpiccolo.dsa5.model.pdf" disposableProviderFactory="true"
       ecorePackage="content.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="content.ecore#//ContentType">
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/AllgemeineSonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Elfenlied"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Elixier"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/ErweiterterLiturgiestil"/>

@@ -77,6 +77,7 @@ Bereits implementierte Informationen:
 
 | ContentType | Homepage |
 | --- | --- |
+| *AllgemeineSonderfertigkeit* | https://dsa.ulisses-regelwiki.de/sf_allgemeine_sonderfertigkeiten.html |
 | *Elfenlied* | https://dsa.ulisses-regelwiki.de/elfenliedauswahl.html |
 | *Elixier* | https://dsa.ulisses-regelwiki.de/Elixier.html |
 | *ErweiterterLiturgiestil* | https://dsa.ulisses-regelwiki.de/erweiterte_liturgiestilsonderfertigkeitenauswahl.html |

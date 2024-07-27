@@ -56,7 +56,7 @@ public class DataContentImpl extends MinimalEObjectImpl.Container implements Dat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ContentType CONTENT_TYPE_EDEFAULT = ContentType.ELFENLIED;
+	protected static final ContentType CONTENT_TYPE_EDEFAULT = ContentType.ALLGEMEINE_SONDERFERTIGKEIT;
 
 	/**
 	 * The cached value of the '{@link #getContentType() <em>Content Type</em>}' attribute.
