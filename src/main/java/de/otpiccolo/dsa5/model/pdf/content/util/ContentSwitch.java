@@ -93,6 +93,25 @@ public class ContentSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ContentPackage.TABLE_CELL: {
+				TableCell tableCell = (TableCell)theEObject;
+				T result = caseTableCell(tableCell);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ContentPackage.TABLE_CONTENT: {
+				TableContent tableContent = (TableContent)theEObject;
+				T result = caseTableContent(tableContent);
+				if (result == null) result = casePageContent(tableContent);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ContentPackage.TABLE_ROW: {
+				TableRow tableRow = (TableRow)theEObject;
+				T result = caseTableRow(tableRow);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -154,6 +173,51 @@ public class ContentSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseImageContent(ImageContent object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Table Cell</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Table Cell</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTableCell(TableCell object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Table Content</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Table Content</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTableContent(TableContent object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Table Row</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Table Row</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTableRow(TableRow object) {
 		return null;
 	}
 

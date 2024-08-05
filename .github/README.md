@@ -50,11 +50,40 @@ EMF wird verwendet um das Model auszulesen. Es wird in einer XML-Datei gespeiche
   </pages>
   <pages xsi:type="de.otpiccolo.dsa5.model.pdf.page:DefaultPage">
     <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:ImageContent">
-     <imagePath>C:\Pfad\Zum\Bild.jpg</imagePath>
+     <imagePath>C:\Path\To\Image.jpg</imagePath>
     </contents>
     <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:ImageContent">
      <imagePath>http://www.bilder.de/bild.png</imagePath>
     </contents>
+  </pages>
+  <pages xsi:type="de.otpiccolo.dsa5.model.pdf.page:DefaultPage">
+    <contents xsi:type="de.otpiccolo.dsa5.model.pdf.content:TableContent" columnCount="2" columnWeights="2:1">
+      <rows>
+        <cells>
+          <content xsi:type="de.otpiccolo.dsa5.model.pdf.content:ParagraphContent">
+            <title>Tabellen Überschrift 1 (Text)</title>
+          </content>
+        </cells>
+        <cells>
+          <content xsi:type="de.otpiccolo.dsa5.model.pdf.content:ParagraphContent">
+            <title>Tabellen Überschrift 2 (Bild)</title>
+          </content>
+        </cells>
+      </rows>
+      <rows>
+        <cells>
+          <content xsi:type="de.otpiccolo.dsa5.model.pdf.content:ParagraphContent">
+            <paragraphs>Eine Beschreibung des Bilds.</paragraphs>
+          </content>
+        </cells>
+        <cells>
+          <content xsi:type="de.otpiccolo.dsa5.model.pdf.content:ImageContent">
+            <imagePath>C:\Pfad\Zum\Bild.png</imagePath>
+          </content>
+        </cells>
+      </rows>
+    </contents>
+    <title>Tabelle</title>
   </pages>
   <pdfSource>C:\Path\optional.source.pdf</pdfSource>
   <pdfDestination>C:\Path\destination.pdf</pdfDestination>
@@ -108,6 +137,11 @@ Beispiel: Axxeleratus#Noch schneller
 
 ### ImageContent
 *ImageContent* erlaubt es, ein Bild in das PDF aufzunehmen. Der *imagePath* kann dabei sowohl ein Pfad im lokalen System sein, als auch eine URL zu einer Webseite. Bilder, die zu groß sind, um auf die restliche Seite zu passen, werden auf die passende Größe skaliert.
+
+### TableContent
+*TableContent* erzeugt eine Tabelle, in der beliebige Inhalte eingefügt werden können, wie sie auch auf einer *DefaultPage* zu finden sind. Es muss ein *columnCount* angegeben werden, der die Anzahl der Spalten angibt. Optional kann auch noch ein *columnWeights* angegeben werden, der das Verhältnis der Größe der Spalten auf der Seite angibt. Wenn man zB *columnWeights* auf "1:2:1" setzt, würde die mittlere Spalte 50% des Platzes einnehmen, während die anderen beiden Spalten jeweils 25% des Platzes bekommen. Wenn *columnWeights* nicht angegeben wird, werden alle Spalten gleich groß angezeigt.
+
+Der Inhalt der Tabelle wird für jede Reihe angegeben (*rows*), und dann in jeder Reihe die einzelne Zelle (*cells*). Innerhalb der Zelle wird dann erneut der Content angegeben, wie er auch auf der *DefaultPage* angegeben wird. Die Inhalte jeder Zelle können dabei natürlich von unterschiedlicher Natur sein.
 
 ## PdfPage
 *PdfPage* fügt den Inhalt einer PDF Datei zu diesem zu generierenden PDF hinzu. In *file* wird der Dateipfad zur PDF angegeben. Man kann über *pageNumbers* noch angeben, welche Seiten genau übernommen werden sollen. Wenn nicht angegeben, werden alle Seiten übernommen.

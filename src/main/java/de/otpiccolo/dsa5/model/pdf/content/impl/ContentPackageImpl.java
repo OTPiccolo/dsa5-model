@@ -12,6 +12,9 @@ import de.otpiccolo.dsa5.model.pdf.content.ImageContent;
 import de.otpiccolo.dsa5.model.pdf.content.PageContent;
 import de.otpiccolo.dsa5.model.pdf.content.ParagraphContent;
 
+import de.otpiccolo.dsa5.model.pdf.content.TableCell;
+import de.otpiccolo.dsa5.model.pdf.content.TableContent;
+import de.otpiccolo.dsa5.model.pdf.content.TableRow;
 import de.otpiccolo.dsa5.model.pdf.impl.PdfPackageImpl;
 
 import de.otpiccolo.dsa5.model.pdf.page.PagePackage;
@@ -21,6 +24,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 
+import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -57,6 +61,27 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 	 * @generated
 	 */
 	private EClass imageContentEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass tableCellEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass tableContentEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass tableRowEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -231,6 +256,106 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getTableCell() {
+		return tableCellEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTableCell_Row() {
+		return (EReference)tableCellEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTableCell_Content() {
+		return (EReference)tableCellEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getTableContent() {
+		return tableContentEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTableContent_Rows() {
+		return (EReference)tableContentEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableContent_ColumnCount() {
+		return (EAttribute)tableContentEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableContent_ColumnWeights() {
+		return (EAttribute)tableContentEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getTableRow() {
+		return tableRowEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTableRow_Table() {
+		return (EReference)tableRowEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTableRow_Cells() {
+		return (EReference)tableRowEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EEnum getContentType() {
 		return contentTypeEEnum;
 	}
@@ -277,6 +402,19 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		imageContentEClass = createEClass(IMAGE_CONTENT);
 		createEAttribute(imageContentEClass, IMAGE_CONTENT__IMAGE_PATH);
 
+		tableCellEClass = createEClass(TABLE_CELL);
+		createEReference(tableCellEClass, TABLE_CELL__ROW);
+		createEReference(tableCellEClass, TABLE_CELL__CONTENT);
+
+		tableContentEClass = createEClass(TABLE_CONTENT);
+		createEReference(tableContentEClass, TABLE_CONTENT__ROWS);
+		createEAttribute(tableContentEClass, TABLE_CONTENT__COLUMN_COUNT);
+		createEAttribute(tableContentEClass, TABLE_CONTENT__COLUMN_WEIGHTS);
+
+		tableRowEClass = createEClass(TABLE_ROW);
+		createEReference(tableRowEClass, TABLE_ROW__TABLE);
+		createEReference(tableRowEClass, TABLE_ROW__CELLS);
+
 		// Create enums
 		contentTypeEEnum = createEEnum(CONTENT_TYPE);
 	}
@@ -312,6 +450,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		dataContentEClass.getESuperTypes().add(this.getPageContent());
 		paragraphContentEClass.getESuperTypes().add(this.getPageContent());
 		imageContentEClass.getESuperTypes().add(this.getPageContent());
+		tableContentEClass.getESuperTypes().add(this.getPageContent());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(dataContentEClass, DataContent.class, "DataContent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -326,6 +465,19 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 
 		initEClass(imageContentEClass, ImageContent.class, "ImageContent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getImageContent_ImagePath(), ecorePackage.getEString(), "imagePath", null, 0, 1, ImageContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(tableCellEClass, TableCell.class, "TableCell", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getTableCell_Row(), this.getTableRow(), this.getTableRow_Cells(), "row", null, 0, 1, TableCell.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTableCell_Content(), this.getPageContent(), null, "content", null, 0, 1, TableCell.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(tableContentEClass, TableContent.class, "TableContent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getTableContent_Rows(), this.getTableRow(), this.getTableRow_Table(), "rows", null, 0, -1, TableContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableContent_ColumnCount(), ecorePackage.getEInt(), "columnCount", null, 0, 1, TableContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableContent_ColumnWeights(), ecorePackage.getEString(), "columnWeights", null, 0, 1, TableContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(tableRowEClass, TableRow.class, "TableRow", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getTableRow_Table(), this.getTableContent(), this.getTableContent_Rows(), "table", null, 0, 1, TableRow.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTableRow_Cells(), this.getTableCell(), this.getTableCell_Row(), "cells", null, 0, -1, TableRow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(contentTypeEEnum, ContentType.class, "ContentType");

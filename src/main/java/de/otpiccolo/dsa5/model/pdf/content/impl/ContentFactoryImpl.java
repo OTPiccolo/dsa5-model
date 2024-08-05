@@ -60,6 +60,9 @@ public class ContentFactoryImpl extends EFactoryImpl implements ContentFactory {
 			case ContentPackage.DATA_CONTENT: return createDataContent();
 			case ContentPackage.PARAGRAPH_CONTENT: return createParagraphContent();
 			case ContentPackage.IMAGE_CONTENT: return createImageContent();
+			case ContentPackage.TABLE_CELL: return createTableCell();
+			case ContentPackage.TABLE_CONTENT: return createTableContent();
+			case ContentPackage.TABLE_ROW: return createTableRow();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -126,6 +129,39 @@ public class ContentFactoryImpl extends EFactoryImpl implements ContentFactory {
 	public ImageContent createImageContent() {
 		ImageContentImpl imageContent = new ImageContentImpl();
 		return imageContent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TableCell createTableCell() {
+		TableCellImpl tableCell = new TableCellImpl();
+		return tableCell;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TableContent createTableContent() {
+		TableContentImpl tableContent = new TableContentImpl();
+		return tableContent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TableRow createTableRow() {
+		TableRowImpl tableRow = new TableRowImpl();
+		return tableRow;
 	}
 
 	/**

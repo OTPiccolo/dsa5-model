@@ -1,6 +1,7 @@
 package de.otpiccolo.dsa5.cli.pdf;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.EnumMap;
@@ -54,12 +55,17 @@ import de.otpiccolo.dsa5.model.pdf.content.DataContent;
 import de.otpiccolo.dsa5.model.pdf.content.ImageContent;
 import de.otpiccolo.dsa5.model.pdf.content.PageContent;
 import de.otpiccolo.dsa5.model.pdf.content.ParagraphContent;
+import de.otpiccolo.dsa5.model.pdf.content.TableCell;
+import de.otpiccolo.dsa5.model.pdf.content.TableContent;
+import de.otpiccolo.dsa5.model.pdf.content.TableRow;
 import de.otpiccolo.dsa5.pdf.data.IDataReader;
 import de.otpiccolo.dsa5.pdf.data.IDataWriter;
 import de.otpiccolo.dsa5.pdf.data.image.ImageReader;
 import de.otpiccolo.dsa5.pdf.data.image.ImageWriter;
 import de.otpiccolo.dsa5.pdf.data.paragraph.ParagraphData;
 import de.otpiccolo.dsa5.pdf.data.paragraph.ParagraphWriter;
+import de.otpiccolo.dsa5.pdf.data.table.TableData;
+import de.otpiccolo.dsa5.pdf.data.table.TableWriter;
 
 /**
  * Factory to generate DSA writer.
@@ -112,6 +118,9 @@ public class DsaContentFactory {
 		if (content instanceof final ImageContent ic) {
 			return createImageContent(ic);
 		}
+		if (content instanceof final TableContent tc) {
+			return createTableContent(tc);
+		}
 		throw new FactoryException("Unknown page content encountered: " + content);
 	}
 
@@ -129,6 +138,38 @@ public class DsaContentFactory {
 
 	private static final IDataWriter createImageContent(final ImageContent content) {
 		return new ImageWriter(new ImageReader().readData(content.getImagePath()));
+	}
+
+	private static final IDataWriter createTableContent(final TableContent content) throws FactoryException {
+		final int columnCount = content.getColumnCount();
+		if (columnCount < 1) {
+			throw new IllegalArgumentException("Column count must be greater than zero.");
+		}
+
+		final int[] columnWeights = new int[columnCount];
+		if (content.getColumnWeights() != null) {
+			final String[] ratio = content.getColumnWeights().split(":");
+			if (ratio.length != columnCount) {
+				throw new IllegalArgumentException("Column ratio does not contain " + columnCount + " ratios, but instead " + ratio.length + ".");
+			}
+			for (int i = 0; i < columnCount; i++) {
+				columnWeights[i] = Integer.parseInt(ratio[i]);
+			}
+		} else {
+			Arrays.fill(columnWeights, 1);
+		}
+
+		final List<List<IDataWriter>> dataCells = new ArrayList<List<IDataWriter>>(content.getRows().size());
+		for (final TableRow row : content.getRows()) {
+			final List<IDataWriter> writers = new ArrayList<IDataWriter>(columnCount);
+			for (final TableCell cell : row.getCells()) {
+				writers.add(createDataWriter(cell.getContent()));
+			}
+			dataCells.add(writers);
+		}
+
+		return new TableWriter(new TableData(columnWeights, dataCells));
+
 	}
 
 	private static final <T extends IDataWriter, U extends IDataReader<String, V>, V> T fillWriter(final Function<Collection<V>, T> writer, final Supplier<U> reader, final List<String> data) {

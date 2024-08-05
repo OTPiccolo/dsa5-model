@@ -52,6 +52,19 @@
     <genClasses ecoreClass="content.ecore#//ImageContent">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//ImageContent/imagePath"/>
     </genClasses>
+    <genClasses ecoreClass="content.ecore#//TableCell">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference content.ecore#//TableCell/row"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference content.ecore#//TableCell/content"/>
+    </genClasses>
+    <genClasses ecoreClass="content.ecore#//TableContent">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference content.ecore#//TableContent/rows"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//TableContent/columnCount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//TableContent/columnWeights"/>
+    </genClasses>
+    <genClasses ecoreClass="content.ecore#//TableRow">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference content.ecore#//TableRow/table"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference content.ecore#//TableRow/cells"/>
+    </genClasses>
   </genPackages>
   <genPackages prefix="Page" basePackage="de.otpiccolo.dsa5.model.pdf" disposableProviderFactory="true"
       ecorePackage="page.ecore#/">

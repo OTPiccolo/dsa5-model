@@ -84,6 +84,18 @@ public class ContentAdapterFactory extends AdapterFactoryImpl {
 				return createImageContentAdapter();
 			}
 			@Override
+			public Adapter caseTableCell(TableCell object) {
+				return createTableCellAdapter();
+			}
+			@Override
+			public Adapter caseTableContent(TableContent object) {
+				return createTableContentAdapter();
+			}
+			@Override
+			public Adapter caseTableRow(TableRow object) {
+				return createTableRowAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -156,6 +168,48 @@ public class ContentAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createImageContentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.otpiccolo.dsa5.model.pdf.content.TableCell <em>Table Cell</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.otpiccolo.dsa5.model.pdf.content.TableCell
+	 * @generated
+	 */
+	public Adapter createTableCellAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.otpiccolo.dsa5.model.pdf.content.TableContent <em>Table Content</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.otpiccolo.dsa5.model.pdf.content.TableContent
+	 * @generated
+	 */
+	public Adapter createTableContentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.otpiccolo.dsa5.model.pdf.content.TableRow <em>Table Row</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.otpiccolo.dsa5.model.pdf.content.TableRow
+	 * @generated
+	 */
+	public Adapter createTableRowAdapter() {
 		return null;
 	}
 

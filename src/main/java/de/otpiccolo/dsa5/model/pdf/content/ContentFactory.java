@@ -49,6 +49,33 @@ public interface ContentFactory extends EFactory {
 	ImageContent createImageContent();
 
 	/**
+	 * Returns a new object of class '<em>Table Cell</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Table Cell</em>'.
+	 * @generated
+	 */
+	TableCell createTableCell();
+
+	/**
+	 * Returns a new object of class '<em>Table Content</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Table Content</em>'.
+	 * @generated
+	 */
+	TableContent createTableContent();
+
+	/**
+	 * Returns a new object of class '<em>Table Row</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Table Row</em>'.
+	 * @generated
+	 */
+	TableRow createTableRow();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

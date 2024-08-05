@@ -16,6 +16,24 @@
   <eClassifiers xsi:type="ecore:EClass" name="ImageContent" eSuperTypes="#//PageContent">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="imagePath" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TableCell">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="row" eType="#//TableRow"
+        transient="true" eOpposite="#//TableRow/cells"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="content" eType="#//PageContent"
+        containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TableContent" eSuperTypes="#//PageContent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rows" upperBound="-1" eType="#//TableRow"
+        containment="true" resolveProxies="false" eOpposite="#//TableRow/table"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="columnCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="columnWeights" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TableRow">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="table" eType="#//TableContent"
+        transient="true" eOpposite="#//TableContent/rows"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cells" upperBound="-1"
+        eType="#//TableCell" containment="true" resolveProxies="false" eOpposite="#//TableCell/row"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ContentType">
     <eLiterals name="AllgemeineSonderfertigkeit"/>
     <eLiterals name="Elfenlied" value="1"/>
