@@ -52,6 +52,8 @@ import de.otpiccolo.dsa5.data.zeremonialgegenstand.ZeremonialgegenstandReader;
 import de.otpiccolo.dsa5.data.zeremonialgegenstand.ZeremonialgegenstandWriter;
 import de.otpiccolo.dsa5.data.zeremonien.ZeremonieReader;
 import de.otpiccolo.dsa5.data.zeremonien.ZeremonieWriter;
+import de.otpiccolo.dsa5.datazaubertradition.ZauberTraditionReader;
+import de.otpiccolo.dsa5.datazaubertradition.ZauberTraditionWriter;
 import de.otpiccolo.dsa5.model.pdf.content.ContentType;
 import de.otpiccolo.dsa5.model.pdf.content.DataContent;
 import de.otpiccolo.dsa5.model.pdf.content.ImageContent;
@@ -96,6 +98,7 @@ public class DsaContentFactory {
 		map.put(ContentType.ZAUBER, d -> fillWriter(ZauberWriter::new, ZauberReader::new, d));
 		map.put(ContentType.ZAUBERERWEITERUNG, d -> fillWriter(ZaubererweiterungWriter::new, ZaubererweiterungReader::new, d));
 		map.put(ContentType.ZAUBERSTIL, d -> fillWriter(ZauberstilsonderfertigkeitWriter::new, ZauberstilsonderfertigkeitReader::new, d));
+		map.put(ContentType.ZAUBER_TRADITION, d -> fillWriter(ZauberTraditionWriter::new, ZauberTraditionReader::new, d));
 		map.put(ContentType.ZAUBERTRICK, d -> fillWriter(ZaubertrickWriter::new, ZaubertrickReader::new, d));
 		map.put(ContentType.ZEREMONIALGEGENSTAND, d -> fillWriter(ZeremonialgegenstandWriter::new, ZeremonialgegenstandReader::new, d));
 		map.put(ContentType.ZEREMONIE, d -> fillWriter(ZeremonieWriter::new, ZeremonieReader::new, d));

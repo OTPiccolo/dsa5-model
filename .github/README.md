@@ -125,6 +125,7 @@ Bereits implementierte Informationen:
 | *Zauber* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html |
 | *Zaubererweiterung* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html (Spezielle Angabe, siehe unten) |
 | *Zauberstil* | https://dsa.ulisses-regelwiki.de/zauberstil_sf_auswahl.html |
+| *ZauberTradition* | https://dsa.ulisses-regelwiki.de/magische_traditionauswahl.html |
 | *Zaubertrick* | https://dsa.ulisses-regelwiki.de/zaubertrickauswahl.html |
 | *Zeremonialgegenstand* | https://dsa.ulisses-regelwiki.de/zeremonialgegenstands_sf_auswahl.html |
 | *Zeremonie* | https://dsa.ulisses-regelwiki.de/zeremonieauswahl.html |
