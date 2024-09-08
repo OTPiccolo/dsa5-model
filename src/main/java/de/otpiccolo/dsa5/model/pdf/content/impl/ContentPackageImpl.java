@@ -499,6 +499,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		addEEnumLiteral(contentTypeEEnum, ContentType.VORTEIL);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ZAUBER);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ZAUBERERWEITERUNG);
+		addEEnumLiteral(contentTypeEEnum, ContentType.ZAUBERSTIL);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ZAUBERTRICK);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ZEREMONIALGEGENSTAND);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ZEREMONIE);

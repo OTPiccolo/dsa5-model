@@ -36,6 +36,7 @@
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Vorteil"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zauber"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zaubererweiterung"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zauberstil"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zaubertrick"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zeremonialgegenstand"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zeremonie"/>

@@ -83,22 +83,26 @@ public enum ContentType implements Enumerator {
 	 */
 	ZAUBERERWEITERUNG(17, "Zaubererweiterung", "Zaubererweiterung"),
 	/**
+	 * @model name="Zauberstil"
+	 */
+	ZAUBERSTIL(18, "Zauberstil", "Zauberstil"),
+	/**
 	 * @model name="Zaubertrick"
 	 */
-	ZAUBERTRICK(18, "Zaubertrick", "Zaubertrick"),
+	ZAUBERTRICK(19, "Zaubertrick", "Zaubertrick"),
 	/**
 	 * @model name="Zeremonialgegenstand"
 	 */
-	ZEREMONIALGEGENSTAND(19, "Zeremonialgegenstand", "Zeremonialgegenstand"),
+	ZEREMONIALGEGENSTAND(20, "Zeremonialgegenstand", "Zeremonialgegenstand"),
 	/**
 	 * @model name="Zeremonie"
 	 */
-	ZEREMONIE(20, "Zeremonie", "Zeremonie");
+	ZEREMONIE(21, "Zeremonie", "Zeremonie");
 
 	/**
-	 * The '<em><b>Allgemeine Sonderfertigkeit</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>Allgemeine Sonderfertigkeit</b></em>' literal value. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @see #ALLGEMEINE_SONDERFERTIGKEIT
 	 * @model name="AllgemeineSonderfertigkeit"
 	 * @generated
@@ -276,6 +280,16 @@ public enum ContentType implements Enumerator {
 	 */
 	public static final int ZAUBERERWEITERUNG_VALUE = 17;
 	/**
+	 * The '<em><b>Zauberstil</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ZAUBERSTIL
+	 * @model name="Zauberstil"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ZAUBERSTIL_VALUE = 18;
+	/**
 	 * The '<em><b>Zaubertrick</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -284,7 +298,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ZAUBERTRICK_VALUE = 18;
+	public static final int ZAUBERTRICK_VALUE = 19;
 	/**
 	 * The '<em><b>Zeremonialgegenstand</b></em>' literal value. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -294,7 +308,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ZEREMONIALGEGENSTAND_VALUE = 19;
+	public static final int ZEREMONIALGEGENSTAND_VALUE = 20;
 	/**
 	 * The '<em><b>Zeremonie</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -304,7 +318,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ZEREMONIE_VALUE = 20;
+	public static final int ZEREMONIE_VALUE = 21;
 	/**
 	 * An array of all the '<em><b>Content Type</b></em>' enumerators. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -330,6 +344,7 @@ public enum ContentType implements Enumerator {
 			VORTEIL,
 			ZAUBER,
 			ZAUBERERWEITERUNG,
+			ZAUBERSTIL,
 			ZAUBERTRICK,
 			ZEREMONIALGEGENSTAND,
 			ZEREMONIE,
@@ -404,6 +419,7 @@ public enum ContentType implements Enumerator {
 			case VORTEIL_VALUE: return VORTEIL;
 			case ZAUBER_VALUE: return ZAUBER;
 			case ZAUBERERWEITERUNG_VALUE: return ZAUBERERWEITERUNG;
+			case ZAUBERSTIL_VALUE: return ZAUBERSTIL;
 			case ZAUBERTRICK_VALUE: return ZAUBERTRICK;
 			case ZEREMONIALGEGENSTAND_VALUE: return ZEREMONIALGEGENSTAND;
 			case ZEREMONIE_VALUE: return ZEREMONIE;
