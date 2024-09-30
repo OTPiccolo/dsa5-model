@@ -20,19 +20,20 @@
     <eLiterals name="Boron"/>
     <eLiterals name="Efferd" value="1"/>
     <eLiterals name="EntrueckungTrance" value="2"/>
-    <eLiterals name="Firun" value="3"/>
-    <eLiterals name="Hesinde" value="4"/>
-    <eLiterals name="Ingerimm" value="5"/>
-    <eLiterals name="Peraine" value="6"/>
-    <eLiterals name="Phex" value="7"/>
-    <eLiterals name="Praios" value="8"/>
-    <eLiterals name="Rahja" value="9"/>
-    <eLiterals name="Rondra" value="10"/>
-    <eLiterals name="Schicksalspunkte" value="11"/>
-    <eLiterals name="Segen" value="12"/>
-    <eLiterals name="Travia" value="13"/>
-    <eLiterals name="Tsa" value="14"/>
-    <eLiterals name="ZauberMod" value="15"/>
+    <eLiterals name="FernkampfMod" value="3"/>
+    <eLiterals name="Firun" value="4"/>
+    <eLiterals name="Hesinde" value="5"/>
+    <eLiterals name="Ingerimm" value="6"/>
+    <eLiterals name="Peraine" value="7"/>
+    <eLiterals name="Phex" value="8"/>
+    <eLiterals name="Praios" value="9"/>
+    <eLiterals name="Rahja" value="10"/>
+    <eLiterals name="Rondra" value="11"/>
+    <eLiterals name="Schicksalspunkte" value="12"/>
+    <eLiterals name="Segen" value="13"/>
+    <eLiterals name="Travia" value="14"/>
+    <eLiterals name="Tsa" value="15"/>
+    <eLiterals name="ZauberMod" value="16"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="Collection" instanceClassName="java.util.Collection">
     <eTypeParameters name="T"/>

@@ -361,6 +361,7 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.BORON);
 		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.EFFERD);
 		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.ENTRUECKUNG_TRANCE);
+		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.FERNKAMPF_MOD);
 		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.FIRUN);
 		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.HESINDE);
 		addEEnumLiteral(predefinedTypeEEnum, PredefinedType.INGERIMM);

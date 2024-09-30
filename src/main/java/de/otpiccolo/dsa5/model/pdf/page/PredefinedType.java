@@ -24,57 +24,61 @@ public enum PredefinedType implements Enumerator {
 	 */
 	ENTRUECKUNG_TRANCE(2, "EntrueckungTrance", "EntrueckungTrance"),
 	/**
+	 * @model name="FernkampfMod"
+	 */
+	FERNKAMPF_MOD(3, "FernkampfMod", "FernkampfMod"),
+	/**
 	 * @model name="Firun"
 	 */
-	FIRUN(3, "Firun", "Firun"),
+	FIRUN(4, "Firun", "Firun"),
 	/**
 	 * @model name="Hesinde"
 	 */
-	HESINDE(4, "Hesinde", "Hesinde"),
+	HESINDE(5, "Hesinde", "Hesinde"),
 	/**
 	 * @model name="Ingerimm"
 	 */
-	INGERIMM(5, "Ingerimm", "Ingerimm"),
+	INGERIMM(6, "Ingerimm", "Ingerimm"),
 	/**
 	 * @model name="Peraine"
 	 */
-	PERAINE(6, "Peraine", "Peraine"),
+	PERAINE(7, "Peraine", "Peraine"),
 	/**
 	 * @model name="Phex"
 	 */
-	PHEX(7, "Phex", "Phex"),
+	PHEX(8, "Phex", "Phex"),
 	/**
 	 * @model name="Praios"
 	 */
-	PRAIOS(8, "Praios", "Praios"),
+	PRAIOS(9, "Praios", "Praios"),
 	/**
 	 * @model name="Rahja"
 	 */
-	RAHJA(9, "Rahja", "Rahja"),
+	RAHJA(10, "Rahja", "Rahja"),
 	/**
 	 * @model name="Rondra"
 	 */
-	RONDRA(10, "Rondra", "Rondra"),
+	RONDRA(11, "Rondra", "Rondra"),
 	/**
 	 * @model name="Schicksalspunkte"
 	 */
-	SCHICKSALSPUNKTE(11, "Schicksalspunkte", "Schicksalspunkte"),
+	SCHICKSALSPUNKTE(12, "Schicksalspunkte", "Schicksalspunkte"),
 	/**
 	 * @model name="Segen"
 	 */
-	SEGEN(12, "Segen", "Segen"),
+	SEGEN(13, "Segen", "Segen"),
 	/**
 	 * @model name="Travia"
 	 */
-	TRAVIA(13, "Travia", "Travia"),
+	TRAVIA(14, "Travia", "Travia"),
 	/**
 	 * @model name="Tsa"
 	 */
-	TSA(14, "Tsa", "Tsa"),
+	TSA(15, "Tsa", "Tsa"),
 	/**
 	 * @model name="ZauberMod"
 	 */
-	ZAUBER_MOD(15, "ZauberMod", "ZauberMod");
+	ZAUBER_MOD(16, "ZauberMod", "ZauberMod");
 
 	/**
 	 * The '<em><b>Boron</b></em>' literal value.
@@ -107,6 +111,16 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int ENTRUECKUNG_TRANCE_VALUE = 2;
 	/**
+	 * The '<em><b>Fernkampf Mod</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #FERNKAMPF_MOD
+	 * @model name="FernkampfMod"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int FERNKAMPF_MOD_VALUE = 3;
+	/**
 	 * The '<em><b>Firun</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
@@ -115,7 +129,7 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int FIRUN_VALUE = 3;
+	public static final int FIRUN_VALUE = 4;
 	/**
 	 * The '<em><b>Hesinde</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -125,7 +139,7 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int HESINDE_VALUE = 4;
+	public static final int HESINDE_VALUE = 5;
 	/**
 	 * The '<em><b>Ingerimm</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -135,7 +149,7 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int INGERIMM_VALUE = 5;
+	public static final int INGERIMM_VALUE = 6;
 	/**
 	 * The '<em><b>Peraine</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -145,7 +159,7 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PERAINE_VALUE = 6;
+	public static final int PERAINE_VALUE = 7;
 	/**
 	 * The '<em><b>Phex</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -155,7 +169,7 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PHEX_VALUE = 7;
+	public static final int PHEX_VALUE = 8;
 	/**
 	 * The '<em><b>Praios</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -165,7 +179,7 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PRAIOS_VALUE = 8;
+	public static final int PRAIOS_VALUE = 9;
 	/**
 	 * The '<em><b>Rahja</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -175,7 +189,7 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int RAHJA_VALUE = 9;
+	public static final int RAHJA_VALUE = 10;
 	/**
 	 * The '<em><b>Rondra</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -185,7 +199,7 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int RONDRA_VALUE = 10;
+	public static final int RONDRA_VALUE = 11;
 	/**
 	 * The '<em><b>Schicksalspunkte</b></em>' literal value.
 	 * <!-- begin-user-doc
@@ -195,7 +209,7 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int SCHICKSALSPUNKTE_VALUE = 11;
+	public static final int SCHICKSALSPUNKTE_VALUE = 12;
 	/**
 	 * The '<em><b>Segen</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -205,7 +219,7 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int SEGEN_VALUE = 12;
+	public static final int SEGEN_VALUE = 13;
 	/**
 	 * The '<em><b>Travia</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -215,7 +229,7 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int TRAVIA_VALUE = 13;
+	public static final int TRAVIA_VALUE = 14;
 	/**
 	 * The '<em><b>Tsa</b></em>' literal value.
 	 * <!-- begin-user-doc --> <!--
@@ -225,7 +239,7 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int TSA_VALUE = 14;
+	public static final int TSA_VALUE = 15;
 	/**
 	 * The '<em><b>Zauber Mod</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -235,7 +249,7 @@ public enum PredefinedType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ZAUBER_MOD_VALUE = 15;
+	public static final int ZAUBER_MOD_VALUE = 16;
 	/**
 	 * An array of all the '<em><b>Predefined Type</b></em>' enumerators. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -246,6 +260,7 @@ public enum PredefinedType implements Enumerator {
 			BORON,
 			EFFERD,
 			ENTRUECKUNG_TRANCE,
+			FERNKAMPF_MOD,
 			FIRUN,
 			HESINDE,
 			INGERIMM,
@@ -313,6 +328,7 @@ public enum PredefinedType implements Enumerator {
 			case BORON_VALUE: return BORON;
 			case EFFERD_VALUE: return EFFERD;
 			case ENTRUECKUNG_TRANCE_VALUE: return ENTRUECKUNG_TRANCE;
+			case FERNKAMPF_MOD_VALUE: return FERNKAMPF_MOD;
 			case FIRUN_VALUE: return FIRUN;
 			case HESINDE_VALUE: return HESINDE;
 			case INGERIMM_VALUE: return INGERIMM;

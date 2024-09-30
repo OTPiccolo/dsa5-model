@@ -74,6 +74,7 @@
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Boron"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Efferd"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/EntrueckungTrance"/>
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/FernkampfMod"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Firun"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Hesinde"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Ingerimm"/>

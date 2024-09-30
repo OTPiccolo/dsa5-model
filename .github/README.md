@@ -154,6 +154,7 @@ Der Inhalt der Tabelle wird für jede Reihe angegeben (*rows*), und dann in jede
 | ID | Beschreibung |
 | --- | --- |
 | *EntrueckungTrance* | Eine Übersicht, über die Status-Effekte Entrückung und Trance. |
+| *FernkampfMod* | Eine Übersicht, wie Fernkampf-Angriffe modifiziert werden. |
 | *Schicksalspunkte* | Eine Übersicht, wie Schicksalspunkte verwendet werden können. |
 | *Segen* | Eine Übersicht über die 12 kleinen Segen, die alle Geweihten für gewöhnlich können. |
 | *ZauberMod* | Eine Übersicht, wie Zauber modifiziert werden können, um ihre Wirkung zu verändern. |

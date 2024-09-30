@@ -19,6 +19,7 @@ import de.otpiccolo.dsa5.model.pdf.page.PredefinedType;
 import de.otpiccolo.dsa5.pdf.data.IDataWriter;
 import de.otpiccolo.dsa5.pdf.page.IPage;
 import de.otpiccolo.dsa5.pdf.page.predefined.EntrueckungTrancePage;
+import de.otpiccolo.dsa5.pdf.page.predefined.FernkampfModPage;
 import de.otpiccolo.dsa5.pdf.page.predefined.SchicksalspunktePage;
 import de.otpiccolo.dsa5.pdf.page.predefined.SegenPage;
 import de.otpiccolo.dsa5.pdf.page.predefined.ZauberModPage;
@@ -134,6 +135,7 @@ public class DsaPageFactory {
 		case BORON -> new BoronPage();
 		case EFFERD -> new EfferdPage();
 		case ENTRUECKUNG_TRANCE -> new EntrueckungTrancePage();
+		case FERNKAMPF_MOD -> new FernkampfModPage();
 		case FIRUN -> new FirunPage();
 		case HESINDE -> new HesindePage();
 		case INGERIMM -> new IngerimmPage();
