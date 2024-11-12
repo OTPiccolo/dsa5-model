@@ -54,9 +54,10 @@
     <eLiterals name="Zauber" value="16"/>
     <eLiterals name="Zaubererweiterung" value="17"/>
     <eLiterals name="Zauberstil" value="18"/>
-    <eLiterals name="ZauberTradition" value="19"/>
-    <eLiterals name="Zaubertrick" value="20"/>
-    <eLiterals name="Zeremonialgegenstand" value="21"/>
-    <eLiterals name="Zeremonie" value="22"/>
+    <eLiterals name="Zaubertanz" value="19"/>
+    <eLiterals name="ZauberTradition" value="20"/>
+    <eLiterals name="Zaubertrick" value="21"/>
+    <eLiterals name="Zeremonialgegenstand" value="22"/>
+    <eLiterals name="Zeremonie" value="23"/>
   </eClassifiers>
 </ecore:EPackage>
