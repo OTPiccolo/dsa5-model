@@ -30,6 +30,7 @@
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Kampfstilsonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Liturgie"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Liturgiestil"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/MagischeSonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Nachteil"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Predigt"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Segen"/>

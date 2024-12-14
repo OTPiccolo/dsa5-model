@@ -47,18 +47,19 @@
     <eLiterals name="Kampfstilsonderfertigkeit" value="9"/>
     <eLiterals name="Liturgie" value="10"/>
     <eLiterals name="Liturgiestil" value="11"/>
-    <eLiterals name="Nachteil" value="12"/>
-    <eLiterals name="Predigt" value="13"/>
-    <eLiterals name="Segen" value="14"/>
-    <eLiterals name="Vision" value="15"/>
-    <eLiterals name="Vorteil" value="16"/>
-    <eLiterals name="Zauber" value="17"/>
-    <eLiterals name="Zaubererweiterung" value="18"/>
-    <eLiterals name="Zauberstil" value="19"/>
-    <eLiterals name="Zaubertanz" value="20"/>
-    <eLiterals name="ZauberTradition" value="21"/>
-    <eLiterals name="Zaubertrick" value="22"/>
-    <eLiterals name="Zeremonialgegenstand" value="23"/>
-    <eLiterals name="Zeremonie" value="24"/>
+    <eLiterals name="MagischeSonderfertigkeit" value="12"/>
+    <eLiterals name="Nachteil" value="13"/>
+    <eLiterals name="Predigt" value="14"/>
+    <eLiterals name="Segen" value="15"/>
+    <eLiterals name="Vision" value="16"/>
+    <eLiterals name="Vorteil" value="17"/>
+    <eLiterals name="Zauber" value="18"/>
+    <eLiterals name="Zaubererweiterung" value="19"/>
+    <eLiterals name="Zauberstil" value="20"/>
+    <eLiterals name="Zaubertanz" value="21"/>
+    <eLiterals name="ZauberTradition" value="22"/>
+    <eLiterals name="Zaubertrick" value="23"/>
+    <eLiterals name="Zeremonialgegenstand" value="24"/>
+    <eLiterals name="Zeremonie" value="25"/>
   </eClassifiers>
 </ecore:EPackage>
