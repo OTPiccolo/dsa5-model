@@ -22,6 +22,7 @@
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Elfenlied"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Elixier"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/ErweiterterLiturgiestil"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/ErweiterterTalentstil"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Gewandzauber"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Hexenfluch"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/KarmaleSonderfertigkeit"/>
@@ -34,6 +35,7 @@
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Nachteil"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Predigt"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Segen"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/TalentstilSonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Vision"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Vorteil"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zauber"/>

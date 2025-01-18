@@ -110,6 +110,7 @@ Bereits implementierte Informationen:
 | *Elfenlied* | https://dsa.ulisses-regelwiki.de/elfenliedauswahl.html |
 | *Elixier* | https://dsa.ulisses-regelwiki.de/Elixier.html |
 | *ErweiterterLiturgiestil* | https://dsa.ulisses-regelwiki.de/erweiterte_liturgiestilsonderfertigkeitenauswahl.html |
+| *ErweiterterTalentstil* | https://dsa.ulisses-regelwiki.de/Erweiterte_Talentsonderfertigkeiten.html |
 | *Gewandzauber* | https://dsa.ulisses-regelwiki.de/traditionsartefakt_sf_gewandzauber_auswahl.html |
 | *Hexenfluch* | https://dsa.ulisses-regelwiki.de/hexenfluchauswahl.html |
 | *Kampfsonderfertigkeit* | https://dsa.ulisses-regelwiki.de/sf_kampfsonderfertigkeiten.html |
@@ -122,6 +123,7 @@ Bereits implementierte Informationen:
 | *Nachteil* | https://dsa.ulisses-regelwiki.de/nachteilauswahl.html |
 | *Predigt* | https://dsa.ulisses-regelwiki.de/predigtauswahl.html |
 | *Segen* | https://dsa.ulisses-regelwiki.de/segenauswahl.html |
+| *TalentstilSonderfertigkeit* | https://dsa.ulisses-regelwiki.de/Talentstilsonderfertigkeiten.html |
 | *Vision* | https://dsa.ulisses-regelwiki.de/visionauswahl.html |
 | *Vorteil* | https://dsa.ulisses-regelwiki.de/vorteilauswahl.html |
 | *Zauber* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html |

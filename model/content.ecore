@@ -39,27 +39,29 @@
     <eLiterals name="Elfenlied" value="1"/>
     <eLiterals name="Elixier" value="2"/>
     <eLiterals name="ErweiterterLiturgiestil" value="3"/>
-    <eLiterals name="Gewandzauber" value="4"/>
-    <eLiterals name="Hexenfluch" value="5"/>
-    <eLiterals name="KarmaleSonderfertigkeit" value="6"/>
-    <eLiterals name="KarmaleTradition" value="7"/>
-    <eLiterals name="Kampfsonderfertigkeit" value="8"/>
-    <eLiterals name="Kampfstilsonderfertigkeit" value="9"/>
-    <eLiterals name="Liturgie" value="10"/>
-    <eLiterals name="Liturgiestil" value="11"/>
-    <eLiterals name="MagischeSonderfertigkeit" value="12"/>
-    <eLiterals name="Nachteil" value="13"/>
-    <eLiterals name="Predigt" value="14"/>
-    <eLiterals name="Segen" value="15"/>
-    <eLiterals name="Vision" value="16"/>
-    <eLiterals name="Vorteil" value="17"/>
-    <eLiterals name="Zauber" value="18"/>
-    <eLiterals name="Zaubererweiterung" value="19"/>
-    <eLiterals name="Zauberstil" value="20"/>
-    <eLiterals name="Zaubertanz" value="21"/>
-    <eLiterals name="ZauberTradition" value="22"/>
-    <eLiterals name="Zaubertrick" value="23"/>
-    <eLiterals name="Zeremonialgegenstand" value="24"/>
-    <eLiterals name="Zeremonie" value="25"/>
+    <eLiterals name="ErweiterterTalentstil" value="4"/>
+    <eLiterals name="Gewandzauber" value="5"/>
+    <eLiterals name="Hexenfluch" value="6"/>
+    <eLiterals name="KarmaleSonderfertigkeit" value="7"/>
+    <eLiterals name="KarmaleTradition" value="8"/>
+    <eLiterals name="Kampfsonderfertigkeit" value="9"/>
+    <eLiterals name="Kampfstilsonderfertigkeit" value="10"/>
+    <eLiterals name="Liturgie" value="11"/>
+    <eLiterals name="Liturgiestil" value="12"/>
+    <eLiterals name="MagischeSonderfertigkeit" value="13"/>
+    <eLiterals name="Nachteil" value="14"/>
+    <eLiterals name="Predigt" value="15"/>
+    <eLiterals name="Segen" value="16"/>
+    <eLiterals name="TalentstilSonderfertigkeit" value="17"/>
+    <eLiterals name="Vision" value="18"/>
+    <eLiterals name="Vorteil" value="19"/>
+    <eLiterals name="Zauber" value="20"/>
+    <eLiterals name="Zaubererweiterung" value="21"/>
+    <eLiterals name="Zauberstil" value="22"/>
+    <eLiterals name="Zaubertanz" value="23"/>
+    <eLiterals name="ZauberTradition" value="24"/>
+    <eLiterals name="Zaubertrick" value="25"/>
+    <eLiterals name="Zeremonialgegenstand" value="26"/>
+    <eLiterals name="Zeremonie" value="27"/>
   </eClassifiers>
 </ecore:EPackage>
