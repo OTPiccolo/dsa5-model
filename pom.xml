@@ -19,7 +19,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
-    <emf.version>2.35.0</emf.version>
+    <emf.version>2.38.0</emf.version>
   </properties>
 
   <dependencies>
@@ -32,18 +32,18 @@
     <dependency>
       <groupId>org.jsoup</groupId>
       <artifactId>jsoup</artifactId>
-      <version>1.17.2</version>
+      <version>1.18.3</version>
     </dependency>
 
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>2.0.10</version>
+      <version>2.0.16</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
-      <version>2.0.10</version>
+      <version>2.0.16</version>
     </dependency>
 
     <dependency>
@@ -60,7 +60,7 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
-      <version>5.10.1</version>
+      <version>5.11.4</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

@@ -12,6 +12,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
+import org.apache.pdfbox.Loader;
 import org.apache.pdfbox.io.IOUtils;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
@@ -102,7 +103,7 @@ public class DsaPageFactoryTest {
 		writer.setPages(pages.stream());
 		writer.writeDocument();
 
-		final PDDocument createdPdf = PDDocument.load(outputFile);
+		final PDDocument createdPdf = Loader.loadPDF(outputFile);
 		assertEquals(20, createdPdf.getNumberOfPages());
 		for (int i = 0; i < 20; i++) {
 			final PDPage numberedPage = createdPdf.getPage(i);
@@ -132,7 +133,7 @@ public class DsaPageFactoryTest {
 		writer.setPages(pages.stream());
 		writer.writeDocument();
 
-		final PDDocument createdPdf = PDDocument.load(outputFile);
+		final PDDocument createdPdf = Loader.loadPDF(outputFile);
 		assertEquals(createdPage.getPageIndices().size(), createdPdf.getNumberOfPages());
 		int i = 0;
 		for (final Iterator<Integer> iter = createdPage.getPageIndices().iterator(); iter.hasNext();) {

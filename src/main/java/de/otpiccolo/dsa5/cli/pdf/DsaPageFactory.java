@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.pdfbox.Loader;
 import org.apache.pdfbox.pdmodel.PDDocument;
 
 import de.otpiccolo.dsa5.model.pdf.content.PageContent;
@@ -92,7 +93,7 @@ public class DsaPageFactory {
 
 		PDDocument doc;
 		try {
-			doc = PDDocument.load(new File(fileName));
+			doc = Loader.loadPDF(new File(fileName));
 		} catch (final IOException e) {
 			throw new FactoryException("Could not read PDF from \"" + fileName + "\". Error message: " + e.getMessage(), e);
 		}
