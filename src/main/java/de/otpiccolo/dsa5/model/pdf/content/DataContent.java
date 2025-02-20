@@ -11,10 +11,13 @@ public interface DataContent extends PageContent {
 	ContentType getContentType();
 
 	/**
-	 * Sets the value of the '{@link de.otpiccolo.dsa5.model.pdf.content.DataContent#getContentType <em>Content Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Type</em>' attribute.
+	 * Sets the value of the
+	 * '{@link de.otpiccolo.dsa5.model.pdf.content.DataContent#getContentType
+	 * <em>Content Type</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 *
+	 * @param value
+	 *            the new value of the '<em>Content Type</em>' attribute.
 	 * @see de.otpiccolo.dsa5.model.pdf.content.ContentType
 	 * @see #isSetContentType()
 	 * @see #unsetContentType()
@@ -24,9 +27,11 @@ public interface DataContent extends PageContent {
 	void setContentType(ContentType value);
 
 	/**
-	 * Unsets the value of the '{@link de.otpiccolo.dsa5.model.pdf.content.DataContent#getContentType <em>Content Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Unsets the value of the
+	 * '{@link de.otpiccolo.dsa5.model.pdf.content.DataContent#getContentType
+	 * <em>Content Type</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 *
 	 * @see #isSetContentType()
 	 * @see #getContentType()
 	 * @see #setContentType(ContentType)
@@ -35,10 +40,13 @@ public interface DataContent extends PageContent {
 	void unsetContentType();
 
 	/**
-	 * Returns whether the value of the '{@link de.otpiccolo.dsa5.model.pdf.content.DataContent#getContentType <em>Content Type</em>}' attribute is set.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Content Type</em>' attribute is set.
+	 * Returns whether the value of the
+	 * '{@link de.otpiccolo.dsa5.model.pdf.content.DataContent#getContentType
+	 * <em>Content Type</em>}' attribute is set. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 *
+	 * @return whether the value of the '<em>Content Type</em>' attribute is
+	 *         set.
 	 * @see #unsetContentType()
 	 * @see #getContentType()
 	 * @see #setContentType(ContentType)

@@ -2,91 +2,87 @@
  */
 package de.otpiccolo.dsa5.model.pdf.page.impl;
 
-import de.otpiccolo.dsa5.model.pdf.PdfPackage;
-
-import de.otpiccolo.dsa5.model.pdf.content.ContentPackage;
-
-import de.otpiccolo.dsa5.model.pdf.content.impl.ContentPackageImpl;
-
-import de.otpiccolo.dsa5.model.pdf.impl.PdfPackageImpl;
-
-import de.otpiccolo.dsa5.model.pdf.page.DefaultPage;
-import de.otpiccolo.dsa5.model.pdf.page.Page;
-import de.otpiccolo.dsa5.model.pdf.page.PageFactory;
-import de.otpiccolo.dsa5.model.pdf.page.PagePackage;
-import de.otpiccolo.dsa5.model.pdf.page.PdfPage;
-
-import de.otpiccolo.dsa5.model.pdf.page.PredefinedPage;
-import de.otpiccolo.dsa5.model.pdf.page.PredefinedType;
 import java.util.Collection;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import de.otpiccolo.dsa5.model.pdf.PdfPackage;
+import de.otpiccolo.dsa5.model.pdf.content.ContentPackage;
+import de.otpiccolo.dsa5.model.pdf.content.impl.ContentPackageImpl;
+import de.otpiccolo.dsa5.model.pdf.impl.PdfPackageImpl;
+import de.otpiccolo.dsa5.model.pdf.page.DefaultPage;
+import de.otpiccolo.dsa5.model.pdf.page.Page;
+import de.otpiccolo.dsa5.model.pdf.page.PageFactory;
+import de.otpiccolo.dsa5.model.pdf.page.PagePackage;
+import de.otpiccolo.dsa5.model.pdf.page.PdfPage;
+import de.otpiccolo.dsa5.model.pdf.page.PredefinedPage;
+import de.otpiccolo.dsa5.model.pdf.page.PredefinedType;
+
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model <b>Package</b>.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model <b>Package</b>. <!--
+ * end-user-doc -->
+ *
  * @generated
  */
 public class PagePackageImpl extends EPackageImpl implements PagePackage {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private EClass defaultPageEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private EClass pageEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private EClass pdfPageEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private EClass predefinedPageEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private EEnum predefinedTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private EDataType collectionEDataType = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
-	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
-	 * package URI value.
-	 * <p>Note: the correct way to create the package is via the static
-	 * factory method {@link #init init()}, which also performs
-	 * initialization of the package, or returns the registered package,
-	 * if one already exists.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the
+	 * package package URI value.
+	 * <p>
+	 * Note: the correct way to create the package is via the static factory
+	 * method {@link #init init()}, which also performs initialization of the
+	 * package, or returns the registered package, if one already exists. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
 	 * @see de.otpiccolo.dsa5.model.pdf.page.PagePackage#eNS_URI
 	 * @see #init()
@@ -95,39 +91,45 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 	private PagePackageImpl() {
 		super(eNS_URI, PageFactory.eINSTANCE);
 	}
+
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private static boolean isInited = false;
 
 	/**
-	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 * Creates, registers, and initializes the <b>Package</b> for this model,
+	 * and for any others upon which it depends.
 	 *
-	 * <p>This method is used to initialize {@link PagePackage#eINSTANCE} when that field is accessed.
-	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <p>
+	 * This method is used to initialize {@link PagePackage#eINSTANCE} when that
+	 * field is accessed. Clients should not invoke it directly. Instead, they
+	 * should simply access that field to obtain the package. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @see #eNS_URI
 	 * @see #createPackageContents()
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
 	public static PagePackage init() {
-		if (isInited) return (PagePackage)EPackage.Registry.INSTANCE.getEPackage(PagePackage.eNS_URI);
+		if (isInited) {
+			return (PagePackage) EPackage.Registry.INSTANCE.getEPackage(PagePackage.eNS_URI);
+		}
 
 		// Obtain or create and register package
-		Object registeredPagePackage = EPackage.Registry.INSTANCE.get(eNS_URI);
-		PagePackageImpl thePagePackage = registeredPagePackage instanceof PagePackageImpl ? (PagePackageImpl)registeredPagePackage : new PagePackageImpl();
+		final Object registeredPagePackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		final PagePackageImpl thePagePackage = registeredPagePackage instanceof PagePackageImpl ? (PagePackageImpl) registeredPagePackage : new PagePackageImpl();
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PdfPackage.eNS_URI);
-		PdfPackageImpl thePdfPackage = (PdfPackageImpl)(registeredPackage instanceof PdfPackageImpl ? registeredPackage : PdfPackage.eINSTANCE);
+		final PdfPackageImpl thePdfPackage = (PdfPackageImpl) (registeredPackage instanceof PdfPackageImpl ? registeredPackage : PdfPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ContentPackage.eNS_URI);
-		ContentPackageImpl theContentPackage = (ContentPackageImpl)(registeredPackage instanceof ContentPackageImpl ? registeredPackage : ContentPackage.eINSTANCE);
+		final ContentPackageImpl theContentPackage = (ContentPackageImpl) (registeredPackage instanceof ContentPackageImpl ? registeredPackage : ContentPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		thePagePackage.createPackageContents();
@@ -148,8 +150,8 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
@@ -158,28 +160,28 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public EReference getDefaultPage_Contents() {
-		return (EReference)defaultPageEClass.getEStructuralFeatures().get(0);
+		return (EReference) defaultPageEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public EAttribute getDefaultPage_Title() {
-		return (EAttribute)defaultPageEClass.getEStructuralFeatures().get(1);
+		return (EAttribute) defaultPageEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
@@ -188,8 +190,8 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
@@ -198,28 +200,28 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public EAttribute getPdfPage_File() {
-		return (EAttribute)pdfPageEClass.getEStructuralFeatures().get(0);
+		return (EAttribute) pdfPageEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public EAttribute getPdfPage_PageNumbers() {
-		return (EAttribute)pdfPageEClass.getEStructuralFeatures().get(1);
+		return (EAttribute) pdfPageEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
@@ -228,18 +230,18 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public EAttribute getPredefinedPage_Id() {
-		return (EAttribute)predefinedPageEClass.getEStructuralFeatures().get(0);
+		return (EAttribute) predefinedPageEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
@@ -248,8 +250,8 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
@@ -258,31 +260,33 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public PageFactory getPageFactory() {
-		return (PageFactory)getEFactoryInstance();
+		return (PageFactory) getEFactoryInstance();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private boolean isCreated = false;
 
 	/**
-	 * Creates the meta-model objects for the package.  This method is
-	 * guarded to have no affect on any invocation but its first.
-	 * <!-- begin-user-doc -->
+	 * Creates the meta-model objects for the package. This method is guarded to
+	 * have no affect on any invocation but its first. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	public void createPackageContents() {
-		if (isCreated) return;
+		if (isCreated) {
+			return;
+		}
 		isCreated = true;
 
 		// Create classes and their features
@@ -307,21 +311,23 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private boolean isInitialized = false;
 
 	/**
-	 * Complete the initialization of the package and its meta-model.  This
-	 * method is guarded to have no affect on any invocation but its first.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Complete the initialization of the package and its meta-model. This
+	 * method is guarded to have no affect on any invocation but its first. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	public void initializePackageContents() {
-		if (isInitialized) return;
+		if (isInitialized) {
+			return;
+		}
 		isInitialized = true;
 
 		// Initialize package
@@ -330,7 +336,7 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		ContentPackage theContentPackage = (ContentPackage)EPackage.Registry.INSTANCE.getEPackage(ContentPackage.eNS_URI);
+		final ContentPackage theContentPackage = (ContentPackage) EPackage.Registry.INSTANCE.getEPackage(ContentPackage.eNS_URI);
 
 		// Create type parameters
 		addETypeParameter(collectionEDataType, "T");
@@ -383,4 +389,4 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 		createResource(eNS_URI);
 	}
 
-} //PagePackageImpl
+} // PagePackageImpl

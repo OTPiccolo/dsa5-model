@@ -15,10 +15,12 @@ public interface DefaultPage extends Page {
 	String getTitle();
 
 	/**
-	 * Sets the value of the '{@link de.otpiccolo.dsa5.model.pdf.page.DefaultPage#getTitle <em>Title</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Title</em>' attribute.
+	 * Sets the value of the
+	 * '{@link de.otpiccolo.dsa5.model.pdf.page.DefaultPage#getTitle
+	 * <em>Title</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @param value
+	 *            the new value of the '<em>Title</em>' attribute.
 	 * @see #getTitle()
 	 * @generated
 	 */

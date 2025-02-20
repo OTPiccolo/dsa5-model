@@ -41,9 +41,12 @@ public interface Pdf extends EObject {
 	String getPdfSource();
 
 	/**
-	 * Sets the value of the '{@link de.otpiccolo.dsa5.model.pdf.Pdf#getPdfSource <em>Pdf Source</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Pdf Source</em>' attribute.
+	 * Sets the value of the
+	 * '{@link de.otpiccolo.dsa5.model.pdf.Pdf#getPdfSource <em>Pdf
+	 * Source</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @param value
+	 *            the new value of the '<em>Pdf Source</em>' attribute.
 	 * @see #getPdfSource()
 	 * @generated
 	 */

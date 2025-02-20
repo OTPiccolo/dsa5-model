@@ -13,10 +13,13 @@ public interface TableCell extends EObject {
 	TableRow getRow();
 
 	/**
-	 * Sets the value of the '{@link de.otpiccolo.dsa5.model.pdf.content.TableCell#getRow <em>Row</em>}' container reference.
-	 * <!-- begin-user-doc --> <!--
+	 * Sets the value of the
+	 * '{@link de.otpiccolo.dsa5.model.pdf.content.TableCell#getRow
+	 * <em>Row</em>}' container reference. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * @param value the new value of the '<em>Row</em>' container reference.
+	 *
+	 * @param value
+	 *            the new value of the '<em>Row</em>' container reference.
 	 * @see #getRow()
 	 * @generated
 	 */

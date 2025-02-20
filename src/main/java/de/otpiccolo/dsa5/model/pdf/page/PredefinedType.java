@@ -81,9 +81,9 @@ public enum PredefinedType implements Enumerator {
 	ZAUBER_MOD(16, "ZauberMod", "ZauberMod");
 
 	/**
-	 * The '<em><b>Boron</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
+	 * The '<em><b>Boron</b></em>' literal value. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 *
 	 * @see #BORON
 	 * @model name="Boron"
 	 * @generated
@@ -91,9 +91,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int BORON_VALUE = 0;
 	/**
-	 * The '<em><b>Efferd</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
+	 * The '<em><b>Efferd</b></em>' literal value. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 *
 	 * @see #EFFERD
 	 * @model name="Efferd"
 	 * @generated
@@ -111,9 +111,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int ENTRUECKUNG_TRANCE_VALUE = 2;
 	/**
-	 * The '<em><b>Fernkampf Mod</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>Fernkampf Mod</b></em>' literal value. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 *
 	 * @see #FERNKAMPF_MOD
 	 * @model name="FernkampfMod"
 	 * @generated
@@ -121,9 +121,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int FERNKAMPF_MOD_VALUE = 3;
 	/**
-	 * The '<em><b>Firun</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
+	 * The '<em><b>Firun</b></em>' literal value. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 *
 	 * @see #FIRUN
 	 * @model name="Firun"
 	 * @generated
@@ -131,9 +131,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int FIRUN_VALUE = 4;
 	/**
-	 * The '<em><b>Hesinde</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
+	 * The '<em><b>Hesinde</b></em>' literal value. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 *
 	 * @see #HESINDE
 	 * @model name="Hesinde"
 	 * @generated
@@ -141,9 +141,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int HESINDE_VALUE = 5;
 	/**
-	 * The '<em><b>Ingerimm</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>Ingerimm</b></em>' literal value. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 *
 	 * @see #INGERIMM
 	 * @model name="Ingerimm"
 	 * @generated
@@ -151,9 +151,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int INGERIMM_VALUE = 6;
 	/**
-	 * The '<em><b>Peraine</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
+	 * The '<em><b>Peraine</b></em>' literal value. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 *
 	 * @see #PERAINE
 	 * @model name="Peraine"
 	 * @generated
@@ -161,9 +161,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int PERAINE_VALUE = 7;
 	/**
-	 * The '<em><b>Phex</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
+	 * The '<em><b>Phex</b></em>' literal value. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 *
 	 * @see #PHEX
 	 * @model name="Phex"
 	 * @generated
@@ -171,9 +171,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int PHEX_VALUE = 8;
 	/**
-	 * The '<em><b>Praios</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
+	 * The '<em><b>Praios</b></em>' literal value. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 *
 	 * @see #PRAIOS
 	 * @model name="Praios"
 	 * @generated
@@ -181,9 +181,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int PRAIOS_VALUE = 9;
 	/**
-	 * The '<em><b>Rahja</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
+	 * The '<em><b>Rahja</b></em>' literal value. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 *
 	 * @see #RAHJA
 	 * @model name="Rahja"
 	 * @generated
@@ -191,9 +191,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int RAHJA_VALUE = 10;
 	/**
-	 * The '<em><b>Rondra</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
+	 * The '<em><b>Rondra</b></em>' literal value. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 *
 	 * @see #RONDRA
 	 * @model name="Rondra"
 	 * @generated
@@ -201,9 +201,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int RONDRA_VALUE = 11;
 	/**
-	 * The '<em><b>Schicksalspunkte</b></em>' literal value.
-	 * <!-- begin-user-doc
+	 * The '<em><b>Schicksalspunkte</b></em>' literal value. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
+	 *
 	 * @see #SCHICKSALSPUNKTE
 	 * @model name="Schicksalspunkte"
 	 * @generated
@@ -211,9 +211,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int SCHICKSALSPUNKTE_VALUE = 12;
 	/**
-	 * The '<em><b>Segen</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
+	 * The '<em><b>Segen</b></em>' literal value. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 *
 	 * @see #SEGEN
 	 * @model name="Segen"
 	 * @generated
@@ -221,9 +221,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int SEGEN_VALUE = 13;
 	/**
-	 * The '<em><b>Travia</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
+	 * The '<em><b>Travia</b></em>' literal value. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 *
 	 * @see #TRAVIA
 	 * @model name="Travia"
 	 * @generated
@@ -231,9 +231,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int TRAVIA_VALUE = 14;
 	/**
-	 * The '<em><b>Tsa</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
+	 * The '<em><b>Tsa</b></em>' literal value. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 *
 	 * @see #TSA
 	 * @model name="Tsa"
 	 * @generated
@@ -241,9 +241,9 @@ public enum PredefinedType implements Enumerator {
 	 */
 	public static final int TSA_VALUE = 15;
 	/**
-	 * The '<em><b>Zauber Mod</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>Zauber Mod</b></em>' literal value. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 *
 	 * @see #ZAUBER_MOD
 	 * @model name="ZauberMod"
 	 * @generated
@@ -256,42 +256,27 @@ public enum PredefinedType implements Enumerator {
 	 *
 	 * @generated
 	 */
-	private static final PredefinedType[] VALUES_ARRAY = new PredefinedType[] {
-			BORON,
-			EFFERD,
-			ENTRUECKUNG_TRANCE,
-			FERNKAMPF_MOD,
-			FIRUN,
-			HESINDE,
-			INGERIMM,
-			PERAINE,
-			PHEX,
-			PRAIOS,
-			RAHJA,
-			RONDRA,
-			SCHICKSALSPUNKTE,
-			SEGEN,
-			TRAVIA,
-			TSA,
-			ZAUBER_MOD,
-		};
+	private static final PredefinedType[] VALUES_ARRAY = new PredefinedType[] { BORON, EFFERD, ENTRUECKUNG_TRANCE, FERNKAMPF_MOD, FIRUN, HESINDE, INGERIMM, PERAINE, PHEX, PRAIOS, RAHJA, RONDRA, SCHICKSALSPUNKTE, SEGEN, TRAVIA, TSA, ZAUBER_MOD, };
 	/**
-	 * A public read-only list of all the '<em><b>Predefined Type</b></em>' enumerators.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * A public read-only list of all the '<em><b>Predefined Type</b></em>'
+	 * enumerators. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	public static final List<PredefinedType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>Predefined Type</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param literal the literal.
+	 * Returns the '<em><b>Predefined Type</b></em>' literal with the specified
+	 * literal value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @param literal
+	 *            the literal.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static PredefinedType get(String literal) {
+	public static PredefinedType get(final String literal) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			PredefinedType result = VALUES_ARRAY[i];
+			final PredefinedType result = VALUES_ARRAY[i];
 			if (result.toString().equals(literal)) {
 				return result;
 			}
@@ -300,15 +285,17 @@ public enum PredefinedType implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Predefined Type</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param name the name.
+	 * Returns the '<em><b>Predefined Type</b></em>' literal with the specified
+	 * name. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @param name
+	 *            the name.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static PredefinedType getByName(String name) {
+	public static PredefinedType getByName(final String name) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			PredefinedType result = VALUES_ARRAY[i];
+			final PredefinedType result = VALUES_ARRAY[i];
 			if (result.getName().equals(name)) {
 				return result;
 			}
@@ -317,58 +304,80 @@ public enum PredefinedType implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Predefined Type</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the integer value.
+	 * Returns the '<em><b>Predefined Type</b></em>' literal with the specified
+	 * integer value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @param value
+	 *            the integer value.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static PredefinedType get(int value) {
+	public static PredefinedType get(final int value) {
 		switch (value) {
-			case BORON_VALUE: return BORON;
-			case EFFERD_VALUE: return EFFERD;
-			case ENTRUECKUNG_TRANCE_VALUE: return ENTRUECKUNG_TRANCE;
-			case FERNKAMPF_MOD_VALUE: return FERNKAMPF_MOD;
-			case FIRUN_VALUE: return FIRUN;
-			case HESINDE_VALUE: return HESINDE;
-			case INGERIMM_VALUE: return INGERIMM;
-			case PERAINE_VALUE: return PERAINE;
-			case PHEX_VALUE: return PHEX;
-			case PRAIOS_VALUE: return PRAIOS;
-			case RAHJA_VALUE: return RAHJA;
-			case RONDRA_VALUE: return RONDRA;
-			case SCHICKSALSPUNKTE_VALUE: return SCHICKSALSPUNKTE;
-			case SEGEN_VALUE: return SEGEN;
-			case TRAVIA_VALUE: return TRAVIA;
-			case TSA_VALUE: return TSA;
-			case ZAUBER_MOD_VALUE: return ZAUBER_MOD;
+		case BORON_VALUE:
+			return BORON;
+		case EFFERD_VALUE:
+			return EFFERD;
+		case ENTRUECKUNG_TRANCE_VALUE:
+			return ENTRUECKUNG_TRANCE;
+		case FERNKAMPF_MOD_VALUE:
+			return FERNKAMPF_MOD;
+		case FIRUN_VALUE:
+			return FIRUN;
+		case HESINDE_VALUE:
+			return HESINDE;
+		case INGERIMM_VALUE:
+			return INGERIMM;
+		case PERAINE_VALUE:
+			return PERAINE;
+		case PHEX_VALUE:
+			return PHEX;
+		case PRAIOS_VALUE:
+			return PRAIOS;
+		case RAHJA_VALUE:
+			return RAHJA;
+		case RONDRA_VALUE:
+			return RONDRA;
+		case SCHICKSALSPUNKTE_VALUE:
+			return SCHICKSALSPUNKTE;
+		case SEGEN_VALUE:
+			return SEGEN;
+		case TRAVIA_VALUE:
+			return TRAVIA;
+		case TSA_VALUE:
+			return TSA;
+		case ZAUBER_MOD_VALUE:
+			return ZAUBER_MOD;
 		}
 		return null;
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private final int value;
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private final String name;
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc --> <!--
+	 * Only this class can construct instances. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 *
 	 * @generated
 	 */
-	private PredefinedType(int value, String name, String literal) {
+	private PredefinedType(final int value, final String name, final String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -376,34 +385,38 @@ public enum PredefinedType implements Enumerator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public int getValue() {
-	  return value;
+		return value;
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public String getName() {
-	  return name;
+		return name;
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public String getLiteral() {
-	  return literal;
+		return literal;
 	}
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string
+	 * representation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override

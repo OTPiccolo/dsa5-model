@@ -14,10 +14,13 @@ public interface TableRow extends EObject {
 	TableContent getTable();
 
 	/**
-	 * Sets the value of the '{@link de.otpiccolo.dsa5.model.pdf.content.TableRow#getTable <em>Table</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Table</em>' container reference.
+	 * Sets the value of the
+	 * '{@link de.otpiccolo.dsa5.model.pdf.content.TableRow#getTable
+	 * <em>Table</em>}' container reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 *
+	 * @param value
+	 *            the new value of the '<em>Table</em>' container reference.
 	 * @see #getTable()
 	 * @generated
 	 */

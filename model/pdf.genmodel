@@ -3,8 +3,10 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dsa5-model/src/main/java" editDirectory="/dsa5-model.edit/src/main/java"
     editorDirectory="/dsa5-model.editor/src/main/java" modelPluginID="dsa5-model"
     modelName="Pdf" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
-    testsDirectory="/dsa5-model.tests/src/main/java" importerID="org.eclipse.emf.importer.java"
-    complianceLevel="17.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+    codeFormatting="true" commentFormatting="true" testsDirectory="/dsa5-model.tests/src/main/java"
+    importerID="org.eclipse.emf.importer.java" complianceLevel="17.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true" cleanup="true" autoExpandProperties="2"
+    expandAllAction="true" collapseAllAction="true">
   <foreignModel>@model</foreignModel>
   <genPackages prefix="Pdf" basePackage="de.otpiccolo.dsa5.model" disposableProviderFactory="true"
       ecorePackage="pdf.ecore#/">
@@ -16,7 +18,7 @@
     </genClasses>
   </genPackages>
   <genPackages prefix="Content" basePackage="de.otpiccolo.dsa5.model.pdf" disposableProviderFactory="true"
-      ecorePackage="content.ecore#/">
+      multipleEditorPages="false" generateModelWizard="false" fileExtensions="" ecorePackage="content.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="content.ecore#//ContentType">
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/AllgemeineSonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Elfenlied"/>
@@ -61,7 +63,7 @@
     </genClasses>
     <genClasses ecoreClass="content.ecore#//TableCell">
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference content.ecore#//TableCell/row"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference content.ecore#//TableCell/content"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference content.ecore#//TableCell/content"/>
     </genClasses>
     <genClasses ecoreClass="content.ecore#//TableContent">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference content.ecore#//TableContent/rows"/>
@@ -74,7 +76,7 @@
     </genClasses>
   </genPackages>
   <genPackages prefix="Page" basePackage="de.otpiccolo.dsa5.model.pdf" disposableProviderFactory="true"
-      ecorePackage="page.ecore#/">
+      multipleEditorPages="false" generateModelWizard="false" ecorePackage="page.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="page.ecore#//PredefinedType">
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Boron"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Efferd"/>

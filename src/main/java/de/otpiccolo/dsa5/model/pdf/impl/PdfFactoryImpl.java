@@ -2,7 +2,6 @@
  */
 package de.otpiccolo.dsa5.model.pdf.impl;
 
-import de.otpiccolo.dsa5.model.pdf.*;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -14,35 +13,34 @@ import de.otpiccolo.dsa5.model.pdf.PdfFactory;
 import de.otpiccolo.dsa5.model.pdf.PdfPackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model <b>Factory</b>.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model <b>Factory</b>. <!--
+ * end-user-doc -->
+ *
  * @generated
  */
 public class PdfFactoryImpl extends EFactoryImpl implements PdfFactory {
 	/**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates the default factory implementation. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 *
 	 * @generated
 	 */
 	public static PdfFactory init() {
 		try {
-			PdfFactory thePdfFactory = (PdfFactory)EPackage.Registry.INSTANCE.getEFactory(PdfPackage.eNS_URI);
+			final PdfFactory thePdfFactory = (PdfFactory) EPackage.Registry.INSTANCE.getEFactory(PdfPackage.eNS_URI);
 			if (thePdfFactory != null) {
 				return thePdfFactory;
 			}
-		}
-		catch (Exception exception) {
+		} catch (final Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new PdfFactoryImpl();
 	}
 
 	/**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an instance of the factory. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 *
 	 * @generated
 	 */
 	public PdfFactoryImpl() {
@@ -50,43 +48,44 @@ public class PdfFactoryImpl extends EFactoryImpl implements PdfFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
-	public EObject create(EClass eClass) {
+	public EObject create(final EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case PdfPackage.PDF: return createPdf();
-			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		case PdfPackage.PDF:
+			return createPdf();
+		default:
+			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public Pdf createPdf() {
-		PdfImpl pdf = new PdfImpl();
+		final PdfImpl pdf = new PdfImpl();
 		return pdf;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public PdfPackage getPdfPackage() {
-		return (PdfPackage)getEPackage();
+		return (PdfPackage) getEPackage();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @deprecated
 	 * @generated
 	 */
@@ -95,4 +94,4 @@ public class PdfFactoryImpl extends EFactoryImpl implements PdfFactory {
 		return PdfPackage.eINSTANCE;
 	}
 
-} //PdfFactoryImpl
+} // PdfFactoryImpl

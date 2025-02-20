@@ -2,34 +2,32 @@
  */
 package de.otpiccolo.dsa5.model.pdf.content.impl;
 
-import de.otpiccolo.dsa5.model.pdf.content.ContentPackage;
-import de.otpiccolo.dsa5.model.pdf.content.ImageContent;
-
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import de.otpiccolo.dsa5.model.pdf.content.ContentPackage;
+import de.otpiccolo.dsa5.model.pdf.content.ImageContent;
+
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Image Content</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Image
+ * Content</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link de.otpiccolo.dsa5.model.pdf.content.impl.ImageContentImpl#getImagePath <em>Image Path</em>}</li>
+ * <li>{@link de.otpiccolo.dsa5.model.pdf.content.impl.ImageContentImpl#getImagePath
+ * <em>Image Path</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class ImageContentImpl extends MinimalEObjectImpl.Container implements ImageContent {
 	/**
-	 * The default value of the '{@link #getImagePath() <em>Image Path</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getImagePath() <em>Image Path</em>}'
+	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @see #getImagePath()
 	 * @generated
 	 * @ordered
@@ -37,9 +35,9 @@ public class ImageContentImpl extends MinimalEObjectImpl.Container implements Im
 	protected static final String IMAGE_PATH_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getImagePath() <em>Image Path</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getImagePath() <em>Image Path</em>}'
+	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @see #getImagePath()
 	 * @generated
 	 * @ordered
@@ -47,8 +45,8 @@ public class ImageContentImpl extends MinimalEObjectImpl.Container implements Im
 	protected String imagePath = IMAGE_PATH_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	protected ImageContentImpl() {
@@ -56,8 +54,8 @@ public class ImageContentImpl extends MinimalEObjectImpl.Container implements Im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
@@ -66,8 +64,8 @@ public class ImageContentImpl extends MinimalEObjectImpl.Container implements Im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
@@ -76,90 +74,93 @@ public class ImageContentImpl extends MinimalEObjectImpl.Container implements Im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
-	public void setImagePath(String newImagePath) {
-		String oldImagePath = imagePath;
+	public void setImagePath(final String newImagePath) {
+		final String oldImagePath = imagePath;
 		imagePath = newImagePath;
-		if (eNotificationRequired())
+		if (eNotificationRequired()) {
 			eNotify(new ENotificationImpl(this, Notification.SET, ContentPackage.IMAGE_CONTENT__IMAGE_PATH, oldImagePath, imagePath));
+		}
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
 		switch (featureID) {
-			case ContentPackage.IMAGE_CONTENT__IMAGE_PATH:
-				return getImagePath();
+		case ContentPackage.IMAGE_CONTENT__IMAGE_PATH:
+			return getImagePath();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue) {
+	public void eSet(final int featureID, final Object newValue) {
 		switch (featureID) {
-			case ContentPackage.IMAGE_CONTENT__IMAGE_PATH:
-				setImagePath((String)newValue);
-				return;
+		case ContentPackage.IMAGE_CONTENT__IMAGE_PATH:
+			setImagePath((String) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID) {
+	public void eUnset(final int featureID) {
 		switch (featureID) {
-			case ContentPackage.IMAGE_CONTENT__IMAGE_PATH:
-				setImagePath(IMAGE_PATH_EDEFAULT);
-				return;
+		case ContentPackage.IMAGE_CONTENT__IMAGE_PATH:
+			setImagePath(IMAGE_PATH_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID) {
+	public boolean eIsSet(final int featureID) {
 		switch (featureID) {
-			case ContentPackage.IMAGE_CONTENT__IMAGE_PATH:
-				return IMAGE_PATH_EDEFAULT == null ? imagePath != null : !IMAGE_PATH_EDEFAULT.equals(imagePath);
+		case ContentPackage.IMAGE_CONTENT__IMAGE_PATH:
+			return IMAGE_PATH_EDEFAULT == null ? imagePath != null : !IMAGE_PATH_EDEFAULT.equals(imagePath);
 		}
 		return super.eIsSet(featureID);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+		if (eIsProxy()) {
+			return super.toString();
+		}
 
-		StringBuilder result = new StringBuilder(super.toString());
+		final StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (imagePath: ");
 		result.append(imagePath);
 		result.append(')');
 		return result.toString();
 	}
 
-} //ImageContentImpl
+} // ImageContentImpl

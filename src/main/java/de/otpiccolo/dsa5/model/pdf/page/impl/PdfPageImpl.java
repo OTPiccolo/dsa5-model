@@ -2,25 +2,25 @@
  */
 package de.otpiccolo.dsa5.model.pdf.page.impl;
 
-import de.otpiccolo.dsa5.model.pdf.page.PagePackage;
-import de.otpiccolo.dsa5.model.pdf.page.PdfPage;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import de.otpiccolo.dsa5.model.pdf.page.PagePackage;
+import de.otpiccolo.dsa5.model.pdf.page.PdfPage;
+
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Pdf Page</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Pdf
+ * Page</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link de.otpiccolo.dsa5.model.pdf.page.impl.PdfPageImpl#getFile <em>File</em>}</li>
- *   <li>{@link de.otpiccolo.dsa5.model.pdf.page.impl.PdfPageImpl#getPageNumbers <em>Page Numbers</em>}</li>
+ * <li>{@link de.otpiccolo.dsa5.model.pdf.page.impl.PdfPageImpl#getFile
+ * <em>File</em>}</li>
+ * <li>{@link de.otpiccolo.dsa5.model.pdf.page.impl.PdfPageImpl#getPageNumbers
+ * <em>Page Numbers</em>}</li>
  * </ul>
  *
  * @generated
@@ -28,8 +28,8 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage {
 	/**
 	 * The default value of the '{@link #getFile() <em>File</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @see #getFile()
 	 * @generated
 	 * @ordered
@@ -38,8 +38,8 @@ public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage
 
 	/**
 	 * The cached value of the '{@link #getFile() <em>File</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @see #getFile()
 	 * @generated
 	 * @ordered
@@ -47,9 +47,9 @@ public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage
 	protected String file = FILE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getPageNumbers() <em>Page Numbers</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getPageNumbers() <em>Page
+	 * Numbers</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @see #getPageNumbers()
 	 * @generated
 	 * @ordered
@@ -57,9 +57,9 @@ public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage
 	protected static final String PAGE_NUMBERS_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getPageNumbers() <em>Page Numbers</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getPageNumbers() <em>Page Numbers</em>}'
+	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @see #getPageNumbers()
 	 * @generated
 	 * @ordered
@@ -67,8 +67,8 @@ public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage
 	protected String pageNumbers = PAGE_NUMBERS_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	protected PdfPageImpl() {
@@ -76,8 +76,8 @@ public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
@@ -86,8 +86,8 @@ public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
@@ -96,21 +96,22 @@ public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
-	public void setFile(String newFile) {
-		String oldFile = file;
+	public void setFile(final String newFile) {
+		final String oldFile = file;
 		file = newFile;
-		if (eNotificationRequired())
+		if (eNotificationRequired()) {
 			eNotify(new ENotificationImpl(this, Notification.SET, PagePackage.PDF_PAGE__FILE, oldFile, file));
+		}
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
@@ -119,97 +120,100 @@ public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
-	public void setPageNumbers(String newPageNumbers) {
-		String oldPageNumbers = pageNumbers;
+	public void setPageNumbers(final String newPageNumbers) {
+		final String oldPageNumbers = pageNumbers;
 		pageNumbers = newPageNumbers;
-		if (eNotificationRequired())
+		if (eNotificationRequired()) {
 			eNotify(new ENotificationImpl(this, Notification.SET, PagePackage.PDF_PAGE__PAGE_NUMBERS, oldPageNumbers, pageNumbers));
+		}
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
 		switch (featureID) {
-			case PagePackage.PDF_PAGE__FILE:
-				return getFile();
-			case PagePackage.PDF_PAGE__PAGE_NUMBERS:
-				return getPageNumbers();
+		case PagePackage.PDF_PAGE__FILE:
+			return getFile();
+		case PagePackage.PDF_PAGE__PAGE_NUMBERS:
+			return getPageNumbers();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue) {
+	public void eSet(final int featureID, final Object newValue) {
 		switch (featureID) {
-			case PagePackage.PDF_PAGE__FILE:
-				setFile((String)newValue);
-				return;
-			case PagePackage.PDF_PAGE__PAGE_NUMBERS:
-				setPageNumbers((String)newValue);
-				return;
+		case PagePackage.PDF_PAGE__FILE:
+			setFile((String) newValue);
+			return;
+		case PagePackage.PDF_PAGE__PAGE_NUMBERS:
+			setPageNumbers((String) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID) {
+	public void eUnset(final int featureID) {
 		switch (featureID) {
-			case PagePackage.PDF_PAGE__FILE:
-				setFile(FILE_EDEFAULT);
-				return;
-			case PagePackage.PDF_PAGE__PAGE_NUMBERS:
-				setPageNumbers(PAGE_NUMBERS_EDEFAULT);
-				return;
+		case PagePackage.PDF_PAGE__FILE:
+			setFile(FILE_EDEFAULT);
+			return;
+		case PagePackage.PDF_PAGE__PAGE_NUMBERS:
+			setPageNumbers(PAGE_NUMBERS_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID) {
+	public boolean eIsSet(final int featureID) {
 		switch (featureID) {
-			case PagePackage.PDF_PAGE__FILE:
-				return FILE_EDEFAULT == null ? file != null : !FILE_EDEFAULT.equals(file);
-			case PagePackage.PDF_PAGE__PAGE_NUMBERS:
-				return PAGE_NUMBERS_EDEFAULT == null ? pageNumbers != null : !PAGE_NUMBERS_EDEFAULT.equals(pageNumbers);
+		case PagePackage.PDF_PAGE__FILE:
+			return FILE_EDEFAULT == null ? file != null : !FILE_EDEFAULT.equals(file);
+		case PagePackage.PDF_PAGE__PAGE_NUMBERS:
+			return PAGE_NUMBERS_EDEFAULT == null ? pageNumbers != null : !PAGE_NUMBERS_EDEFAULT.equals(pageNumbers);
 		}
 		return super.eIsSet(featureID);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+		if (eIsProxy()) {
+			return super.toString();
+		}
 
-		StringBuilder result = new StringBuilder(super.toString());
+		final StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (file: ");
 		result.append(file);
 		result.append(", pageNumbers: ");
@@ -218,4 +222,4 @@ public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage
 		return result.toString();
 	}
 
-} //PdfPageImpl
+} // PdfPageImpl

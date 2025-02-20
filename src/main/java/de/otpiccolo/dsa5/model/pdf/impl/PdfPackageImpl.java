@@ -2,6 +2,12 @@
  */
 package de.otpiccolo.dsa5.model.pdf.impl;
 
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.impl.EPackageImpl;
+
 import de.otpiccolo.dsa5.model.pdf.Pdf;
 import de.otpiccolo.dsa5.model.pdf.PdfFactory;
 import de.otpiccolo.dsa5.model.pdf.PdfPackage;
@@ -9,37 +15,31 @@ import de.otpiccolo.dsa5.model.pdf.content.ContentPackage;
 import de.otpiccolo.dsa5.model.pdf.content.impl.ContentPackageImpl;
 import de.otpiccolo.dsa5.model.pdf.page.PagePackage;
 import de.otpiccolo.dsa5.model.pdf.page.impl.PagePackageImpl;
-import org.eclipse.emf.ecore.EAttribute;
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.emf.ecore.EReference;
-
-import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model <b>Package</b>.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model <b>Package</b>. <!--
+ * end-user-doc -->
+ *
  * @generated
  */
 public class PdfPackageImpl extends EPackageImpl implements PdfPackage {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private EClass pdfEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
-	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
-	 * package URI value.
-	 * <p>Note: the correct way to create the package is via the static
-	 * factory method {@link #init init()}, which also performs
-	 * initialization of the package, or returns the registered package,
-	 * if one already exists.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the
+	 * package package URI value.
+	 * <p>
+	 * Note: the correct way to create the package is via the static factory
+	 * method {@link #init init()}, which also performs initialization of the
+	 * package, or returns the registered package, if one already exists. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
 	 * @see de.otpiccolo.dsa5.model.pdf.PdfPackage#eNS_URI
 	 * @see #init()
@@ -48,39 +48,45 @@ public class PdfPackageImpl extends EPackageImpl implements PdfPackage {
 	private PdfPackageImpl() {
 		super(eNS_URI, PdfFactory.eINSTANCE);
 	}
+
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private static boolean isInited = false;
 
 	/**
-	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 * Creates, registers, and initializes the <b>Package</b> for this model,
+	 * and for any others upon which it depends.
 	 *
-	 * <p>This method is used to initialize {@link PdfPackage#eINSTANCE} when that field is accessed.
-	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <p>
+	 * This method is used to initialize {@link PdfPackage#eINSTANCE} when that
+	 * field is accessed. Clients should not invoke it directly. Instead, they
+	 * should simply access that field to obtain the package. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @see #eNS_URI
 	 * @see #createPackageContents()
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
 	public static PdfPackage init() {
-		if (isInited) return (PdfPackage)EPackage.Registry.INSTANCE.getEPackage(PdfPackage.eNS_URI);
+		if (isInited) {
+			return (PdfPackage) EPackage.Registry.INSTANCE.getEPackage(PdfPackage.eNS_URI);
+		}
 
 		// Obtain or create and register package
-		Object registeredPdfPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
-		PdfPackageImpl thePdfPackage = registeredPdfPackage instanceof PdfPackageImpl ? (PdfPackageImpl)registeredPdfPackage : new PdfPackageImpl();
+		final Object registeredPdfPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		final PdfPackageImpl thePdfPackage = registeredPdfPackage instanceof PdfPackageImpl ? (PdfPackageImpl) registeredPdfPackage : new PdfPackageImpl();
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ContentPackage.eNS_URI);
-		ContentPackageImpl theContentPackage = (ContentPackageImpl)(registeredPackage instanceof ContentPackageImpl ? registeredPackage : ContentPackage.eINSTANCE);
+		final ContentPackageImpl theContentPackage = (ContentPackageImpl) (registeredPackage instanceof ContentPackageImpl ? registeredPackage : ContentPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PagePackage.eNS_URI);
-		PagePackageImpl thePagePackage = (PagePackageImpl)(registeredPackage instanceof PagePackageImpl ? registeredPackage : PagePackage.eINSTANCE);
+		final PagePackageImpl thePagePackage = (PagePackageImpl) (registeredPackage instanceof PagePackageImpl ? registeredPackage : PagePackage.eINSTANCE);
 
 		// Create package meta-data objects
 		thePdfPackage.createPackageContents();
@@ -101,8 +107,8 @@ public class PdfPackageImpl extends EPackageImpl implements PdfPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
@@ -111,71 +117,73 @@ public class PdfPackageImpl extends EPackageImpl implements PdfPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public EAttribute getPdf_Version() {
-		return (EAttribute)pdfEClass.getEStructuralFeatures().get(0);
+		return (EAttribute) pdfEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public EReference getPdf_Pages() {
-		return (EReference)pdfEClass.getEStructuralFeatures().get(1);
+		return (EReference) pdfEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public EAttribute getPdf_PdfSource() {
-		return (EAttribute)pdfEClass.getEStructuralFeatures().get(2);
+		return (EAttribute) pdfEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public EAttribute getPdf_PdfDestination() {
-		return (EAttribute)pdfEClass.getEStructuralFeatures().get(3);
+		return (EAttribute) pdfEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
 	public PdfFactory getPdfFactory() {
-		return (PdfFactory)getEFactoryInstance();
+		return (PdfFactory) getEFactoryInstance();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private boolean isCreated = false;
 
 	/**
-	 * Creates the meta-model objects for the package.  This method is
-	 * guarded to have no affect on any invocation but its first.
-	 * <!-- begin-user-doc -->
+	 * Creates the meta-model objects for the package. This method is guarded to
+	 * have no affect on any invocation but its first. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	public void createPackageContents() {
-		if (isCreated) return;
+		if (isCreated) {
+			return;
+		}
 		isCreated = true;
 
 		// Create classes and their features
@@ -187,21 +195,23 @@ public class PdfPackageImpl extends EPackageImpl implements PdfPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	private boolean isInitialized = false;
 
 	/**
-	 * Complete the initialization of the package and its meta-model.  This
-	 * method is guarded to have no affect on any invocation but its first.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Complete the initialization of the package and its meta-model. This
+	 * method is guarded to have no affect on any invocation but its first. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	public void initializePackageContents() {
-		if (isInitialized) return;
+		if (isInitialized) {
+			return;
+		}
 		isInitialized = true;
 
 		// Initialize package
@@ -210,7 +220,7 @@ public class PdfPackageImpl extends EPackageImpl implements PdfPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		PagePackage thePagePackage = (PagePackage)EPackage.Registry.INSTANCE.getEPackage(PagePackage.eNS_URI);
+		final PagePackage thePagePackage = (PagePackage) EPackage.Registry.INSTANCE.getEPackage(PagePackage.eNS_URI);
 
 		// Create type parameters
 
@@ -229,4 +239,4 @@ public class PdfPackageImpl extends EPackageImpl implements PdfPackage {
 		createResource(eNS_URI);
 	}
 
-} //PdfPackageImpl
+} // PdfPackageImpl

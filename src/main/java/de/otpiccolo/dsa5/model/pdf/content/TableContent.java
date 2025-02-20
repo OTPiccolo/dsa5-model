@@ -20,10 +20,13 @@ public interface TableContent extends PageContent {
 	int getColumnCount();
 
 	/**
-	 * Sets the value of the '{@link de.otpiccolo.dsa5.model.pdf.content.TableContent#getColumnCount <em>Column Count</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+	 * Sets the value of the
+	 * '{@link de.otpiccolo.dsa5.model.pdf.content.TableContent#getColumnCount
+	 * <em>Column Count</em>}' attribute. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * @param value the new value of the '<em>Column Count</em>' attribute.
+	 *
+	 * @param value
+	 *            the new value of the '<em>Column Count</em>' attribute.
 	 * @see #getColumnCount()
 	 * @generated
 	 */
@@ -35,10 +38,13 @@ public interface TableContent extends PageContent {
 	String getColumnWeights();
 
 	/**
-	 * Sets the value of the '{@link de.otpiccolo.dsa5.model.pdf.content.TableContent#getColumnWeights <em>Column Weights</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Column Weights</em>' attribute.
+	 * Sets the value of the
+	 * '{@link de.otpiccolo.dsa5.model.pdf.content.TableContent#getColumnWeights
+	 * <em>Column Weights</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 *
+	 * @param value
+	 *            the new value of the '<em>Column Weights</em>' attribute.
 	 * @see #getColumnWeights()
 	 * @generated
 	 */
