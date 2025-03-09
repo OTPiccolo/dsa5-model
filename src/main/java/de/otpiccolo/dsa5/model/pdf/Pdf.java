@@ -11,6 +11,22 @@ import de.otpiccolo.dsa5.model.pdf.page.Page;
 public interface Pdf extends EObject {
 
 	/**
+	 * @model
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link de.otpiccolo.dsa5.model.pdf.Pdf#getName
+	 * <em>Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @param value
+	 *            the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+	/**
 	 * @model default="1.0"
 	 */
 	String getVersion();

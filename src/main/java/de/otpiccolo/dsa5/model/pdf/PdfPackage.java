@@ -101,13 +101,22 @@ public interface PdfPackage extends EPackage {
 	int PDF__PDF_DESTINATION = 3;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 * @ordered
+	 */
+	int PDF__NAME = 4;
+
+	/**
 	 * The number of structural features of the '<em>Pdf</em>' class. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 *
 	 * @generated
 	 * @ordered
 	 */
-	int PDF_FEATURE_COUNT = 4;
+	int PDF_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>Pdf</em>' class. <!-- begin-user-doc
@@ -178,6 +187,18 @@ public interface PdfPackage extends EPackage {
 	EAttribute getPdf_PdfDestination();
 
 	/**
+	 * Returns the meta object for the attribute
+	 * '{@link de.otpiccolo.dsa5.model.pdf.Pdf#getName <em>Name</em>}'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see de.otpiccolo.dsa5.model.pdf.Pdf#getName()
+	 * @see #getPdf()
+	 * @generated
+	 */
+	EAttribute getPdf_Name();
+
+	/**
 	 * Returns the factory that creates the instances of the model. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 *
@@ -243,6 +264,14 @@ public interface PdfPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PDF__PDF_DESTINATION = eINSTANCE.getPdf_PdfDestination();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute
+		 * feature. <!-- begin-user-doc --> <!-- end-user-doc -->
+		 *
+		 * @generated
+		 */
+		EAttribute PDF__NAME = eINSTANCE.getPdf_Name();
 
 	}
 

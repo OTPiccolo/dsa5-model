@@ -33,6 +33,8 @@ import de.otpiccolo.dsa5.model.pdf.page.Page;
  * Source</em>}</li>
  * <li>{@link de.otpiccolo.dsa5.model.pdf.impl.PdfImpl#getPdfDestination <em>Pdf
  * Destination</em>}</li>
+ * <li>{@link de.otpiccolo.dsa5.model.pdf.impl.PdfImpl#getName
+ * <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -109,6 +111,26 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 	 * @ordered
 	 */
 	protected String pdfDestination = PDF_DESTINATION_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -220,6 +242,30 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 	 * @generated
 	 */
 	@Override
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	@Override
+	public void setName(final String newName) {
+		final String oldName = name;
+		name = newName;
+		if (eNotificationRequired()) {
+			eNotify(new ENotificationImpl(this, Notification.SET, PdfPackage.PDF__NAME, oldName, name));
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID, final NotificationChain msgs) {
 		switch (featureID) {
 		case PdfPackage.PDF__PAGES:
@@ -244,6 +290,8 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 			return getPdfSource();
 		case PdfPackage.PDF__PDF_DESTINATION:
 			return getPdfDestination();
+		case PdfPackage.PDF__NAME:
+			return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -270,6 +318,9 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 		case PdfPackage.PDF__PDF_DESTINATION:
 			setPdfDestination((String) newValue);
 			return;
+		case PdfPackage.PDF__NAME:
+			setName((String) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -294,6 +345,9 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 		case PdfPackage.PDF__PDF_DESTINATION:
 			setPdfDestination(PDF_DESTINATION_EDEFAULT);
 			return;
+		case PdfPackage.PDF__NAME:
+			setName(NAME_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -314,6 +368,8 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 			return PDF_SOURCE_EDEFAULT == null ? pdfSource != null : !PDF_SOURCE_EDEFAULT.equals(pdfSource);
 		case PdfPackage.PDF__PDF_DESTINATION:
 			return PDF_DESTINATION_EDEFAULT == null ? pdfDestination != null : !PDF_DESTINATION_EDEFAULT.equals(pdfDestination);
+		case PdfPackage.PDF__NAME:
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -336,6 +392,8 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 		result.append(pdfSource);
 		result.append(", pdfDestination: ");
 		result.append(pdfDestination);
+		result.append(", name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}

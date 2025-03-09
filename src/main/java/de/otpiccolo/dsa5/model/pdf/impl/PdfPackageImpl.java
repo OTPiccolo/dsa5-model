@@ -162,6 +162,16 @@ public class PdfPackageImpl extends EPackageImpl implements PdfPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getPdf_Name() {
+		return (EAttribute) pdfEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	@Override
 	public PdfFactory getPdfFactory() {
 		return (PdfFactory) getEFactoryInstance();
 	}
@@ -192,6 +202,7 @@ public class PdfPackageImpl extends EPackageImpl implements PdfPackage {
 		createEReference(pdfEClass, PDF__PAGES);
 		createEAttribute(pdfEClass, PDF__PDF_SOURCE);
 		createEAttribute(pdfEClass, PDF__PDF_DESTINATION);
+		createEAttribute(pdfEClass, PDF__NAME);
 	}
 
 	/**
@@ -234,6 +245,7 @@ public class PdfPackageImpl extends EPackageImpl implements PdfPackage {
 		initEReference(getPdf_Pages(), thePagePackage.getPage(), null, "pages", null, 0, -1, Pdf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPdf_PdfSource(), ecorePackage.getEString(), "pdfSource", null, 0, 1, Pdf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPdf_PdfDestination(), ecorePackage.getEString(), "pdfDestination", null, 0, 1, Pdf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPdf_Name(), ecorePackage.getEString(), "name", null, 0, 1, Pdf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
