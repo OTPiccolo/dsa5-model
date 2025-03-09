@@ -11,7 +11,7 @@
   <genPackages prefix="Pdf" basePackage="de.otpiccolo.dsa5.model" disposableProviderFactory="true"
       ecorePackage="pdf.ecore#/">
     <genClasses ecoreClass="pdf.ecore#//Pdf">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pdf.ecore#//Pdf/version"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute pdf.ecore#//Pdf/version"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pdf.ecore#//Pdf/pages"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pdf.ecore#//Pdf/pdfSource"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pdf.ecore#//Pdf/pdfDestination"/>
