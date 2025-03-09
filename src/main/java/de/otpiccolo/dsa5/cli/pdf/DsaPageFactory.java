@@ -86,16 +86,16 @@ public class DsaPageFactory {
 	}
 
 	private static final de.otpiccolo.dsa5.pdf.page.PdfPage createPdfPage(final PdfPage page) throws FactoryException {
-		final String fileName = page.getFile();
-		if (fileName == null) {
-			throw new FactoryException("Could not create PDF page. No file name was given.");
+		final File file = page.getFile();
+		if (file == null) {
+			throw new FactoryException("Could not create PDF page. No file was given.");
 		}
 
 		PDDocument doc;
 		try {
-			doc = Loader.loadPDF(new File(fileName));
+			doc = Loader.loadPDF(file);
 		} catch (final IOException e) {
-			throw new FactoryException("Could not read PDF from \"" + fileName + "\". Error message: " + e.getMessage(), e);
+			throw new FactoryException("Could not read PDF from \"" + file + "\". Error message: " + e.getMessage(), e);
 		}
 
 		final de.otpiccolo.dsa5.pdf.page.PdfPage createdPage = new de.otpiccolo.dsa5.pdf.page.PdfPage(doc);

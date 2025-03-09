@@ -2,8 +2,11 @@
  */
 package de.otpiccolo.dsa5.model.pdf.impl;
 
+import java.io.File;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
@@ -29,6 +32,13 @@ public class PdfPackageImpl extends EPackageImpl implements PdfPackage {
 	 * @generated
 	 */
 	private EClass pdfEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	private EDataType fileEDataType = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -172,6 +182,16 @@ public class PdfPackageImpl extends EPackageImpl implements PdfPackage {
 	 * @generated
 	 */
 	@Override
+	public EDataType getFile() {
+		return fileEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	@Override
 	public PdfFactory getPdfFactory() {
 		return (PdfFactory) getEFactoryInstance();
 	}
@@ -203,6 +223,9 @@ public class PdfPackageImpl extends EPackageImpl implements PdfPackage {
 		createEAttribute(pdfEClass, PDF__PDF_SOURCE);
 		createEAttribute(pdfEClass, PDF__PDF_DESTINATION);
 		createEAttribute(pdfEClass, PDF__NAME);
+
+		// Create data types
+		fileEDataType = createEDataType(FILE);
 	}
 
 	/**
@@ -243,9 +266,12 @@ public class PdfPackageImpl extends EPackageImpl implements PdfPackage {
 		initEClass(pdfEClass, Pdf.class, "Pdf", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPdf_Version(), ecorePackage.getEString(), "version", "1.0", 0, 1, Pdf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPdf_Pages(), thePagePackage.getPage(), null, "pages", null, 0, -1, Pdf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPdf_PdfSource(), ecorePackage.getEString(), "pdfSource", null, 0, 1, Pdf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPdf_PdfDestination(), ecorePackage.getEString(), "pdfDestination", null, 0, 1, Pdf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPdf_PdfSource(), this.getFile(), "pdfSource", null, 0, 1, Pdf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPdf_PdfDestination(), this.getFile(), "pdfDestination", null, 0, 1, Pdf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPdf_Name(), ecorePackage.getEString(), "name", null, 0, 1, Pdf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Initialize data types
+		initEDataType(fileEDataType, File.class, "File", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

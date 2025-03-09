@@ -2,6 +2,7 @@
  */
 package de.otpiccolo.dsa5.model.pdf.page.impl;
 
+import java.io.File;
 import java.util.Collection;
 
 import org.eclipse.emf.ecore.EClass;
@@ -84,6 +85,8 @@ public class PageFactoryImpl extends EFactoryImpl implements PageFactory {
 			return createPredefinedTypeFromString(eDataType, initialValue);
 		case PagePackage.COLLECTION:
 			return createCollectionFromString(eDataType, initialValue);
+		case PagePackage.FILE:
+			return createFileFromString(eDataType, initialValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -101,6 +104,8 @@ public class PageFactoryImpl extends EFactoryImpl implements PageFactory {
 			return convertPredefinedTypeToString(eDataType, instanceValue);
 		case PagePackage.COLLECTION:
 			return convertCollectionToString(eDataType, instanceValue);
+		case PagePackage.FILE:
+			return convertFileToString(eDataType, instanceValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -177,6 +182,24 @@ public class PageFactoryImpl extends EFactoryImpl implements PageFactory {
 	 */
 	public String convertCollectionToString(final EDataType eDataType, final Object instanceValue) {
 		return super.convertToString(instanceValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	public File createFileFromString(final EDataType eDataType, final String initialValue) {
+		return (File) super.createFromString(eDataType, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	public String convertFileToString(final EDataType eDataType, final Object instanceValue) {
+		return super.convertToString(eDataType, instanceValue);
 	}
 
 	/**

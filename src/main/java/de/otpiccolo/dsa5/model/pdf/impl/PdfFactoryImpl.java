@@ -2,7 +2,10 @@
  */
 package de.otpiccolo.dsa5.model.pdf.impl;
 
+import java.io.File;
+
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
@@ -68,9 +71,57 @@ public class PdfFactoryImpl extends EFactoryImpl implements PdfFactory {
 	 * @generated
 	 */
 	@Override
+	public Object createFromString(final EDataType eDataType, final String initialValue) {
+		switch (eDataType.getClassifierID()) {
+		case PdfPackage.FILE:
+			return createFileFromString(eDataType, initialValue);
+		default:
+			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	@Override
+	public String convertToString(final EDataType eDataType, final Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
+		case PdfPackage.FILE:
+			return convertFileToString(eDataType, instanceValue);
+		default:
+			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	@Override
 	public Pdf createPdf() {
 		final PdfImpl pdf = new PdfImpl();
 		return pdf;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	public File createFileFromString(final EDataType eDataType, final String initialValue) {
+		return (File) super.createFromString(eDataType, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	public String convertFileToString(final EDataType eDataType, final Object instanceValue) {
+		return super.convertToString(eDataType, instanceValue);
 	}
 
 	/**

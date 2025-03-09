@@ -2,6 +2,7 @@
  */
 package de.otpiccolo.dsa5.model.pdf.impl;
 
+import java.io.File;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -78,7 +79,7 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String PDF_SOURCE_EDEFAULT = null;
+	protected static final File PDF_SOURCE_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getPdfSource() <em>Pdf Source</em>}'
@@ -88,7 +89,7 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 	 * @generated
 	 * @ordered
 	 */
-	protected String pdfSource = PDF_SOURCE_EDEFAULT;
+	protected File pdfSource = PDF_SOURCE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getPdfDestination() <em>Pdf
@@ -99,7 +100,7 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String PDF_DESTINATION_EDEFAULT = null;
+	protected static final File PDF_DESTINATION_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getPdfDestination() <em>Pdf
@@ -110,7 +111,7 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 	 * @generated
 	 * @ordered
 	 */
-	protected String pdfDestination = PDF_DESTINATION_EDEFAULT;
+	protected File pdfDestination = PDF_DESTINATION_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -194,7 +195,7 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 	 * @generated
 	 */
 	@Override
-	public String getPdfSource() {
+	public File getPdfSource() {
 		return pdfSource;
 	}
 
@@ -204,8 +205,8 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 	 * @generated
 	 */
 	@Override
-	public void setPdfSource(final String newPdfSource) {
-		final String oldPdfSource = pdfSource;
+	public void setPdfSource(final File newPdfSource) {
+		final File oldPdfSource = pdfSource;
 		pdfSource = newPdfSource;
 		if (eNotificationRequired()) {
 			eNotify(new ENotificationImpl(this, Notification.SET, PdfPackage.PDF__PDF_SOURCE, oldPdfSource, pdfSource));
@@ -218,7 +219,7 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 	 * @generated
 	 */
 	@Override
-	public String getPdfDestination() {
+	public File getPdfDestination() {
 		return pdfDestination;
 	}
 
@@ -228,8 +229,8 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 	 * @generated
 	 */
 	@Override
-	public void setPdfDestination(final String newPdfDestination) {
-		final String oldPdfDestination = pdfDestination;
+	public void setPdfDestination(final File newPdfDestination) {
+		final File oldPdfDestination = pdfDestination;
 		pdfDestination = newPdfDestination;
 		if (eNotificationRequired()) {
 			eNotify(new ENotificationImpl(this, Notification.SET, PdfPackage.PDF__PDF_DESTINATION, oldPdfDestination, pdfDestination));
@@ -313,10 +314,10 @@ public class PdfImpl extends MinimalEObjectImpl.Container implements Pdf {
 			getPages().addAll((Collection<? extends Page>) newValue);
 			return;
 		case PdfPackage.PDF__PDF_SOURCE:
-			setPdfSource((String) newValue);
+			setPdfSource((File) newValue);
 			return;
 		case PdfPackage.PDF__PDF_DESTINATION:
-			setPdfDestination((String) newValue);
+			setPdfDestination((File) newValue);
 			return;
 		case PdfPackage.PDF__NAME:
 			setName((String) newValue);

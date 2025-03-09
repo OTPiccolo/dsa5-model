@@ -238,6 +238,16 @@ public interface PagePackage extends EPackage {
 	int COLLECTION = 5;
 
 	/**
+	 * The meta object id for the '<em>File</em>' data type. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 *
+	 * @see java.io.File
+	 * @see de.otpiccolo.dsa5.model.pdf.page.impl.PagePackageImpl#getFile()
+	 * @generated
+	 */
+	int FILE = 6;
+
+	/**
 	 * Returns the meta object for class
 	 * '{@link de.otpiccolo.dsa5.model.pdf.page.DefaultPage <em>Default
 	 * Page</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -363,6 +373,17 @@ public interface PagePackage extends EPackage {
 	 * @generated
 	 */
 	EDataType getCollection();
+
+	/**
+	 * Returns the meta object for data type '{@link java.io.File
+	 * <em>File</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @return the meta object for data type '<em>File</em>'.
+	 * @see java.io.File
+	 * @model instanceClass="java.io.File"
+	 * @generated
+	 */
+	EDataType getFile();
 
 	/**
 	 * Returns the factory that creates the instances of the model. <!--
@@ -496,6 +517,16 @@ public interface PagePackage extends EPackage {
 		 * @generated
 		 */
 		EDataType COLLECTION = eINSTANCE.getCollection();
+
+		/**
+		 * The meta object literal for the '<em>File</em>' data type. <!--
+		 * begin-user-doc --> <!-- end-user-doc -->
+		 *
+		 * @see java.io.File
+		 * @see de.otpiccolo.dsa5.model.pdf.page.impl.PagePackageImpl#getFile()
+		 * @generated
+		 */
+		EDataType FILE = eINSTANCE.getFile();
 
 	}
 

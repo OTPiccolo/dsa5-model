@@ -36,8 +36,8 @@ public class ModelTest {
 
 		final Thyra thyra = new Thyra();
 		final Pdf pdf = thyra.getPdf();
-		pdf.setPdfSource(source);
-		pdf.setPdfDestination(destination);
+		pdf.setPdfSource(new File(source));
+		pdf.setPdfDestination(new File(destination));
 
 		savePdf(pdf, saveFile);
 

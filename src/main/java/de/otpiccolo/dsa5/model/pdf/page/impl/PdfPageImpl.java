@@ -2,6 +2,8 @@
  */
 package de.otpiccolo.dsa5.model.pdf.page.impl;
 
+import java.io.File;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
@@ -34,7 +36,7 @@ public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String FILE_EDEFAULT = null;
+	protected static final File FILE_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getFile() <em>File</em>}' attribute.
@@ -44,7 +46,7 @@ public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage
 	 * @generated
 	 * @ordered
 	 */
-	protected String file = FILE_EDEFAULT;
+	protected File file = FILE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getPageNumbers() <em>Page
@@ -91,7 +93,7 @@ public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage
 	 * @generated
 	 */
 	@Override
-	public String getFile() {
+	public File getFile() {
 		return file;
 	}
 
@@ -101,8 +103,8 @@ public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage
 	 * @generated
 	 */
 	@Override
-	public void setFile(final String newFile) {
-		final String oldFile = file;
+	public void setFile(final File newFile) {
+		final File oldFile = file;
 		file = newFile;
 		if (eNotificationRequired()) {
 			eNotify(new ENotificationImpl(this, Notification.SET, PagePackage.PDF_PAGE__FILE, oldFile, file));
@@ -159,7 +161,7 @@ public class PdfPageImpl extends MinimalEObjectImpl.Container implements PdfPage
 	public void eSet(final int featureID, final Object newValue) {
 		switch (featureID) {
 		case PagePackage.PDF_PAGE__FILE:
-			setFile((String) newValue);
+			setFile((File) newValue);
 			return;
 		case PagePackage.PDF_PAGE__PAGE_NUMBERS:
 			setPageNumbers((String) newValue);

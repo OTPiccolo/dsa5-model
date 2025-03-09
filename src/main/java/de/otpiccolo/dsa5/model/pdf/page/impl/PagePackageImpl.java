@@ -2,6 +2,7 @@
  */
 package de.otpiccolo.dsa5.model.pdf.page.impl;
 
+import java.io.File;
 import java.util.Collection;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -72,6 +73,13 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 	 * @generated
 	 */
 	private EDataType collectionEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	private EDataType fileEDataType = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -265,6 +273,16 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 	 * @generated
 	 */
 	@Override
+	public EDataType getFile() {
+		return fileEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	@Override
 	public PageFactory getPageFactory() {
 		return (PageFactory) getEFactoryInstance();
 	}
@@ -308,6 +326,7 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 
 		// Create data types
 		collectionEDataType = createEDataType(COLLECTION);
+		fileEDataType = createEDataType(FILE);
 	}
 
 	/**
@@ -356,7 +375,7 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 		initEClass(pageEClass, Page.class, "Page", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(pdfPageEClass, PdfPage.class, "PdfPage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getPdfPage_File(), ecorePackage.getEString(), "file", null, 0, 1, PdfPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPdfPage_File(), this.getFile(), "file", null, 0, 1, PdfPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPdfPage_PageNumbers(), ecorePackage.getEString(), "pageNumbers", null, 0, 1, PdfPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(predefinedPageEClass, PredefinedPage.class, "PredefinedPage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -384,6 +403,7 @@ public class PagePackageImpl extends EPackageImpl implements PagePackage {
 
 		// Initialize data types
 		initEDataType(collectionEDataType, Collection.class, "Collection", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
+		initEDataType(fileEDataType, File.class, "File", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

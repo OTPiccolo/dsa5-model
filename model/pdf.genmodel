@@ -10,6 +10,7 @@
   <foreignModel>@model</foreignModel>
   <genPackages prefix="Pdf" basePackage="de.otpiccolo.dsa5.model" disposableProviderFactory="true"
       ecorePackage="pdf.ecore#/">
+    <genDataTypes ecoreDataType="pdf.ecore#//File"/>
     <genClasses ecoreClass="pdf.ecore#//Pdf">
       <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute pdf.ecore#//Pdf/version"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pdf.ecore#//Pdf/pages"/>
@@ -100,6 +101,7 @@
     <genDataTypes ecoreDataType="page.ecore#//Collection">
       <genTypeParameters ecoreTypeParameter="page.ecore#//Collection/T"/>
     </genDataTypes>
+    <genDataTypes ecoreDataType="page.ecore#//File"/>
     <genClasses ecoreClass="page.ecore#//DefaultPage">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference page.ecore#//DefaultPage/contents"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute page.ecore#//DefaultPage/title"/>

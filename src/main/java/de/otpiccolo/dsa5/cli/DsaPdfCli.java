@@ -50,11 +50,11 @@ public class DsaPdfCli {
 
 		if (args.length > 1) {
 			System.out.println("Ziel-Datei zusätzlich spezifiziert: " + args[1]);
-			pdf.setPdfDestination(args[1]);
+			pdf.setPdfDestination(new File(args[1]));
 		}
 		if (args.length > 2) {
 			System.out.println("Urspungs-Datei zusätzlich spezifiziert: " + args[2]);
-			pdf.setPdfSource(args[2]);
+			pdf.setPdfSource(new File(args[2]));
 		}
 
 		final DsaPdfCli cli = new DsaPdfCli(pdf);
@@ -70,7 +70,7 @@ public class DsaPdfCli {
 		System.out.println("Generierung des PDFs erfolgreich beendet.");
 		try {
 			System.out.println("Öffne PDF zur Ansicht.");
-			Desktop.getDesktop().open(new File(pdf.getPdfDestination()));
+			Desktop.getDesktop().open(pdf.getPdfDestination());
 		} catch (final IOException e) {
 			e.printStackTrace();
 			System.exit(2);

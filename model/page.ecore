@@ -9,7 +9,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Page" abstract="true" interface="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="PdfPage" eSuperTypes="#//Page">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="file" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="file" eType="#//File"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="pageNumbers" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PredefinedPage" eSuperTypes="#//Page">
@@ -38,4 +38,5 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Collection" instanceClassName="java.util.Collection">
     <eTypeParameters name="T"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="File" instanceClassName="java.io.File"/>
 </ecore:EPackage>

@@ -4,6 +4,7 @@ package de.otpiccolo.dsa5.model.pdf;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -128,6 +129,16 @@ public interface PdfPackage extends EPackage {
 	int PDF_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '<em>File</em>' data type. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 *
+	 * @see java.io.File
+	 * @see de.otpiccolo.dsa5.model.pdf.impl.PdfPackageImpl#getFile()
+	 * @generated
+	 */
+	int FILE = 1;
+
+	/**
 	 * Returns the meta object for class '{@link de.otpiccolo.dsa5.model.pdf.Pdf
 	 * <em>Pdf</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 *
@@ -197,6 +208,17 @@ public interface PdfPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getPdf_Name();
+
+	/**
+	 * Returns the meta object for data type '{@link java.io.File
+	 * <em>File</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @return the meta object for data type '<em>File</em>'.
+	 * @see java.io.File
+	 * @model instanceClass="java.io.File"
+	 * @generated
+	 */
+	EDataType getFile();
 
 	/**
 	 * Returns the factory that creates the instances of the model. <!--
@@ -272,6 +294,16 @@ public interface PdfPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PDF__NAME = eINSTANCE.getPdf_Name();
+
+		/**
+		 * The meta object literal for the '<em>File</em>' data type. <!--
+		 * begin-user-doc --> <!-- end-user-doc -->
+		 *
+		 * @see java.io.File
+		 * @see de.otpiccolo.dsa5.model.pdf.impl.PdfPackageImpl#getFile()
+		 * @generated
+		 */
+		EDataType FILE = eINSTANCE.getFile();
 
 	}
 

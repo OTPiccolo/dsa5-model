@@ -1,5 +1,7 @@
 package de.otpiccolo.dsa5.model.pdf.page;
 
+import java.io.File;
+
 /**
  * @model abstract="false" interface="false"
  */
@@ -8,7 +10,7 @@ public interface PdfPage extends Page {
 	/**
 	 * @model
 	 */
-	String getFile();
+	File getFile();
 
 	/**
 	 * Sets the value of the
@@ -20,7 +22,7 @@ public interface PdfPage extends Page {
 	 * @see #getFile()
 	 * @generated
 	 */
-	void setFile(String value);
+	void setFile(File value);
 
 	/**
 	 * @model

@@ -85,13 +85,13 @@ public class DsaPageFactoryTest {
 	@BeforeEach
 	public final void beforeEach() throws Exception {
 		pdf = PdfFactory.eINSTANCE.createPdf();
-		pdf.setPdfDestination(outputFile.getCanonicalPath());
+		pdf.setPdfDestination(outputFile);
 	}
 
 	@Test
 	public final void testPdfPage_FullPdf() throws Exception {
 		final PdfPage page = PageFactory.eINSTANCE.createPdfPage();
-		page.setFile(pdfFile.getCanonicalPath());
+		page.setFile(pdfFile);
 		pdf.getPages().add(page);
 
 		final PdfWriter writer = PdfBridge.createWriter(pdf);
@@ -118,7 +118,7 @@ public class DsaPageFactoryTest {
 	@Test
 	public final void testPdfPage_SomePages() throws Exception {
 		final PdfPage page = PageFactory.eINSTANCE.createPdfPage();
-		page.setFile(pdfFile.getCanonicalPath());
+		page.setFile(pdfFile);
 		// Page numbers done on purpose with strange formatting and duplicate
 		// entries.
 		page.setPageNumbers("1, 3, 4-6,9, 11 - 15, 17, 8, 12-13");
