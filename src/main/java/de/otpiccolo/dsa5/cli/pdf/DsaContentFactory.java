@@ -149,7 +149,7 @@ public class DsaContentFactory {
 	}
 
 	private static final IDataWriter createImageContent(final ImageContent content) {
-		return new ImageWriter(new ImageReader().readData(content.getImagePath()));
+		return new ImageWriter(new ImageReader().readData(content.getImageFile().getAbsolutePath()));
 	}
 
 	private static final IDataWriter createTableContent(final TableContent content) throws FactoryException {

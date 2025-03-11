@@ -1,5 +1,6 @@
 package de.otpiccolo.dsa5.model.cli.person;
 
+import java.io.File;
 import java.util.Arrays;
 
 import org.eclipse.emf.common.util.EList;
@@ -75,7 +76,7 @@ public class Thyra {
 
 		final DefaultPage imagePage = createPage(null);
 		final ImageContent imageContent = ContentFactory.eINSTANCE.createImageContent();
-		imageContent.setImagePath("D:\\RP\\Bilder\\Thyra.jpg");
+		imageContent.setImageFile(new File("D:\\RP\\Bilder\\Thyra.jpg"));
 		imagePage.getContents().add(imageContent);
 		pages.add(imagePage);
 	}

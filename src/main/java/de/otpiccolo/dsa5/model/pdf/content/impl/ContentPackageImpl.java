@@ -2,8 +2,11 @@
  */
 package de.otpiccolo.dsa5.model.pdf.content.impl;
 
+import java.io.File;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -86,6 +89,13 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 	 * @generated
 	 */
 	private EEnum contentTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	private EDataType fileEDataType = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -249,7 +259,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getImageContent_ImagePath() {
+	public EAttribute getImageContent_ImageFile() {
 		return (EAttribute) imageContentEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -369,6 +379,16 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 	 * @generated
 	 */
 	@Override
+	public EDataType getFile() {
+		return fileEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	@Override
 	public ContentFactory getContentFactory() {
 		return (ContentFactory) getEFactoryInstance();
 	}
@@ -405,7 +425,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		createEAttribute(paragraphContentEClass, PARAGRAPH_CONTENT__PARAGRAPHS);
 
 		imageContentEClass = createEClass(IMAGE_CONTENT);
-		createEAttribute(imageContentEClass, IMAGE_CONTENT__IMAGE_PATH);
+		createEAttribute(imageContentEClass, IMAGE_CONTENT__IMAGE_FILE);
 
 		tableCellEClass = createEClass(TABLE_CELL);
 		createEReference(tableCellEClass, TABLE_CELL__ROW);
@@ -422,6 +442,9 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 
 		// Create enums
 		contentTypeEEnum = createEEnum(CONTENT_TYPE);
+
+		// Create data types
+		fileEDataType = createEDataType(FILE);
 	}
 
 	/**
@@ -471,7 +494,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		initEAttribute(getParagraphContent_Paragraphs(), ecorePackage.getEString(), "paragraphs", null, 0, -1, ParagraphContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(imageContentEClass, ImageContent.class, "ImageContent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getImageContent_ImagePath(), ecorePackage.getEString(), "imagePath", null, 0, 1, ImageContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getImageContent_ImageFile(), this.getFile(), "imageFile", null, 0, 1, ImageContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(tableCellEClass, TableCell.class, "TableCell", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTableCell_Row(), this.getTableRow(), this.getTableRow_Cells(), "row", null, 0, 1, TableCell.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -516,6 +539,9 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		addEEnumLiteral(contentTypeEEnum, ContentType.ZAUBERTRICK);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ZEREMONIALGEGENSTAND);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ZEREMONIE);
+
+		// Initialize data types
+		initEDataType(fileEDataType, File.class, "File", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

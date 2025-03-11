@@ -61,7 +61,7 @@ public class ModelTest {
 		map.add(PagePackage.eINSTANCE.getDefaultPage_Title(), infoElement);
 		map.add(PagePackage.eINSTANCE.getPdfPage_File(), infoElement);
 		map.add(ContentPackage.eINSTANCE.getParagraphContent_Title(), infoElement);
-		map.add(ContentPackage.eINSTANCE.getImageContent_ImagePath(), infoElement);
+		map.add(ContentPackage.eINSTANCE.getImageContent_ImageFile(), infoElement);
 		saveOptions.put(XMLResource.OPTION_XML_MAP, map);
 		saveOptions.put(XMLResource.OPTION_EXTENDED_META_DATA, Boolean.TRUE);
 

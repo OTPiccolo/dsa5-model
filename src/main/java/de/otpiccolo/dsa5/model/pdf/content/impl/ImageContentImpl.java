@@ -2,6 +2,8 @@
  */
 package de.otpiccolo.dsa5.model.pdf.content.impl;
 
+import java.io.File;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
@@ -17,32 +19,32 @@ import de.otpiccolo.dsa5.model.pdf.content.ImageContent;
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link de.otpiccolo.dsa5.model.pdf.content.impl.ImageContentImpl#getImagePath
- * <em>Image Path</em>}</li>
+ * <li>{@link de.otpiccolo.dsa5.model.pdf.content.impl.ImageContentImpl#getImageFile
+ * <em>Image File</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class ImageContentImpl extends MinimalEObjectImpl.Container implements ImageContent {
 	/**
-	 * The default value of the '{@link #getImagePath() <em>Image Path</em>}'
+	 * The default value of the '{@link #getImageFile() <em>Image File</em>}'
 	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 *
-	 * @see #getImagePath()
+	 * @see #getImageFile()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String IMAGE_PATH_EDEFAULT = null;
+	protected static final File IMAGE_FILE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getImagePath() <em>Image Path</em>}'
+	 * The cached value of the '{@link #getImageFile() <em>Image File</em>}'
 	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 *
-	 * @see #getImagePath()
+	 * @see #getImageFile()
 	 * @generated
 	 * @ordered
 	 */
-	protected String imagePath = IMAGE_PATH_EDEFAULT;
+	protected File imageFile = IMAGE_FILE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -69,8 +71,8 @@ public class ImageContentImpl extends MinimalEObjectImpl.Container implements Im
 	 * @generated
 	 */
 	@Override
-	public String getImagePath() {
-		return imagePath;
+	public File getImageFile() {
+		return imageFile;
 	}
 
 	/**
@@ -79,11 +81,11 @@ public class ImageContentImpl extends MinimalEObjectImpl.Container implements Im
 	 * @generated
 	 */
 	@Override
-	public void setImagePath(final String newImagePath) {
-		final String oldImagePath = imagePath;
-		imagePath = newImagePath;
+	public void setImageFile(final File newImageFile) {
+		final File oldImageFile = imageFile;
+		imageFile = newImageFile;
 		if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(this, Notification.SET, ContentPackage.IMAGE_CONTENT__IMAGE_PATH, oldImagePath, imagePath));
+			eNotify(new ENotificationImpl(this, Notification.SET, ContentPackage.IMAGE_CONTENT__IMAGE_FILE, oldImageFile, imageFile));
 		}
 	}
 
@@ -95,8 +97,8 @@ public class ImageContentImpl extends MinimalEObjectImpl.Container implements Im
 	@Override
 	public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
 		switch (featureID) {
-		case ContentPackage.IMAGE_CONTENT__IMAGE_PATH:
-			return getImagePath();
+		case ContentPackage.IMAGE_CONTENT__IMAGE_FILE:
+			return getImageFile();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -109,8 +111,8 @@ public class ImageContentImpl extends MinimalEObjectImpl.Container implements Im
 	@Override
 	public void eSet(final int featureID, final Object newValue) {
 		switch (featureID) {
-		case ContentPackage.IMAGE_CONTENT__IMAGE_PATH:
-			setImagePath((String) newValue);
+		case ContentPackage.IMAGE_CONTENT__IMAGE_FILE:
+			setImageFile((File) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -124,8 +126,8 @@ public class ImageContentImpl extends MinimalEObjectImpl.Container implements Im
 	@Override
 	public void eUnset(final int featureID) {
 		switch (featureID) {
-		case ContentPackage.IMAGE_CONTENT__IMAGE_PATH:
-			setImagePath(IMAGE_PATH_EDEFAULT);
+		case ContentPackage.IMAGE_CONTENT__IMAGE_FILE:
+			setImageFile(IMAGE_FILE_EDEFAULT);
 			return;
 		}
 		super.eUnset(featureID);
@@ -139,8 +141,8 @@ public class ImageContentImpl extends MinimalEObjectImpl.Container implements Im
 	@Override
 	public boolean eIsSet(final int featureID) {
 		switch (featureID) {
-		case ContentPackage.IMAGE_CONTENT__IMAGE_PATH:
-			return IMAGE_PATH_EDEFAULT == null ? imagePath != null : !IMAGE_PATH_EDEFAULT.equals(imagePath);
+		case ContentPackage.IMAGE_CONTENT__IMAGE_FILE:
+			return IMAGE_FILE_EDEFAULT == null ? imageFile != null : !IMAGE_FILE_EDEFAULT.equals(imageFile);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -157,8 +159,8 @@ public class ImageContentImpl extends MinimalEObjectImpl.Container implements Im
 		}
 
 		final StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (imagePath: ");
-		result.append(imagePath);
+		result.append(" (imageFile: ");
+		result.append(imageFile);
 		result.append(')');
 		return result.toString();
 	}

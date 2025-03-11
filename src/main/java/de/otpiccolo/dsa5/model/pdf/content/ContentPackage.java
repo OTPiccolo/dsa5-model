@@ -4,6 +4,7 @@ package de.otpiccolo.dsa5.model.pdf.content;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -191,13 +192,13 @@ public interface ContentPackage extends EPackage {
 	int IMAGE_CONTENT = 3;
 
 	/**
-	 * The feature id for the '<em><b>Image Path</b></em>' attribute. <!--
+	 * The feature id for the '<em><b>Image File</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 *
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_CONTENT__IMAGE_PATH = PAGE_CONTENT_FEATURE_COUNT + 0;
+	int IMAGE_CONTENT__IMAGE_FILE = PAGE_CONTENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Image Content</em>' class.
@@ -380,6 +381,16 @@ public interface ContentPackage extends EPackage {
 	int CONTENT_TYPE = 7;
 
 	/**
+	 * The meta object id for the '<em>File</em>' data type. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 *
+	 * @see java.io.File
+	 * @see de.otpiccolo.dsa5.model.pdf.content.impl.ContentPackageImpl#getFile()
+	 * @generated
+	 */
+	int FILE = 8;
+
+	/**
 	 * Returns the meta object for class
 	 * '{@link de.otpiccolo.dsa5.model.pdf.content.DataContent <em>Data
 	 * Content</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -474,15 +485,15 @@ public interface ContentPackage extends EPackage {
 
 	/**
 	 * Returns the meta object for the attribute
-	 * '{@link de.otpiccolo.dsa5.model.pdf.content.ImageContent#getImagePath
-	 * <em>Image Path</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * '{@link de.otpiccolo.dsa5.model.pdf.content.ImageContent#getImageFile
+	 * <em>Image File</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 *
-	 * @return the meta object for the attribute '<em>Image Path</em>'.
-	 * @see de.otpiccolo.dsa5.model.pdf.content.ImageContent#getImagePath()
+	 * @return the meta object for the attribute '<em>Image File</em>'.
+	 * @see de.otpiccolo.dsa5.model.pdf.content.ImageContent#getImageFile()
 	 * @see #getImageContent()
 	 * @generated
 	 */
-	EAttribute getImageContent_ImagePath();
+	EAttribute getImageContent_ImageFile();
 
 	/**
 	 * Returns the meta object for class
@@ -615,6 +626,17 @@ public interface ContentPackage extends EPackage {
 	EEnum getContentType();
 
 	/**
+	 * Returns the meta object for data type '{@link java.io.File
+	 * <em>File</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @return the meta object for data type '<em>File</em>'.
+	 * @see java.io.File
+	 * @model instanceClass="java.io.File"
+	 * @generated
+	 */
+	EDataType getFile();
+
+	/**
 	 * Returns the factory that creates the instances of the model. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 *
@@ -718,12 +740,12 @@ public interface ContentPackage extends EPackage {
 		EClass IMAGE_CONTENT = eINSTANCE.getImageContent();
 
 		/**
-		 * The meta object literal for the '<em><b>Image Path</b></em>'
+		 * The meta object literal for the '<em><b>Image File</b></em>'
 		 * attribute feature. <!-- begin-user-doc --> <!-- end-user-doc -->
 		 *
 		 * @generated
 		 */
-		EAttribute IMAGE_CONTENT__IMAGE_PATH = eINSTANCE.getImageContent_ImagePath();
+		EAttribute IMAGE_CONTENT__IMAGE_FILE = eINSTANCE.getImageContent_ImageFile();
 
 		/**
 		 * The meta object literal for the
@@ -827,6 +849,16 @@ public interface ContentPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum CONTENT_TYPE = eINSTANCE.getContentType();
+
+		/**
+		 * The meta object literal for the '<em>File</em>' data type. <!--
+		 * begin-user-doc --> <!-- end-user-doc -->
+		 *
+		 * @see java.io.File
+		 * @see de.otpiccolo.dsa5.model.pdf.content.impl.ContentPackageImpl#getFile()
+		 * @generated
+		 */
+		EDataType FILE = eINSTANCE.getFile();
 
 	}
 

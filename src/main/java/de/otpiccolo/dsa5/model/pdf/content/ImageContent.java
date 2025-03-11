@@ -1,5 +1,7 @@
 package de.otpiccolo.dsa5.model.pdf.content;
 
+import java.io.File;
+
 /**
  * Content to display an image.
  *
@@ -8,25 +10,24 @@ package de.otpiccolo.dsa5.model.pdf.content;
 public interface ImageContent extends PageContent {
 
 	/**
-	 * Gets the path to the image to use.
+	 * Gets the file of the image to use.
 	 *
-	 * @return The path to the image to use. Can either be a file path, or a
-	 *         URL.
+	 * @return The file of the image to use.
 	 * @model
 	 */
-	String getImagePath();
+	File getImageFile();
 
 	/**
 	 * Sets the value of the
-	 * '{@link de.otpiccolo.dsa5.model.pdf.content.ImageContent#getImagePath
-	 * <em>Image Path</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * '{@link de.otpiccolo.dsa5.model.pdf.content.ImageContent#getImageFile
+	 * <em>Image File</em>}' attribute. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
 	 *
 	 * @param value
-	 *            the new value of the '<em>Image Path</em>' attribute.
-	 * @see #getImagePath()
+	 *            the new value of the '<em>Image File</em>' attribute.
+	 * @see #getImageFile()
 	 * @generated
 	 */
-	void setImagePath(String value);
+	void setImageFile(File value);
 
 }

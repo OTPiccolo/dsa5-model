@@ -2,6 +2,8 @@
  */
 package de.otpiccolo.dsa5.model.pdf.content.impl;
 
+import java.io.File;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
@@ -89,6 +91,8 @@ public class ContentFactoryImpl extends EFactoryImpl implements ContentFactory {
 		switch (eDataType.getClassifierID()) {
 		case ContentPackage.CONTENT_TYPE:
 			return createContentTypeFromString(eDataType, initialValue);
+		case ContentPackage.FILE:
+			return createFileFromString(eDataType, initialValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -104,6 +108,8 @@ public class ContentFactoryImpl extends EFactoryImpl implements ContentFactory {
 		switch (eDataType.getClassifierID()) {
 		case ContentPackage.CONTENT_TYPE:
 			return convertContentTypeToString(eDataType, instanceValue);
+		case ContentPackage.FILE:
+			return convertFileToString(eDataType, instanceValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -195,6 +201,24 @@ public class ContentFactoryImpl extends EFactoryImpl implements ContentFactory {
 	 */
 	public String convertContentTypeToString(final EDataType eDataType, final Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	public File createFileFromString(final EDataType eDataType, final String initialValue) {
+		return (File) super.createFromString(eDataType, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @generated
+	 */
+	public String convertFileToString(final EDataType eDataType, final Object instanceValue) {
+		return super.convertToString(eDataType, instanceValue);
 	}
 
 	/**

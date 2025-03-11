@@ -14,7 +14,7 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ImageContent" eSuperTypes="#//PageContent">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="imagePath" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="imageFile" eType="#//File"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TableCell">
     <eStructuralFeatures xsi:type="ecore:EReference" name="row" eType="#//TableRow"
@@ -64,4 +64,5 @@
     <eLiterals name="Zeremonialgegenstand" value="26"/>
     <eLiterals name="Zeremonie" value="27"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="File" instanceClassName="java.io.File"/>
 </ecore:EPackage>

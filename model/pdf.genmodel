@@ -51,6 +51,7 @@
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zeremonialgegenstand"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zeremonie"/>
     </genEnums>
+    <genDataTypes ecoreDataType="content.ecore#//File"/>
     <genClasses ecoreClass="content.ecore#//DataContent">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//DataContent/content"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//DataContent/contentType"/>
@@ -61,7 +62,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//ParagraphContent/paragraphs"/>
     </genClasses>
     <genClasses ecoreClass="content.ecore#//ImageContent">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//ImageContent/imagePath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute content.ecore#//ImageContent/imageFile"/>
     </genClasses>
     <genClasses ecoreClass="content.ecore#//TableCell">
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference content.ecore#//TableCell/row"/>
