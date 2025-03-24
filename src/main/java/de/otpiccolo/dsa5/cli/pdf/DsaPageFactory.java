@@ -8,9 +8,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.pdfbox.Loader;
-import org.apache.pdfbox.pdmodel.PDDocument;
-
 import de.otpiccolo.dsa5.model.pdf.content.PageContent;
 import de.otpiccolo.dsa5.model.pdf.page.DefaultPage;
 import de.otpiccolo.dsa5.model.pdf.page.Page;
@@ -91,14 +88,12 @@ public class DsaPageFactory {
 			throw new FactoryException("Could not create PDF page. No file was given.");
 		}
 
-		PDDocument doc;
+		final de.otpiccolo.dsa5.pdf.page.PdfPage createdPage;
 		try {
-			doc = Loader.loadPDF(file);
+			createdPage = de.otpiccolo.dsa5.pdf.page.PdfPage.create(file);
 		} catch (final IOException e) {
 			throw new FactoryException("Could not read PDF from \"" + file + "\". Error message: " + e.getMessage(), e);
 		}
-
-		final de.otpiccolo.dsa5.pdf.page.PdfPage createdPage = new de.otpiccolo.dsa5.pdf.page.PdfPage(doc);
 		if (page.getPageNumbers() != null) {
 			createdPage.getPageIndices().addAll(createPageIndices(page.getPageNumbers()));
 		}
