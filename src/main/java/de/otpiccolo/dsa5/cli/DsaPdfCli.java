@@ -15,7 +15,6 @@ import de.otpiccolo.dsa5.cli.pdf.FactoryException;
 import de.otpiccolo.dsa5.cli.pdf.PdfBridge;
 import de.otpiccolo.dsa5.model.pdf.Pdf;
 import de.otpiccolo.dsa5.model.pdf.PdfPackage;
-import de.otpiccolo.dsa5.pdf.PdfWriter;
 
 /**
  * CLI to write PDF from a character file.
@@ -129,8 +128,7 @@ public class DsaPdfCli {
 	 *             If an exception happens creating the content of the PDF.
 	 */
 	public void writePdf() throws IOException, FactoryException {
-		final PdfWriter writer = PdfBridge.createWriter(pdf);
-		writer.writeDocument();
+		PdfBridge.writePdf(pdf);
 	}
 
 }

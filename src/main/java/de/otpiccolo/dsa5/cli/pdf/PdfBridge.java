@@ -1,5 +1,6 @@
 package de.otpiccolo.dsa5.cli.pdf;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,24 +18,6 @@ import de.otpiccolo.dsa5.pdf.page.IPage;
 public class PdfBridge {
 
 	/**
-	 * Creates the writer to write a PDF, from the given pdf model.
-	 *
-	 * @param pdf
-	 *            The model describing what to write to the PDF.
-	 * @return A writer for the PDF.
-	 * @throws FactoryException
-	 *             If the PDF writer could not be created because of data
-	 *             problems.
-	 */
-	public static final PdfWriter createWriter(final Pdf pdf) throws FactoryException {
-		final PdfWriter writer = new PdfWriter();
-		writer.setDestination(pdf.getPdfDestination());
-		writer.setSource(pdf.getPdfSource());
-		writer.setPages(createPageStream(pdf.getPages()));
-		return writer;
-	}
-
-	/**
 	 * Writes the give pdf model to a PDF.
 	 *
 	 * @param pdf
@@ -45,7 +28,31 @@ public class PdfBridge {
 	 *             If the PDF could not be created because of data problems.
 	 */
 	public static final void writePdf(final Pdf pdf) throws IOException, FactoryException {
-		createWriter(pdf).writeDocument();
+		writePdf(pdf, pdf.getPdfDestination(), pdf.getPdfSource());
+	}
+
+	/**
+	 * Writes the give pdf model to a PDF.
+	 *
+	 * @param pdf
+	 *            the model describing what to write to the PDF.
+	 * @param destination
+	 *            Use the given destination instead of the one given in the pdf
+	 *            model. If <code>null</code> is given, no PDF will be written.
+	 * @param source
+	 *            Use the given source instead of the one given in the pdf
+	 *            model. If <code>null</code> ist given, no source will be used.
+	 * @throws IOException
+	 *             If the PDF file could not be written.
+	 * @throws FactoryException
+	 *             If the PDF could not be created because of data problems.
+	 */
+	public static final void writePdf(final Pdf pdf, final File destination, final File source) throws IOException, FactoryException {
+		final PdfWriter writer = new PdfWriter();
+		writer.setDestination(destination);
+		writer.setSource(source);
+		writer.setPages(createPageStream(pdf.getPages()));
+		writer.writeDocument();
 	}
 
 	private static final Stream<IPage> createPageStream(final List<Page> pages) throws FactoryException {

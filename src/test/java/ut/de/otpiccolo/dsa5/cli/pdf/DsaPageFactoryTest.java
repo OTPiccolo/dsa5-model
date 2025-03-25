@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
-import java.util.List;
+import java.util.stream.Stream;
 
 import org.apache.pdfbox.Loader;
 import org.apache.pdfbox.io.IOUtils;
@@ -25,13 +25,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import de.otpiccolo.dsa5.cli.pdf.DsaPageFactory;
-import de.otpiccolo.dsa5.cli.pdf.PdfBridge;
 import de.otpiccolo.dsa5.model.pdf.Pdf;
 import de.otpiccolo.dsa5.model.pdf.PdfFactory;
 import de.otpiccolo.dsa5.model.pdf.page.PageFactory;
 import de.otpiccolo.dsa5.model.pdf.page.PdfPage;
 import de.otpiccolo.dsa5.pdf.PdfWriter;
-import de.otpiccolo.dsa5.pdf.page.IPage;
 import de.otpiccolo.pdf.PDUtil;
 
 /**
@@ -94,13 +92,13 @@ public class DsaPageFactoryTest {
 		page.setFile(pdfFile);
 		pdf.getPages().add(page);
 
-		final PdfWriter writer = PdfBridge.createWriter(pdf);
-		final List<IPage> pages = writer.getPages().toList();
-		assertEquals(1, pages.size());
-		final de.otpiccolo.dsa5.pdf.page.PdfPage createdPage = (de.otpiccolo.dsa5.pdf.page.PdfPage) pages.get(0);
+		final de.otpiccolo.dsa5.pdf.page.PdfPage createdPage = (de.otpiccolo.dsa5.pdf.page.PdfPage) DsaPageFactory.createPage(page);
+		// If whole PDF should be copied, no page indices are listed.
 		assertEquals(Collections.emptyList(), createdPage.getPageIndices());
 
-		writer.setPages(pages.stream());
+		final PdfWriter writer = new PdfWriter();
+		writer.setDestination(outputFile);
+		writer.setPages(Stream.of(createdPage));
 		writer.writeDocument();
 
 		final PDDocument createdPdf = Loader.loadPDF(outputFile);
@@ -124,13 +122,12 @@ public class DsaPageFactoryTest {
 		page.setPageNumbers("1, 3, 4-6,9, 11 - 15, 17, 8, 12-13");
 		pdf.getPages().add(page);
 
-		final PdfWriter writer = PdfBridge.createWriter(pdf);
-		final List<IPage> pages = writer.getPages().toList();
-		assertEquals(1, pages.size());
-		final de.otpiccolo.dsa5.pdf.page.PdfPage createdPage = (de.otpiccolo.dsa5.pdf.page.PdfPage) pages.get(0);
+		final de.otpiccolo.dsa5.pdf.page.PdfPage createdPage = (de.otpiccolo.dsa5.pdf.page.PdfPage) DsaPageFactory.createPage(page);
 		assertEquals(Arrays.asList(0, 2, 3, 4, 5, 8, 10, 11, 12, 13, 14, 16, 7, 11, 12), createdPage.getPageIndices());
 
-		writer.setPages(pages.stream());
+		final PdfWriter writer = new PdfWriter();
+		writer.setDestination(outputFile);
+		writer.setPages(Stream.of(createdPage));
 		writer.writeDocument();
 
 		final PDDocument createdPdf = Loader.loadPDF(outputFile);
