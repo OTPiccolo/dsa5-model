@@ -180,7 +180,7 @@ public class DsaContentFactory {
 			dataCells.add(writers);
 		}
 
-		return new TableWriter(new TableData(columnWeights, dataCells));
+		return new TableWriter(new TableData(dataCells, columnWeights));
 
 	}
 
