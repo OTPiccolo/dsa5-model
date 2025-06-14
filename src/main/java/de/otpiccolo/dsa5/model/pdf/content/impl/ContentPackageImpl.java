@@ -518,10 +518,10 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		addEEnumLiteral(contentTypeEEnum, ContentType.ERWEITERTER_TALENTSTIL);
 		addEEnumLiteral(contentTypeEEnum, ContentType.GEWANDZAUBER);
 		addEEnumLiteral(contentTypeEEnum, ContentType.HEXENFLUCH);
-		addEEnumLiteral(contentTypeEEnum, ContentType.KARMALE_SONDERFERTIGKEIT);
-		addEEnumLiteral(contentTypeEEnum, ContentType.KARMALE_TRADITION);
 		addEEnumLiteral(contentTypeEEnum, ContentType.KAMPFSONDERFERTIGKEIT);
 		addEEnumLiteral(contentTypeEEnum, ContentType.KAMPFSTILSONDERFERTIGKEIT);
+		addEEnumLiteral(contentTypeEEnum, ContentType.KARMALE_SONDERFERTIGKEIT);
+		addEEnumLiteral(contentTypeEEnum, ContentType.KARMALE_TRADITION);
 		addEEnumLiteral(contentTypeEEnum, ContentType.LITURGIE);
 		addEEnumLiteral(contentTypeEEnum, ContentType.LITURGIESTIL);
 		addEEnumLiteral(contentTypeEEnum, ContentType.MAGISCHE_SONDERFERTIGKEIT);

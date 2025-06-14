@@ -42,10 +42,10 @@
     <eLiterals name="ErweiterterTalentstil" value="4"/>
     <eLiterals name="Gewandzauber" value="5"/>
     <eLiterals name="Hexenfluch" value="6"/>
-    <eLiterals name="KarmaleSonderfertigkeit" value="7"/>
-    <eLiterals name="KarmaleTradition" value="8"/>
-    <eLiterals name="Kampfsonderfertigkeit" value="9"/>
-    <eLiterals name="Kampfstilsonderfertigkeit" value="10"/>
+    <eLiterals name="Kampfsonderfertigkeit" value="7"/>
+    <eLiterals name="Kampfstilsonderfertigkeit" value="8"/>
+    <eLiterals name="KarmaleSonderfertigkeit" value="9"/>
+    <eLiterals name="KarmaleTradition" value="10"/>
     <eLiterals name="Liturgie" value="11"/>
     <eLiterals name="Liturgiestil" value="12"/>
     <eLiterals name="MagischeSonderfertigkeit" value="13"/>

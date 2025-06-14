@@ -10,12 +10,16 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
+import de.otpiccolo.dsa5.data.allgemeinesonderfertigkeiten.AllgemeinesonderfertigkeitReader;
+import de.otpiccolo.dsa5.data.allgemeinesonderfertigkeiten.AllgemeinesonderfertigkeitWriter;
 import de.otpiccolo.dsa5.data.elfenlied.ElfenliedReader;
 import de.otpiccolo.dsa5.data.elfenlied.ElfenliedWriter;
 import de.otpiccolo.dsa5.data.elixiere.ElixierReader;
 import de.otpiccolo.dsa5.data.elixiere.ElixierWriter;
 import de.otpiccolo.dsa5.data.erweiterterliturgiestil.ErweiterterLiturgiestilReader;
 import de.otpiccolo.dsa5.data.erweiterterliturgiestil.ErweiterterLiturgiestilWriter;
+import de.otpiccolo.dsa5.data.erweitertertalentstil.ErweiterterTalentstilReader;
+import de.otpiccolo.dsa5.data.erweitertertalentstil.ErweiterterTalentstilWriter;
 import de.otpiccolo.dsa5.data.gewandzauber.GewandzauberReader;
 import de.otpiccolo.dsa5.data.gewandzauber.GewandzauberWriter;
 import de.otpiccolo.dsa5.data.hexenfluch.HexenfluchReader;
@@ -32,12 +36,16 @@ import de.otpiccolo.dsa5.data.liturgien.LiturgieReader;
 import de.otpiccolo.dsa5.data.liturgien.LiturgieWriter;
 import de.otpiccolo.dsa5.data.liturgiestil.LiturgiestilReader;
 import de.otpiccolo.dsa5.data.liturgiestil.LiturgiestilWriter;
+import de.otpiccolo.dsa5.data.magischesonderfertigkeiten.MagischeSonderfertigkeitReader;
+import de.otpiccolo.dsa5.data.magischesonderfertigkeiten.MagischeSonderfertigkeitWriter;
 import de.otpiccolo.dsa5.data.nachteile.NachteilReader;
 import de.otpiccolo.dsa5.data.nachteile.NachteilWriter;
 import de.otpiccolo.dsa5.data.predigt.PredigtReader;
 import de.otpiccolo.dsa5.data.predigt.PredigtWriter;
 import de.otpiccolo.dsa5.data.segen.SegenReader;
 import de.otpiccolo.dsa5.data.segen.SegenWriter;
+import de.otpiccolo.dsa5.data.talentstilsonderfertigkeiten.TalentstilsonderfertigkeitReader;
+import de.otpiccolo.dsa5.data.talentstilsonderfertigkeiten.TalentstilsonderfertigkeitWriter;
 import de.otpiccolo.dsa5.data.vision.VisionReader;
 import de.otpiccolo.dsa5.data.vision.VisionWriter;
 import de.otpiccolo.dsa5.data.vorteile.VorteilReader;
@@ -84,9 +92,11 @@ public class DsaContentFactory {
 
 	static {
 		map = new EnumMap<>(ContentType.class);
+		map.put(ContentType.ALLGEMEINE_SONDERFERTIGKEIT, d -> fillWriter(AllgemeinesonderfertigkeitWriter::new, AllgemeinesonderfertigkeitReader::new, d));
 		map.put(ContentType.ELFENLIED, d -> fillWriter(ElfenliedWriter::new, ElfenliedReader::new, d));
 		map.put(ContentType.ELIXIER, d -> fillWriter(ElixierWriter::new, ElixierReader::new, d));
 		map.put(ContentType.ERWEITERTER_LITURGIESTIL, d -> fillWriter(ErweiterterLiturgiestilWriter::new, ErweiterterLiturgiestilReader::new, d));
+		map.put(ContentType.ERWEITERTER_TALENTSTIL, d -> fillWriter(ErweiterterTalentstilWriter::new, ErweiterterTalentstilReader::new, d));
 		map.put(ContentType.GEWANDZAUBER, d -> fillWriter(GewandzauberWriter::new, GewandzauberReader::new, d));
 		map.put(ContentType.HEXENFLUCH, d -> fillWriter(HexenfluchWriter::new, HexenfluchReader::new, d));
 		map.put(ContentType.KAMPFSONDERFERTIGKEIT, d -> fillWriter(KampfsonderfertigkeitWriter::new, KampfsonderfertigkeitReader::new, d));
@@ -95,9 +105,11 @@ public class DsaContentFactory {
 		map.put(ContentType.KARMALE_TRADITION, d -> fillWriter(KarmaleTraditionWriter::new, KarmaleTraditionReader::new, d));
 		map.put(ContentType.LITURGIE, d -> fillWriter(LiturgieWriter::new, LiturgieReader::new, d));
 		map.put(ContentType.LITURGIESTIL, d -> fillWriter(LiturgiestilWriter::new, LiturgiestilReader::new, d));
+		map.put(ContentType.MAGISCHE_SONDERFERTIGKEIT, d -> fillWriter(MagischeSonderfertigkeitWriter::new, MagischeSonderfertigkeitReader::new, d));
 		map.put(ContentType.NACHTEIL, d -> fillWriter(NachteilWriter::new, NachteilReader::new, d));
 		map.put(ContentType.PREDIGT, d -> fillWriter(PredigtWriter::new, PredigtReader::new, d));
 		map.put(ContentType.SEGEN, d -> fillWriter(SegenWriter::new, SegenReader::new, d));
+		map.put(ContentType.TALENTSTIL_SONDERFERTIGKEIT, d -> fillWriter(TalentstilsonderfertigkeitWriter::new, TalentstilsonderfertigkeitReader::new, d));
 		map.put(ContentType.VISION, d -> fillWriter(VisionWriter::new, VisionReader::new, d));
 		map.put(ContentType.VORTEIL, d -> fillWriter(VorteilWriter::new, VorteilReader::new, d));
 		map.put(ContentType.ZAUBER, d -> fillWriter(ZauberWriter::new, ZauberReader::new, d));

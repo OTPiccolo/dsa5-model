@@ -39,21 +39,21 @@ public enum ContentType implements Enumerator {
 	 */
 	HEXENFLUCH(6, "Hexenfluch", "Hexenfluch"),
 	/**
-	 * @model name="KarmaleSonderfertigkeit"
-	 */
-	KARMALE_SONDERFERTIGKEIT(7, "KarmaleSonderfertigkeit", "KarmaleSonderfertigkeit"),
-	/**
-	 * @model name="KarmaleTradition"
-	 */
-	KARMALE_TRADITION(8, "KarmaleTradition", "KarmaleTradition"),
-	/**
 	 * @model name="Kampfsonderfertigkeit"
 	 */
-	KAMPFSONDERFERTIGKEIT(9, "Kampfsonderfertigkeit", "Kampfsonderfertigkeit"),
+	KAMPFSONDERFERTIGKEIT(7, "Kampfsonderfertigkeit", "Kampfsonderfertigkeit"),
 	/**
 	 * @model name="Kampfstilsonderfertigkeit"
 	 */
-	KAMPFSTILSONDERFERTIGKEIT(10, "Kampfstilsonderfertigkeit", "Kampfstilsonderfertigkeit"),
+	KAMPFSTILSONDERFERTIGKEIT(8, "Kampfstilsonderfertigkeit", "Kampfstilsonderfertigkeit"),
+	/**
+	 * @model name="KarmaleSonderfertigkeit"
+	 */
+	KARMALE_SONDERFERTIGKEIT(9, "KarmaleSonderfertigkeit", "KarmaleSonderfertigkeit"),
+	/**
+	 * @model name="KarmaleTradition"
+	 */
+	KARMALE_TRADITION(10, "KarmaleTradition", "KarmaleTradition"),
 	/**
 	 * @model name="Liturgie"
 	 */
@@ -194,26 +194,6 @@ public enum ContentType implements Enumerator {
 	 */
 	public static final int HEXENFLUCH_VALUE = 6;
 	/**
-	 * The '<em><b>Karmale Sonderfertigkeit</b></em>' literal value. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 *
-	 * @see #KARMALE_SONDERFERTIGKEIT
-	 * @model name="KarmaleSonderfertigkeit"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int KARMALE_SONDERFERTIGKEIT_VALUE = 7;
-	/**
-	 * The '<em><b>Karmale Tradition</b></em>' literal value. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 *
-	 * @see #KARMALE_TRADITION
-	 * @model name="KarmaleTradition"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int KARMALE_TRADITION_VALUE = 8;
-	/**
 	 * The '<em><b>Kampfsonderfertigkeit</b></em>' literal value. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 *
@@ -222,7 +202,7 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int KAMPFSONDERFERTIGKEIT_VALUE = 9;
+	public static final int KAMPFSONDERFERTIGKEIT_VALUE = 7;
 	/**
 	 * The '<em><b>Kampfstilsonderfertigkeit</b></em>' literal value. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -232,7 +212,27 @@ public enum ContentType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int KAMPFSTILSONDERFERTIGKEIT_VALUE = 10;
+	public static final int KAMPFSTILSONDERFERTIGKEIT_VALUE = 8;
+	/**
+	 * The '<em><b>Karmale Sonderfertigkeit</b></em>' literal value. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @see #KARMALE_SONDERFERTIGKEIT
+	 * @model name="KarmaleSonderfertigkeit"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int KARMALE_SONDERFERTIGKEIT_VALUE = 9;
+	/**
+	 * The '<em><b>Karmale Tradition</b></em>' literal value. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @see #KARMALE_TRADITION
+	 * @model name="KarmaleTradition"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int KARMALE_TRADITION_VALUE = 10;
 	/**
 	 * The '<em><b>Liturgie</b></em>' literal value. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -409,7 +409,7 @@ public enum ContentType implements Enumerator {
 	 *
 	 * @generated
 	 */
-	private static final ContentType[] VALUES_ARRAY = new ContentType[] { ALLGEMEINE_SONDERFERTIGKEIT, ELFENLIED, ELIXIER, ERWEITERTER_LITURGIESTIL, ERWEITERTER_TALENTSTIL, GEWANDZAUBER, HEXENFLUCH, KARMALE_SONDERFERTIGKEIT, KARMALE_TRADITION, KAMPFSONDERFERTIGKEIT, KAMPFSTILSONDERFERTIGKEIT, LITURGIE, LITURGIESTIL, MAGISCHE_SONDERFERTIGKEIT, NACHTEIL, PREDIGT, SEGEN, TALENTSTIL_SONDERFERTIGKEIT, VISION, VORTEIL, ZAUBER, ZAUBERERWEITERUNG, ZAUBERSTIL, ZAUBERTANZ, ZAUBER_TRADITION, ZAUBERTRICK, ZEREMONIALGEGENSTAND, ZEREMONIE, };
+	private static final ContentType[] VALUES_ARRAY = new ContentType[] { ALLGEMEINE_SONDERFERTIGKEIT, ELFENLIED, ELIXIER, ERWEITERTER_LITURGIESTIL, ERWEITERTER_TALENTSTIL, GEWANDZAUBER, HEXENFLUCH, KAMPFSONDERFERTIGKEIT, KAMPFSTILSONDERFERTIGKEIT, KARMALE_SONDERFERTIGKEIT, KARMALE_TRADITION, LITURGIE, LITURGIESTIL, MAGISCHE_SONDERFERTIGKEIT, NACHTEIL, PREDIGT, SEGEN, TALENTSTIL_SONDERFERTIGKEIT, VISION, VORTEIL, ZAUBER, ZAUBERERWEITERUNG, ZAUBERSTIL, ZAUBERTANZ, ZAUBER_TRADITION, ZAUBERTRICK, ZEREMONIALGEGENSTAND, ZEREMONIE, };
 	/**
 	 * A public read-only list of all the '<em><b>Type</b></em>' enumerators.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -481,14 +481,14 @@ public enum ContentType implements Enumerator {
 			return GEWANDZAUBER;
 		case HEXENFLUCH_VALUE:
 			return HEXENFLUCH;
-		case KARMALE_SONDERFERTIGKEIT_VALUE:
-			return KARMALE_SONDERFERTIGKEIT;
-		case KARMALE_TRADITION_VALUE:
-			return KARMALE_TRADITION;
 		case KAMPFSONDERFERTIGKEIT_VALUE:
 			return KAMPFSONDERFERTIGKEIT;
 		case KAMPFSTILSONDERFERTIGKEIT_VALUE:
 			return KAMPFSTILSONDERFERTIGKEIT;
+		case KARMALE_SONDERFERTIGKEIT_VALUE:
+			return KARMALE_SONDERFERTIGKEIT;
+		case KARMALE_TRADITION_VALUE:
+			return KARMALE_TRADITION;
 		case LITURGIE_VALUE:
 			return LITURGIE;
 		case LITURGIESTIL_VALUE:
