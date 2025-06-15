@@ -527,6 +527,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		addEEnumLiteral(contentTypeEEnum, ContentType.MAGISCHE_SONDERFERTIGKEIT);
 		addEEnumLiteral(contentTypeEEnum, ContentType.NACHTEIL);
 		addEEnumLiteral(contentTypeEEnum, ContentType.PREDIGT);
+		addEEnumLiteral(contentTypeEEnum, ContentType.RITUAL);
 		addEEnumLiteral(contentTypeEEnum, ContentType.SEGEN);
 		addEEnumLiteral(contentTypeEEnum, ContentType.TALENTSTIL_SONDERFERTIGKEIT);
 		addEEnumLiteral(contentTypeEEnum, ContentType.VISION);

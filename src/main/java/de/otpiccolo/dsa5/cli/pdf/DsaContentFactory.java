@@ -42,6 +42,8 @@ import de.otpiccolo.dsa5.data.nachteile.NachteilReader;
 import de.otpiccolo.dsa5.data.nachteile.NachteilWriter;
 import de.otpiccolo.dsa5.data.predigt.PredigtReader;
 import de.otpiccolo.dsa5.data.predigt.PredigtWriter;
+import de.otpiccolo.dsa5.data.rituale.RitualReader;
+import de.otpiccolo.dsa5.data.rituale.RitualWriter;
 import de.otpiccolo.dsa5.data.segen.SegenReader;
 import de.otpiccolo.dsa5.data.segen.SegenWriter;
 import de.otpiccolo.dsa5.data.talentstilsonderfertigkeiten.TalentstilsonderfertigkeitReader;
@@ -108,6 +110,7 @@ public class DsaContentFactory {
 		map.put(ContentType.MAGISCHE_SONDERFERTIGKEIT, d -> fillWriter(MagischeSonderfertigkeitWriter::new, MagischeSonderfertigkeitReader::new, d));
 		map.put(ContentType.NACHTEIL, d -> fillWriter(NachteilWriter::new, NachteilReader::new, d));
 		map.put(ContentType.PREDIGT, d -> fillWriter(PredigtWriter::new, PredigtReader::new, d));
+		map.put(ContentType.RITUAL, d -> fillWriter(RitualWriter::new, RitualReader::new, d));
 		map.put(ContentType.SEGEN, d -> fillWriter(SegenWriter::new, SegenReader::new, d));
 		map.put(ContentType.TALENTSTIL_SONDERFERTIGKEIT, d -> fillWriter(TalentstilsonderfertigkeitWriter::new, TalentstilsonderfertigkeitReader::new, d));
 		map.put(ContentType.VISION, d -> fillWriter(VisionWriter::new, VisionReader::new, d));

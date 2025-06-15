@@ -51,18 +51,19 @@
     <eLiterals name="MagischeSonderfertigkeit" value="13"/>
     <eLiterals name="Nachteil" value="14"/>
     <eLiterals name="Predigt" value="15"/>
-    <eLiterals name="Segen" value="16"/>
-    <eLiterals name="TalentstilSonderfertigkeit" value="17"/>
-    <eLiterals name="Vision" value="18"/>
-    <eLiterals name="Vorteil" value="19"/>
-    <eLiterals name="Zauber" value="20"/>
-    <eLiterals name="Zaubererweiterung" value="21"/>
-    <eLiterals name="Zauberstil" value="22"/>
-    <eLiterals name="Zaubertanz" value="23"/>
-    <eLiterals name="ZauberTradition" value="24"/>
-    <eLiterals name="Zaubertrick" value="25"/>
-    <eLiterals name="Zeremonialgegenstand" value="26"/>
-    <eLiterals name="Zeremonie" value="27"/>
+    <eLiterals name="Ritual" value="16"/>
+    <eLiterals name="Segen" value="17"/>
+    <eLiterals name="TalentstilSonderfertigkeit" value="18"/>
+    <eLiterals name="Vision" value="19"/>
+    <eLiterals name="Vorteil" value="20"/>
+    <eLiterals name="Zauber" value="21"/>
+    <eLiterals name="Zaubererweiterung" value="22"/>
+    <eLiterals name="Zauberstil" value="23"/>
+    <eLiterals name="Zaubertanz" value="24"/>
+    <eLiterals name="ZauberTradition" value="25"/>
+    <eLiterals name="Zaubertrick" value="26"/>
+    <eLiterals name="Zeremonialgegenstand" value="27"/>
+    <eLiterals name="Zeremonie" value="28"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="File" instanceClassName="java.io.File"/>
 </ecore:EPackage>
