@@ -122,6 +122,7 @@ Bereits implementierte Informationen:
 | *MagischeSonderfertigkeit* | https://dsa.ulisses-regelwiki.de/allgemeine_magische_sonderfertigkeit.html |
 | *Nachteil* | https://dsa.ulisses-regelwiki.de/nachteilauswahl.html |
 | *Predigt* | https://dsa.ulisses-regelwiki.de/predigtauswahl.html |
+| *Ritual* | https://dsa.ulisses-regelwiki.de/ritualauswahl.html |
 | *Segen* | https://dsa.ulisses-regelwiki.de/segenauswahl.html |
 | *TalentstilSonderfertigkeit* | https://dsa.ulisses-regelwiki.de/Talentstilsonderfertigkeiten.html |
 | *Vision* | https://dsa.ulisses-regelwiki.de/visionauswahl.html |
