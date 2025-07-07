@@ -10,6 +10,8 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
+import de.otpiccolo.dsa5.data.BannSchutzkreis.BannSchutzkreisReader;
+import de.otpiccolo.dsa5.data.BannSchutzkreis.BannSchutzkreisWriter;
 import de.otpiccolo.dsa5.data.allgemeinesonderfertigkeiten.AllgemeinesonderfertigkeitReader;
 import de.otpiccolo.dsa5.data.allgemeinesonderfertigkeiten.AllgemeinesonderfertigkeitWriter;
 import de.otpiccolo.dsa5.data.elfenlied.ElfenliedReader;
@@ -44,6 +46,8 @@ import de.otpiccolo.dsa5.data.predigt.PredigtReader;
 import de.otpiccolo.dsa5.data.predigt.PredigtWriter;
 import de.otpiccolo.dsa5.data.rituale.RitualReader;
 import de.otpiccolo.dsa5.data.rituale.RitualWriter;
+import de.otpiccolo.dsa5.data.schicksalspunktsonderfertigkeiten.SchicksalspunktsonderfertigkeitReader;
+import de.otpiccolo.dsa5.data.schicksalspunktsonderfertigkeiten.SchicksalspunktsonderfertigkeitWriter;
 import de.otpiccolo.dsa5.data.segen.SegenReader;
 import de.otpiccolo.dsa5.data.segen.SegenWriter;
 import de.otpiccolo.dsa5.data.talentstilsonderfertigkeiten.TalentstilsonderfertigkeitReader;
@@ -95,6 +99,7 @@ public class DsaContentFactory {
 	static {
 		map = new EnumMap<>(ContentType.class);
 		map.put(ContentType.ALLGEMEINE_SONDERFERTIGKEIT, d -> fillWriter(AllgemeinesonderfertigkeitWriter::new, AllgemeinesonderfertigkeitReader::new, d));
+		map.put(ContentType.BANN_SCHUTZ_KREIS, d -> fillWriter(BannSchutzkreisWriter::new, BannSchutzkreisReader::new, d));
 		map.put(ContentType.ELFENLIED, d -> fillWriter(ElfenliedWriter::new, ElfenliedReader::new, d));
 		map.put(ContentType.ELIXIER, d -> fillWriter(ElixierWriter::new, ElixierReader::new, d));
 		map.put(ContentType.ERWEITERTER_LITURGIESTIL, d -> fillWriter(ErweiterterLiturgiestilWriter::new, ErweiterterLiturgiestilReader::new, d));
@@ -111,6 +116,7 @@ public class DsaContentFactory {
 		map.put(ContentType.NACHTEIL, d -> fillWriter(NachteilWriter::new, NachteilReader::new, d));
 		map.put(ContentType.PREDIGT, d -> fillWriter(PredigtWriter::new, PredigtReader::new, d));
 		map.put(ContentType.RITUAL, d -> fillWriter(RitualWriter::new, RitualReader::new, d));
+		map.put(ContentType.SCHICKSALSPUNKT_SONDERFERTIGKEIT, d -> fillWriter(SchicksalspunktsonderfertigkeitWriter::new, SchicksalspunktsonderfertigkeitReader::new, d));
 		map.put(ContentType.SEGEN, d -> fillWriter(SegenWriter::new, SegenReader::new, d));
 		map.put(ContentType.TALENTSTIL_SONDERFERTIGKEIT, d -> fillWriter(TalentstilsonderfertigkeitWriter::new, TalentstilsonderfertigkeitReader::new, d));
 		map.put(ContentType.VISION, d -> fillWriter(VisionWriter::new, VisionReader::new, d));

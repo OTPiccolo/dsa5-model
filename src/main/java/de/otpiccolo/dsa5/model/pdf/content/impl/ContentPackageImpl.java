@@ -512,6 +512,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		// Initialize enums and add enum literals
 		initEEnum(contentTypeEEnum, ContentType.class, "ContentType");
 		addEEnumLiteral(contentTypeEEnum, ContentType.ALLGEMEINE_SONDERFERTIGKEIT);
+		addEEnumLiteral(contentTypeEEnum, ContentType.BANN_SCHUTZ_KREIS);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ELFENLIED);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ELIXIER);
 		addEEnumLiteral(contentTypeEEnum, ContentType.ERWEITERTER_LITURGIESTIL);
@@ -528,6 +529,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		addEEnumLiteral(contentTypeEEnum, ContentType.NACHTEIL);
 		addEEnumLiteral(contentTypeEEnum, ContentType.PREDIGT);
 		addEEnumLiteral(contentTypeEEnum, ContentType.RITUAL);
+		addEEnumLiteral(contentTypeEEnum, ContentType.SCHICKSALSPUNKT_SONDERFERTIGKEIT);
 		addEEnumLiteral(contentTypeEEnum, ContentType.SEGEN);
 		addEEnumLiteral(contentTypeEEnum, ContentType.TALENTSTIL_SONDERFERTIGKEIT);
 		addEEnumLiteral(contentTypeEEnum, ContentType.VISION);

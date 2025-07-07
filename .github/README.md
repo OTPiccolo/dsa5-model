@@ -107,6 +107,7 @@ Bereits implementierte Informationen:
 | ContentType | Homepage |
 | --- | --- |
 | *AllgemeineSonderfertigkeit* | https://dsa.ulisses-regelwiki.de/sf_allgemeine_sonderfertigkeiten.html |
+| *BannSchutzKreis* | https://dsa.ulisses-regelwiki.de/bannundschutz.html |
 | *Elfenlied* | https://dsa.ulisses-regelwiki.de/elfenliedauswahl.html |
 | *Elixier* | https://dsa.ulisses-regelwiki.de/Elixier.html |
 | *ErweiterterLiturgiestil* | https://dsa.ulisses-regelwiki.de/erweiterte_liturgiestilsonderfertigkeitenauswahl.html |
@@ -123,6 +124,7 @@ Bereits implementierte Informationen:
 | *Nachteil* | https://dsa.ulisses-regelwiki.de/nachteilauswahl.html |
 | *Predigt* | https://dsa.ulisses-regelwiki.de/predigtauswahl.html |
 | *Ritual* | https://dsa.ulisses-regelwiki.de/ritualauswahl.html |
+| *SchicksalspunktSonderfertigkeit* | https://dsa.ulisses-regelwiki.de/SF_Schick.html |
 | *Segen* | https://dsa.ulisses-regelwiki.de/segenauswahl.html |
 | *TalentstilSonderfertigkeit* | https://dsa.ulisses-regelwiki.de/Talentstilsonderfertigkeiten.html |
 | *Vision* | https://dsa.ulisses-regelwiki.de/visionauswahl.html |

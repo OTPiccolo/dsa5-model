@@ -23,6 +23,7 @@
       multipleEditorPages="false" generateModelWizard="false" fileExtensions="" ecorePackage="content.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="content.ecore#//ContentType">
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/AllgemeineSonderfertigkeit"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/BannSchutzKreis"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Elfenlied"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Elixier"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/ErweiterterLiturgiestil"/>
@@ -39,6 +40,7 @@
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Nachteil"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Predigt"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Ritual"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/SchicksalspunktSonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Segen"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/TalentstilSonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Vision"/>
