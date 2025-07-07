@@ -11,127 +11,132 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum ContentType implements Enumerator {
 	/**
-	 * @model name="AllgemeineSonderfertigkeit"
+	 * @model name="AllgemeineSonderfertigkeit" literal="Allgemeine
+	 *        Sonderfertigkeit"
 	 */
 	ALLGEMEINE_SONDERFERTIGKEIT(0, "AllgemeineSonderfertigkeit", "AllgemeineSonderfertigkeit"),
 	/**
-	 * @model name="BannSchutzKreis"
+	 * @model name="BannSchutzKreis" literal="Bann-/Schutzkreis"
 	 */
-	BANN_SCHUTZ_KREIS(1, "BannSchutzKreis", "BannSchutzKreis"),
+	BANN_SCHUTZ_KREIS(1, "BannSchutzKreis", "Bann-/Schutzkreis"),
 	/**
-	 * @model name="Elfenlied"
+	 * @model name="Elfenlied" literal="Elfenlied"
 	 */
 	ELFENLIED(2, "Elfenlied", "Elfenlied"),
 	/**
-	 * @model name="Elixier"
+	 * @model name="Elixier" literal="Elixier"
 	 */
 	ELIXIER(3, "Elixier", "Elixier"),
 	/**
-	 * @model name="ErweiterterLiturgiestil"
+	 * @model name="ErweiterterLiturgiestil" literal="Erweiterter Liturgiestil"
 	 */
-	ERWEITERTER_LITURGIESTIL(4, "ErweiterterLiturgiestil", "ErweiterterLiturgiestil"),
+	ERWEITERTER_LITURGIESTIL(4, "ErweiterterLiturgiestil", "Erweiterter Liturgiestil"),
 	/**
-	 * @model name="ErweiterterTalentstil"
+	 * @model name="ErweiterterTalentstil" literal="Erweiterter Talentstil"
 	 */
-	ERWEITERTER_TALENTSTIL(5, "ErweiterterTalentstil", "ErweiterterTalentstil"),
+	ERWEITERTER_TALENTSTIL(5, "ErweiterterTalentstil", "Erweiterter Talentstil"),
 	/**
-	 * @model name="Gewandzauber"
+	 * @model name="Gewandzauber" literal="Gewandzauber"
 	 */
 	GEWANDZAUBER(6, "Gewandzauber", "Gewandzauber"),
 	/**
-	 * @model name="Hexenfluch"
+	 * @model name="Hexenfluch" literal="Hexenfluch"
 	 */
 	HEXENFLUCH(7, "Hexenfluch", "Hexenfluch"),
 	/**
-	 * @model name="Kampfsonderfertigkeit"
+	 * @model name="Kampfsonderfertigkeit" literal="Kampf-Sonderfertigkeit"
 	 */
-	KAMPFSONDERFERTIGKEIT(8, "Kampfsonderfertigkeit", "Kampfsonderfertigkeit"),
+	KAMPFSONDERFERTIGKEIT(8, "Kampfsonderfertigkeit", "Kampf-Sonderfertigkeit"),
 	/**
 	 * @model name="Kampfstilsonderfertigkeit"
+	 *        literal="Kampfstil-Sonderfertigkeit"
 	 */
-	KAMPFSTILSONDERFERTIGKEIT(9, "Kampfstilsonderfertigkeit", "Kampfstilsonderfertigkeit"),
+	KAMPFSTILSONDERFERTIGKEIT(9, "Kampfstilsonderfertigkeit", "Kampfstil-Sonderfertigkeit"),
 	/**
-	 * @model name="KarmaleSonderfertigkeit"
+	 * @model name="KarmaleSonderfertigkeit" literal="Karmale Sonderfertigkeit"
 	 */
-	KARMALE_SONDERFERTIGKEIT(10, "KarmaleSonderfertigkeit", "KarmaleSonderfertigkeit"),
+	KARMALE_SONDERFERTIGKEIT(10, "KarmaleSonderfertigkeit", "Karmale Sonderfertigkeit"),
 	/**
-	 * @model name="KarmaleTradition"
+	 * @model name="KarmaleTradition" literal="Karmale Tradition"
 	 */
-	KARMALE_TRADITION(11, "KarmaleTradition", "KarmaleTradition"),
+	KARMALE_TRADITION(11, "KarmaleTradition", "Karmale Tradition"),
 	/**
-	 * @model name="Liturgie"
+	 * @model name="Liturgie" literal="Liturgie"
 	 */
 	LITURGIE(12, "Liturgie", "Liturgie"),
 	/**
-	 * @model name="Liturgiestil"
+	 * @model name="Liturgiestil" literal="Liturgiestil
 	 */
 	LITURGIESTIL(13, "Liturgiestil", "Liturgiestil"),
 	/**
-	 * @model name="MagischeSonderfertigkeit"
+	 * @model name="MagischeSonderfertigkeit" literal="Magische
+	 *        Sonderfertigkeit"
 	 */
 	MAGISCHE_SONDERFERTIGKEIT(14, "MagischeSonderfertigkeit", "MagischeSonderfertigkeit"),
 	/**
-	 * @model name="Nachteil"
+	 * @model name="Nachteil" literal="Nachteil"
 	 */
 	NACHTEIL(15, "Nachteil", "Nachteil"),
 	/**
-	 * @model name="Predigt"
+	 * @model name="Predigt" literal="Predigt"
 	 */
 	PREDIGT(16, "Predigt", "Predigt"),
 	/**
-	 * @model name="Ritual"
+	 * @model name="Ritual" literal="Ritual"
 	 */
 	RITUAL(17, "Ritual", "Ritual"),
 	/**
 	 * @model name="SchicksalspunktSonderfertigkeit"
+	 *        literal="Schicksalspunkt-Sonderfertigkeit"
 	 */
-	SCHICKSALSPUNKT_SONDERFERTIGKEIT(18, "SchicksalspunktSonderfertigkeit", "SchicksalspunktSonderfertigkeit"),
+	SCHICKSALSPUNKT_SONDERFERTIGKEIT(18, "SchicksalspunktSonderfertigkeit", "Schicksalspunkt-Sonderfertigkeit"),
 	/**
-	 * @model name="Segen"
+	 * @model name="Segen" literal="Segen"
 	 */
 	SEGEN(19, "Segen", "Segen"),
 	/**
 	 * @model name="TalentstilSonderfertigkeit"
+	 *        literal="Talentstil-Sonderfertigkeit"
 	 */
-	TALENTSTIL_SONDERFERTIGKEIT(20, "TalentstilSonderfertigkeit", "TalentstilSonderfertigkeit"),
+	TALENTSTIL_SONDERFERTIGKEIT(20, "TalentstilSonderfertigkeit", "Talentstil-Sonderfertigkeit"),
 	/**
-	 * @model name="Vision"
+	 * @model name="Vision" literal="Vision"
 	 */
 	VISION(21, "Vision", "Vision"),
 	/**
-	 * @model name="Vorteil"
+	 * @model name="Vorteil" literal="Vorteil"
 	 */
 	VORTEIL(22, "Vorteil", "Vorteil"),
 	/**
-	 * @model name="Zauber"
+	 * @model name="Zauber" literal="Zauber"
 	 */
 	ZAUBER(23, "Zauber", "Zauber"),
 	/**
-	 * @model name="Zaubererweiterung"
+	 * @model name="Zaubererweiterung" literal="Zaubererweiterung"
 	 */
 	ZAUBERERWEITERUNG(24, "Zaubererweiterung", "Zaubererweiterung"),
 	/**
-	 * @model name="Zauberstil"
+	 * @model name="Zauberstil" literal="Zauberstil"
 	 */
 	ZAUBERSTIL(25, "Zauberstil", "Zauberstil"),
 	/**
-	 * @model name="Zaubertanz"
+	 * @model name="Zaubertanz" literal="Zaubertanz"
 	 */
 	ZAUBERTANZ(26, "Zaubertanz", "Zaubertanz"),
 	/**
-	 * @model name="ZauberTradition"
+	 * @model name="ZauberTradition" literal="Zauber-Tradition"
 	 */
-	ZAUBER_TRADITION(27, "ZauberTradition", "ZauberTradition"),
+	ZAUBER_TRADITION(27, "ZauberTradition", "Zauber-Tradition"),
 	/**
-	 * @model name="Zaubertrick"
+	 * @model name="Zaubertrick" literal="Zaubertrick"
 	 */
 	ZAUBERTRICK(28, "Zaubertrick", "Zaubertrick"),
 	/**
-	 * @model name="Zeremonialgegenstand"
+	 * @model name="Zeremonialgegenstand" literal="Zeremonialer Gegenstand"
 	 */
-	ZEREMONIALGEGENSTAND(29, "Zeremonialgegenstand", "Zeremonialgegenstand"),
+	ZEREMONIALGEGENSTAND(29, "Zeremonialgegenstand", "Zeremonialer Gegenstand"),
 	/**
-	 * @model name="Zeremonie"
+	 * @model name="Zeremonie" literal="Zeremonie"
 	 */
 	ZEREMONIE(30, "Zeremonie", "Zeremonie");
 
@@ -321,6 +326,7 @@ public enum ContentType implements Enumerator {
 	 *
 	 * @see #SCHICKSALSPUNKT_SONDERFERTIGKEIT
 	 * @model name="SchicksalspunktSonderfertigkeit"
+	 *        literal="Schicksalspunkt-Sonderfertigkeit"
 	 * @generated
 	 * @ordered
 	 */
@@ -410,7 +416,7 @@ public enum ContentType implements Enumerator {
 	 * --> <!-- end-user-doc -->
 	 *
 	 * @see #ZAUBER_TRADITION
-	 * @model name="ZauberTradition"
+	 * @model name="ZauberTradition" literal="Zauber-Tradition"
 	 * @generated
 	 * @ordered
 	 */

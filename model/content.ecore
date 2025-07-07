@@ -36,36 +36,36 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ContentType">
     <eLiterals name="AllgemeineSonderfertigkeit"/>
-    <eLiterals name="BannSchutzKreis" value="1"/>
-    <eLiterals name="Elfenlied" value="2"/>
-    <eLiterals name="Elixier" value="3"/>
-    <eLiterals name="ErweiterterLiturgiestil" value="4"/>
-    <eLiterals name="ErweiterterTalentstil" value="5"/>
-    <eLiterals name="Gewandzauber" value="6"/>
-    <eLiterals name="Hexenfluch" value="7"/>
-    <eLiterals name="Kampfsonderfertigkeit" value="8"/>
-    <eLiterals name="Kampfstilsonderfertigkeit" value="9"/>
-    <eLiterals name="KarmaleSonderfertigkeit" value="10"/>
-    <eLiterals name="KarmaleTradition" value="11"/>
-    <eLiterals name="Liturgie" value="12"/>
+    <eLiterals name="BannSchutzKreis" value="1" literal="Bann-/Schutzkreis"/>
+    <eLiterals name="Elfenlied" value="2" literal="Elfenlied"/>
+    <eLiterals name="Elixier" value="3" literal="Elixier"/>
+    <eLiterals name="ErweiterterLiturgiestil" value="4" literal="Erweiterter Liturgiestil"/>
+    <eLiterals name="ErweiterterTalentstil" value="5" literal="Erweiterter Talentstil"/>
+    <eLiterals name="Gewandzauber" value="6" literal="Gewandzauber"/>
+    <eLiterals name="Hexenfluch" value="7" literal="Hexenfluch"/>
+    <eLiterals name="Kampfsonderfertigkeit" value="8" literal="Kampf-Sonderfertigkeit"/>
+    <eLiterals name="Kampfstilsonderfertigkeit" value="9" literal="Kampfstil-Sonderfertigkeit"/>
+    <eLiterals name="KarmaleSonderfertigkeit" value="10" literal="Karmale Sonderfertigkeit"/>
+    <eLiterals name="KarmaleTradition" value="11" literal="Karmale Tradition"/>
+    <eLiterals name="Liturgie" value="12" literal="Liturgie"/>
     <eLiterals name="Liturgiestil" value="13"/>
     <eLiterals name="MagischeSonderfertigkeit" value="14"/>
-    <eLiterals name="Nachteil" value="15"/>
-    <eLiterals name="Predigt" value="16"/>
-    <eLiterals name="Ritual" value="17"/>
-    <eLiterals name="SchicksalspunktSonderfertigkeit" value="18"/>
-    <eLiterals name="Segen" value="19"/>
-    <eLiterals name="TalentstilSonderfertigkeit" value="20"/>
-    <eLiterals name="Vision" value="21"/>
-    <eLiterals name="Vorteil" value="22"/>
-    <eLiterals name="Zauber" value="23"/>
-    <eLiterals name="Zaubererweiterung" value="24"/>
-    <eLiterals name="Zauberstil" value="25"/>
-    <eLiterals name="Zaubertanz" value="26"/>
-    <eLiterals name="ZauberTradition" value="27"/>
-    <eLiterals name="Zaubertrick" value="28"/>
-    <eLiterals name="Zeremonialgegenstand" value="29"/>
-    <eLiterals name="Zeremonie" value="30"/>
+    <eLiterals name="Nachteil" value="15" literal="Nachteil"/>
+    <eLiterals name="Predigt" value="16" literal="Predigt"/>
+    <eLiterals name="Ritual" value="17" literal="Ritual"/>
+    <eLiterals name="SchicksalspunktSonderfertigkeit" value="18" literal="Schicksalspunkt-Sonderfertigkeit"/>
+    <eLiterals name="Segen" value="19" literal="Segen"/>
+    <eLiterals name="TalentstilSonderfertigkeit" value="20" literal="Talentstil-Sonderfertigkeit"/>
+    <eLiterals name="Vision" value="21" literal="Vision"/>
+    <eLiterals name="Vorteil" value="22" literal="Vorteil"/>
+    <eLiterals name="Zauber" value="23" literal="Zauber"/>
+    <eLiterals name="Zaubererweiterung" value="24" literal="Zaubererweiterung"/>
+    <eLiterals name="Zauberstil" value="25" literal="Zauberstil"/>
+    <eLiterals name="Zaubertanz" value="26" literal="Zaubertanz"/>
+    <eLiterals name="ZauberTradition" value="27" literal="Zauber-Tradition"/>
+    <eLiterals name="Zaubertrick" value="28" literal="Zaubertrick"/>
+    <eLiterals name="Zeremonialgegenstand" value="29" literal="Zeremonialer Gegenstand"/>
+    <eLiterals name="Zeremonie" value="30" literal="Zeremonie"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="File" instanceClassName="java.io.File"/>
 </ecore:EPackage>
