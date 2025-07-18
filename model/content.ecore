@@ -35,7 +35,7 @@
         eType="#//TableCell" containment="true" resolveProxies="false" eOpposite="#//TableCell/row"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ContentType">
-    <eLiterals name="AllgemeineSonderfertigkeit"/>
+    <eLiterals name="AllgemeineSonderfertigkeit" literal="Allgemeine Sonderfertigkeit"/>
     <eLiterals name="BannSchutzKreis" value="1" literal="Bann-/Schutzkreis"/>
     <eLiterals name="Elfenlied" value="2" literal="Elfenlied"/>
     <eLiterals name="Elixier" value="3" literal="Elixier"/>
@@ -49,7 +49,7 @@
     <eLiterals name="KarmaleTradition" value="11" literal="Karmale Tradition"/>
     <eLiterals name="Liturgie" value="12" literal="Liturgie"/>
     <eLiterals name="Liturgiestil" value="13"/>
-    <eLiterals name="MagischeSonderfertigkeit" value="14"/>
+    <eLiterals name="MagischeSonderfertigkeit" value="14" literal="Magische Sonderfertigkeit"/>
     <eLiterals name="Nachteil" value="15" literal="Nachteil"/>
     <eLiterals name="Predigt" value="16" literal="Predigt"/>
     <eLiterals name="Ritual" value="17" literal="Ritual"/>

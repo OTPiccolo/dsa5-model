@@ -14,7 +14,7 @@ public enum ContentType implements Enumerator {
 	 * @model name="AllgemeineSonderfertigkeit" literal="Allgemeine
 	 *        Sonderfertigkeit"
 	 */
-	ALLGEMEINE_SONDERFERTIGKEIT(0, "AllgemeineSonderfertigkeit", "AllgemeineSonderfertigkeit"),
+	ALLGEMEINE_SONDERFERTIGKEIT(0, "AllgemeineSonderfertigkeit", "Allgemeine Sonderfertigkeit"),
 	/**
 	 * @model name="BannSchutzKreis" literal="Bann-/Schutzkreis"
 	 */
@@ -72,7 +72,7 @@ public enum ContentType implements Enumerator {
 	 * @model name="MagischeSonderfertigkeit" literal="Magische
 	 *        Sonderfertigkeit"
 	 */
-	MAGISCHE_SONDERFERTIGKEIT(14, "MagischeSonderfertigkeit", "MagischeSonderfertigkeit"),
+	MAGISCHE_SONDERFERTIGKEIT(14, "MagischeSonderfertigkeit", "Magische Sonderfertigkeit"),
 	/**
 	 * @model name="Nachteil" literal="Nachteil"
 	 */
