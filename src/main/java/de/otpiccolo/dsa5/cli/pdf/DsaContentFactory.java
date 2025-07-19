@@ -10,10 +10,10 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import de.otpiccolo.dsa5.data.BannSchutzkreis.BannSchutzkreisReader;
-import de.otpiccolo.dsa5.data.BannSchutzkreis.BannSchutzkreisWriter;
 import de.otpiccolo.dsa5.data.allgemeinesonderfertigkeiten.AllgemeinesonderfertigkeitReader;
 import de.otpiccolo.dsa5.data.allgemeinesonderfertigkeiten.AllgemeinesonderfertigkeitWriter;
+import de.otpiccolo.dsa5.data.bannschutzkreis.BannSchutzkreisReader;
+import de.otpiccolo.dsa5.data.bannschutzkreis.BannSchutzkreisWriter;
 import de.otpiccolo.dsa5.data.elfenlied.ElfenliedReader;
 import de.otpiccolo.dsa5.data.elfenlied.ElfenliedWriter;
 import de.otpiccolo.dsa5.data.elixiere.ElixierReader;
