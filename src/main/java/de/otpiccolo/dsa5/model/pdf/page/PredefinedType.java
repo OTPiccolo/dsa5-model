@@ -56,6 +56,10 @@ public enum PredefinedType implements Enumerator {
 	 */
 	RAHJA(10, "Rahja", "Rahja"),
 	/**
+	 * @model name="Reiterkampf"
+	 */
+	REITERKAMPF(10, "Reiterkampf", "Reiterkampf"),
+	/**
 	 * @model name="Rondra"
 	 */
 	RONDRA(11, "Rondra", "Rondra"),

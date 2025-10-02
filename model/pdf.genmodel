@@ -95,6 +95,7 @@
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Phex"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Praios"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Rahja"/>
+      <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Reiterkampf"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Rondra"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Schicksalspunkte"/>
       <genEnumLiterals ecoreEnumLiteral="page.ecore#//PredefinedType/Segen"/>

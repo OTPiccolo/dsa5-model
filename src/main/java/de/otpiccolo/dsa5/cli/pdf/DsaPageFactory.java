@@ -18,6 +18,7 @@ import de.otpiccolo.dsa5.pdf.data.IDataWriter;
 import de.otpiccolo.dsa5.pdf.page.IPage;
 import de.otpiccolo.dsa5.pdf.page.predefined.EntrueckungTrancePage;
 import de.otpiccolo.dsa5.pdf.page.predefined.FernkampfModPage;
+import de.otpiccolo.dsa5.pdf.page.predefined.ReiterkampfPage;
 import de.otpiccolo.dsa5.pdf.page.predefined.SchicksalspunktePage;
 import de.otpiccolo.dsa5.pdf.page.predefined.SegenPage;
 import de.otpiccolo.dsa5.pdf.page.predefined.ZauberModPage;
@@ -139,6 +140,7 @@ public class DsaPageFactory {
 		case PHEX -> new PhexPage();
 		case PRAIOS -> new PraiosPage();
 		case RAHJA -> new RahjaPage();
+		case REITERKAMPF -> new ReiterkampfPage();
 		case RONDRA -> new RondraPage();
 		case SCHICKSALSPUNKTE -> new SchicksalspunktePage();
 		case SEGEN -> new SegenPage();

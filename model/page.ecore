@@ -28,12 +28,13 @@
     <eLiterals name="Phex" value="8"/>
     <eLiterals name="Praios" value="9"/>
     <eLiterals name="Rahja" value="10"/>
-    <eLiterals name="Rondra" value="11"/>
-    <eLiterals name="Schicksalspunkte" value="12"/>
-    <eLiterals name="Segen" value="13"/>
-    <eLiterals name="Travia" value="14"/>
-    <eLiterals name="Tsa" value="15"/>
-    <eLiterals name="ZauberMod" value="16"/>
+    <eLiterals name="Reiterkampf" value="11"/>
+    <eLiterals name="Rondra" value="12"/>
+    <eLiterals name="Schicksalspunkte" value="13"/>
+    <eLiterals name="Segen" value="14"/>
+    <eLiterals name="Travia" value="15"/>
+    <eLiterals name="Tsa" value="16"/>
+    <eLiterals name="ZauberMod" value="17"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="Collection" instanceClassName="java.util.Collection">
     <eTypeParameters name="T"/>
