@@ -43,6 +43,7 @@
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/SchicksalspunktSonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Segen"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/TalentstilSonderfertigkeit"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Vertrautentrick"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Vision"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Vorteil"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Zauber"/>

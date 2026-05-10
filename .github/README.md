@@ -128,6 +128,7 @@ Bereits implementierte Informationen:
 | *Segen* | https://dsa.ulisses-regelwiki.de/segenauswahl.html |
 | *TalentstilSonderfertigkeit* | https://dsa.ulisses-regelwiki.de/Talentstilsonderfertigkeiten.html |
 | *Vision* | https://dsa.ulisses-regelwiki.de/visionauswahl.html |
+| *Vertrautentrick* | https://dsa.ulisses-regelwiki.de/VSF_Vertrautentricks.html |
 | *Vorteil* | https://dsa.ulisses-regelwiki.de/vorteilauswahl.html |
 | *Zauber* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html |
 | *Zaubererweiterung* | https://dsa.ulisses-regelwiki.de/zauberauswahl.html (Spezielle Angabe, siehe unten) |

@@ -52,6 +52,8 @@ import de.otpiccolo.dsa5.data.segen.SegenReader;
 import de.otpiccolo.dsa5.data.segen.SegenWriter;
 import de.otpiccolo.dsa5.data.talentstilsonderfertigkeiten.TalentstilsonderfertigkeitReader;
 import de.otpiccolo.dsa5.data.talentstilsonderfertigkeiten.TalentstilsonderfertigkeitWriter;
+import de.otpiccolo.dsa5.data.vertrautentrick.VertrautentrickReader;
+import de.otpiccolo.dsa5.data.vertrautentrick.VertrautentrickWriter;
 import de.otpiccolo.dsa5.data.vision.VisionReader;
 import de.otpiccolo.dsa5.data.vision.VisionWriter;
 import de.otpiccolo.dsa5.data.vorteile.VorteilReader;
@@ -119,6 +121,7 @@ public class DsaContentFactory {
 		map.put(ContentType.SCHICKSALSPUNKT_SONDERFERTIGKEIT, d -> fillWriter(SchicksalspunktsonderfertigkeitWriter::new, SchicksalspunktsonderfertigkeitReader::new, d));
 		map.put(ContentType.SEGEN, d -> fillWriter(SegenWriter::new, SegenReader::new, d));
 		map.put(ContentType.TALENTSTIL_SONDERFERTIGKEIT, d -> fillWriter(TalentstilsonderfertigkeitWriter::new, TalentstilsonderfertigkeitReader::new, d));
+		map.put(ContentType.VERTRAUTENTRICK, d -> fillWriter(VertrautentrickWriter::new, VertrautentrickReader::new, d));
 		map.put(ContentType.VISION, d -> fillWriter(VisionWriter::new, VisionReader::new, d));
 		map.put(ContentType.VORTEIL, d -> fillWriter(VorteilWriter::new, VorteilReader::new, d));
 		map.put(ContentType.ZAUBER, d -> fillWriter(ZauberWriter::new, ZauberReader::new, d));
