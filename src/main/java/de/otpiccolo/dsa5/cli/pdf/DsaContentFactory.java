@@ -34,6 +34,8 @@ import de.otpiccolo.dsa5.data.karmalesonderfertigkeiten.KarmaleSonderfertigkeitR
 import de.otpiccolo.dsa5.data.karmalesonderfertigkeiten.KarmaleSonderfertigkeitWriter;
 import de.otpiccolo.dsa5.data.karmaletradition.KarmaleTraditionReader;
 import de.otpiccolo.dsa5.data.karmaletradition.KarmaleTraditionWriter;
+import de.otpiccolo.dsa5.data.liturgieerweiterung.LiturgieerweiterungReader;
+import de.otpiccolo.dsa5.data.liturgieerweiterung.LiturgieerweiterungWriter;
 import de.otpiccolo.dsa5.data.liturgien.LiturgieReader;
 import de.otpiccolo.dsa5.data.liturgien.LiturgieWriter;
 import de.otpiccolo.dsa5.data.liturgiestil.LiturgiestilReader;
@@ -113,6 +115,7 @@ public class DsaContentFactory {
 		map.put(ContentType.KARMALE_SONDERFERTIGKEIT, d -> fillWriter(KarmaleSonderfertigkeitWriter::new, KarmaleSonderfertigkeitReader::new, d));
 		map.put(ContentType.KARMALE_TRADITION, d -> fillWriter(KarmaleTraditionWriter::new, KarmaleTraditionReader::new, d));
 		map.put(ContentType.LITURGIE, d -> fillWriter(LiturgieWriter::new, LiturgieReader::new, d));
+		map.put(ContentType.LITURGIEERWEITERUNG, d -> fillWriter(LiturgieerweiterungWriter::new, LiturgieerweiterungReader::new, d));
 		map.put(ContentType.LITURGIESTIL, d -> fillWriter(LiturgiestilWriter::new, LiturgiestilReader::new, d));
 		map.put(ContentType.MAGISCHE_SONDERFERTIGKEIT, d -> fillWriter(MagischeSonderfertigkeitWriter::new, MagischeSonderfertigkeitReader::new, d));
 		map.put(ContentType.NACHTEIL, d -> fillWriter(NachteilWriter::new, NachteilReader::new, d));

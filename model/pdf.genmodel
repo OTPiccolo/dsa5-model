@@ -35,6 +35,7 @@
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/KarmaleSonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/KarmaleTradition"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Liturgie"/>
+      <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Liturgieerweiterung"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Liturgiestil"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/MagischeSonderfertigkeit"/>
       <genEnumLiterals ecoreEnumLiteral="content.ecore#//ContentType/Nachteil"/>

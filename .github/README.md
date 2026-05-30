@@ -119,6 +119,7 @@ Bereits implementierte Informationen:
 | *KarmaleSonderfertigkeit* | https://dsa.ulisses-regelwiki.de/allgemeine_karmale_sonderfertigkeitauswahl.html |
 | *KarmaleTradition* | https://dsa.ulisses-regelwiki.de/karmale_traditionauswahl.html (nur der Teil in Klammern. Beispiel: Praioskirche) |
 | *Liturgie* | https://dsa.ulisses-regelwiki.de/liturgieauswahl.html |
+| *Liturgieerweiterung* | https://dsa.ulisses-regelwiki.de/liturgieauswahl.html (Spezielle Angabe, siehe unten) |
 | *Liturgiestil* | https://dsa.ulisses-regelwiki.de/liturgiestilsonderfertigkeitenauswahl.html |
 | *MagischeSonderfertigkeit* | https://dsa.ulisses-regelwiki.de/allgemeine_magische_sonderfertigkeit.html |
 | *Nachteil* | https://dsa.ulisses-regelwiki.de/nachteilauswahl.html |
@@ -139,7 +140,7 @@ Bereits implementierte Informationen:
 | *Zeremonialgegenstand* | https://dsa.ulisses-regelwiki.de/zeremonialgegenstands_sf_auswahl.html |
 | *Zeremonie* | https://dsa.ulisses-regelwiki.de/zeremonieauswahl.html |
 
-Für Zaubererweiterungen haben einen leicht anderen Syntax, da man zusätzlich zum Namen der Zaubererweiterung auch noch den Namen des Zaubers angeben muss.
+Zaubererweiterungen haben einen leicht anderen Syntax, da man zusätzlich zum Namen der Zaubererweiterung auch noch den Namen des Zaubers angeben muss. Äquivalent wird dies auch für Liturgieerweiterungen verwendet.
 Syntax: Zauber-Name#Zaubererweiterung-Name
 Beispiel: Axxeleratus#Noch schneller
 

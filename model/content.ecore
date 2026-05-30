@@ -48,25 +48,26 @@
     <eLiterals name="KarmaleSonderfertigkeit" value="10" literal="Karmale Sonderfertigkeit"/>
     <eLiterals name="KarmaleTradition" value="11" literal="Karmale Tradition"/>
     <eLiterals name="Liturgie" value="12" literal="Liturgie"/>
-    <eLiterals name="Liturgiestil" value="13"/>
-    <eLiterals name="MagischeSonderfertigkeit" value="14"/>
-    <eLiterals name="Nachteil" value="15" literal="Nachteil"/>
-    <eLiterals name="Predigt" value="16" literal="Predigt"/>
-    <eLiterals name="Ritual" value="17" literal="Ritual"/>
-    <eLiterals name="SchicksalspunktSonderfertigkeit" value="18" literal="Schicksalspunkt-Sonderfertigkeit"/>
-    <eLiterals name="Segen" value="19" literal="Segen"/>
-    <eLiterals name="TalentstilSonderfertigkeit" value="20" literal="Talentstil-Sonderfertigkeit"/>
-    <eLiterals name="Vertrautentrick" value="21" literal="Vertrautentrick"/>
-    <eLiterals name="Vision" value="22" literal="Vision"/>
-    <eLiterals name="Vorteil" value="23" literal="Vorteil"/>
-    <eLiterals name="Zauber" value="24" literal="Zauber"/>
-    <eLiterals name="Zaubererweiterung" value="25" literal="Zaubererweiterung"/>
-    <eLiterals name="Zauberstil" value="26" literal="Zauberstil"/>
-    <eLiterals name="Zaubertanz" value="27" literal="Zaubertanz"/>
-    <eLiterals name="ZauberTradition" value="28" literal="Zauber-Tradition"/>
-    <eLiterals name="Zaubertrick" value="29" literal="Zaubertrick"/>
-    <eLiterals name="Zeremonialgegenstand" value="30" literal="Zeremonialer Gegenstand"/>
-    <eLiterals name="Zeremonie" value="31" literal="Zeremonie"/>
+    <eLiterals name="Liturgieerweiterung" value="13" literal="Liturgieerweiterung"/>
+    <eLiterals name="Liturgiestil" value="14"/>
+    <eLiterals name="MagischeSonderfertigkeit" value="15"/>
+    <eLiterals name="Nachteil" value="16" literal="Nachteil"/>
+    <eLiterals name="Predigt" value="17" literal="Predigt"/>
+    <eLiterals name="Ritual" value="18" literal="Ritual"/>
+    <eLiterals name="SchicksalspunktSonderfertigkeit" value="19" literal="Schicksalspunkt-Sonderfertigkeit"/>
+    <eLiterals name="Segen" value="20" literal="Segen"/>
+    <eLiterals name="TalentstilSonderfertigkeit" value="21" literal="Talentstil-Sonderfertigkeit"/>
+    <eLiterals name="Vertrautentrick" value="22" literal="Vertrautentrick"/>
+    <eLiterals name="Vision" value="23" literal="Vision"/>
+    <eLiterals name="Vorteil" value="24" literal="Vorteil"/>
+    <eLiterals name="Zauber" value="25" literal="Zauber"/>
+    <eLiterals name="Zaubererweiterung" value="26" literal="Zaubererweiterung"/>
+    <eLiterals name="Zauberstil" value="27" literal="Zauberstil"/>
+    <eLiterals name="Zaubertanz" value="28" literal="Zaubertanz"/>
+    <eLiterals name="ZauberTradition" value="29" literal="Zauber-Tradition"/>
+    <eLiterals name="Zaubertrick" value="30" literal="Zaubertrick"/>
+    <eLiterals name="Zeremonialgegenstand" value="31" literal="Zeremonialer Gegenstand"/>
+    <eLiterals name="Zeremonie" value="32" literal="Zeremonie"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="File" instanceClassName="java.io.File"/>
 </ecore:EPackage>
